@@ -1,0 +1,3485 @@
+{
+  "name": "AMAN_v6",
+  "description": "",
+  "machines": [
+    {
+      "name": "M0_AMAN_Update",
+      "description": "",
+      "location": "M0_AMAN_Update.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [
+        {
+          "id": "AMAN_Update_1",
+          "description": "",
+          "code": "GF(BA({scheduledAirplanes /= scheduledAirplanes$0})) => \nGF(BA({#x.(x : scheduledAirplanes & x /: scheduledAirplanes$0)}))",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "id": "AMAN_Update_2",
+          "description": "",
+          "code": "GF(BA({scheduledAirplanes /= scheduledAirplanes$0})) => GF(BA({#x.(x : scheduledAirplanes$0 & x /: scheduledAirplanes)}))",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M0_Scenario_1",
+          "location": "M0_Scenario_1.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M1_Landing_Sequence",
+      "description": "",
+      "location": "M1_Landing_Sequence.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [
+        {
+          "id": "LTL_Move",
+          "description": "",
+          "code": "G([Move_Aircraft] => BA({#a.(a : dom(landing_sequence) & a : dom(landing_sequence$0) & landing_sequence(a) /= landing_sequence$0(a))}))",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M1_Scenario_1",
+          "location": "M1_Scenario_1.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M1_Scenario_2",
+          "location": "M1_Scenario_2.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M1_Scenario_3",
+          "location": "M1_Scenario_3.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        },
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "goal": "2 /: ran(landing_sequence)",
+          "shouldExecute": true
+        },
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [
+        {
+          "id": "DIST3",
+          "name": "AMAN_Update/inv13,2/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": "DIST2",
+          "name": "INITIALISATION/inv13,2/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": "DIST1",
+          "name": "Move_Aircraft/inv13,2/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/inv1,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/glue1,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/inv1,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/glue1,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/inv1,2/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd1,3/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/glue1,1/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/inv1,1/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd1,4/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "enable_graph": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M2_Hold_Button",
+      "description": "",
+      "location": "M2_Hold_Button.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [
+        {
+          "id": "LTL_Hold_Airplanes",
+          "description": "",
+          "code": "G([Hold_Button] => BA({#x.(x : held_airplanes & x /: held_airplanes$0)}))",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M2_Scenario_2",
+          "location": "M2_Scenario_1.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "INITIALISATION/inv4,1/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/inv4,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/inv4,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/inv4,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M3_Block_Timeslots",
+      "description": "",
+      "location": "M3_Block_Timeslots.bum",
+      "lastUsedPreferenceName": "coverage",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M3_Scenario_1",
+          "location": "M3_Scenario_1.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M3_Scenario_2",
+          "location": "M3_Scenario_2.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M3_Scenario_3",
+          "location": "M3_Scenario_3.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M3_Scenario_4",
+          "location": "M3_Scenario_4.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "Deblock_Time/inv3,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/inv3,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Block_Time/inv3,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/inv3,1/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": "BLOCK3",
+          "name": "Move_Aircraft/inv3,3/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": "BLOCK4",
+          "name": "Block_Time/inv3,3/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": "BLOCK2",
+          "name": "AMAN_Update/inv3,3/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": "BLOCK5",
+          "name": "Deblock_Time/inv3,3/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": "BLOCK1",
+          "name": "INITIALISATION/inv3,3/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "precise_operation_coverage": [],
+        "expr_as_table": [],
+        "prob_memo_profile": [],
+        "machine_statistics": [],
+        "quick_operation_coverage": [],
+        "wd_pos": [],
+        "unsat_core_properties": [],
+        "prob_opcache_info": []
+      }
+    },
+    {
+      "name": "M4_Zoom_Ctx",
+      "description": "",
+      "location": "M4_Zoom_Ctx.buc",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M4_Zoom",
+      "description": "",
+      "location": "M4_Zoom.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd6,1/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": "ZOOM1",
+          "name": "INITIALISATION/inv6,1/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/grd6,1/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": "ZOOM2",
+          "name": "changeZoom/inv6,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "variable_read_write_matrix": []
+      }
+    },
+    {
+      "name": "M5_AMAN_Timeout",
+      "description": "",
+      "location": "M5_AMAN_Timeout.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane",
+      "description": "",
+      "location": "M6_Select_Airplane.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "SimB_Trace.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "INITIALISATION/inv7,1/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/selectedAirplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/selectedAirplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/selectedAirplane_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/selectedAirplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "deselectAirplane/selectedAirplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/selectedAirplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Timeout/selectedAirplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Timeout/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/grd6,2/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "deselectAirplane/inv7,1/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectedAirplane_finite/THM",
+          "description": "Theorem",
+          "selected": true
+        }
+      ],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim.json",
+          "simulationItems": []
+        },
+        {
+          "path": "simulation/AMAN_sim_slow.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "transition_diagram": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane_vis",
+      "description": "",
+      "location": "M6_Select_Airplane_vis.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "M6_Scenario_Timeout.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M7_Interaction_Pauses_Updates",
+      "description": "",
+      "location": "M7_Interaction_Pauses_Updates.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "INITIALISATION/dragging_selected_airplane/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Timeout/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "deselectAirplane/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/dragging_selected_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M8_Interaction_Events",
+      "description": "",
+      "location": "M8_Interaction_Events.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [
+        {
+          "id": "Airplane_Drag_Finish",
+          "description": "Dragging an airplane can always be completed or aborted.",
+          "code": "G {dragged_airplane /= {}} => (e(Move_Aircraft) or e(stop_dragging_airplane))",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "id": "Zoom_Slider_Drag_Finish",
+          "description": "Dragging the zoom slider can always be finished.",
+          "code": "G {dragged_zoom_level /= {}} => e(changeZoom)",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "INITIALISATION/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "deselectAirplane/grd6,3/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/dragged_zoom_level_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/dragged_airplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/dragged_airplane/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/is_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_zoom_slider/dragged_zoom_level_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd6,2/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_zoom_slider/dragged_zoom_level_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_zoom_slider/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/dragged_airplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/dragging_airplane_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Hold_Button/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd6,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/dragging_airplane_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "deselectAirplane/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd1,4/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/airplane_selected/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/dragged_airplane_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd7,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/grd6,3/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/dragged_airplane_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragged_zoom_level_finite/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/dragged_airplane_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/dragged_airplane_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/different_time/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragged_zoom_level_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd1,2/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/is_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/grd6,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/dragged_airplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/dragged_airplane/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragged_airplane_finite/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/dragged_zoom_level_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/dragged_airplane_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/dragging_airplane_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/dragging_airplane_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Timeout/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/dragged_zoom_level_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd1,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/cannot_move_airplane_while_zooming/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragged_airplane_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragged_zoom_level_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/grd6,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragged_airplane_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/dragging_airplane_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/dragged_zoom_level_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/dragging_airplane_glue/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/dragged_airplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/dragged_airplane_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/dest_not_allowed/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/dragged_zoom_level_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Timeout/not_dragging_airplane/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/grd1,3/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "deselectAirplane/dragged_airplane_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/dragged_zoom_level_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_zoom_slider/dragged_zoom_level_finite/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/block_slot_position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/theorem/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/zoom_pos_not_empty/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/zoom_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/is_clicked_block_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Time_Button/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/block_slot_position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/zoom_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/zoom_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/block_slot_position_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Block_Time/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Block_Time/is_clicked_block_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/click_start_zoom/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/zoom_Position/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/is_clicked_block_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Hold_Button/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/zoom_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/is_clicked_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/block_slot_position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Hold_Button/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/time/WFIS",
+          "description": "Feasibility of witness",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/act3,1/SIM",
+          "description": "Action simulation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/block_slot_position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/zoom_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "drag_airplane/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/zoom_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/zoom_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Hold_Button/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Block_Time/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Hold_Button/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/is_clicked_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/mouse_pos_not_empty/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Hold_Button/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/click_start_airplane/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/zoom_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/grd6,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Block_Time/is_clicked_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_Position/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/grd3,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/is_clicked_block/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/grd6,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Time_Button/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Block_Time/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_Position_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Hold_Button/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/theorem/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/block_slot_position/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Hold_Button/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/grd3,1/GRD",
+          "description": "Guard strengthening (split)",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Time_Button/is_clicked_block_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/is_clicked_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Time_Button/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/block_slot_position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Hold_Button/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "resume_dragging_airplane/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "stop_dragging_airplane/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/mouse_over_airplane_when_dragged/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_stays/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/block_slot_position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Deblock_Time/is_clicked_block_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/block_slot_position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/click_start_block/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/airplane_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Abort_Time_Button/is_clicked_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/act3,1/SIM",
+          "description": "Action simulation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/zoom_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/zoom_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "selectAirplane/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/airplane_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/click_start_block/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Click_Hold_Button/click_start_airplane/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/zoom_Position_card/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/zoom_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "start_dragging_zoom_slider/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/theorem/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/mouse_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/click_start_zoom/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/zoom_Position_card/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/zoom_Position/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/block_pos_not_empty/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/block_pos_not_empty/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "zoom_Position_fin/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "block_slot_position_fin/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Release_Trigger_Block_Time/clicked_Block_not_empty/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "is_clicked_block_fin/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "airplane_Position_fin/THM",
+          "description": "Theorem",
+          "selected": true
+        }
+      ],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_prob",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_prob.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "StateError.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis_M9.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M10_GUI_Ctx",
+      "description": "",
+      "location": "M10_GUI_Ctx.buc",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "expr_as_table": [],
+        "det_check_constants": [],
+        "unsat_core_properties": []
+      }
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_vis",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_vis.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "Zooming_Bug.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "visualization/AMAN_vis_M9.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M10_GUI",
+      "description": "",
+      "location": "M10_GUI.bum",
+      "lastUsedPreferenceName": "higher max",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_stays/ui_element_at_point/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "block_slot_points_subset_helper/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_ys_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_slot_height_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_ys/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/no_overlap/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_slot_height/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/no_overlap/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/mouse_pos_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/no_overlap/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/currently_at_airplane_or_nothing/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/block_slot_points_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_ys_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/no_overlap/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_ys/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_points/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/mouse_pos_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_slot_ys_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/block_slot_points_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/block_slot_points/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/mouse_pos_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_slot_ys_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/at_zoom_slider/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_slot_height_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_ys_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "zoom_slider_points_subset_helper/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_slot_height_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/no_overlap/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/ui_element_at_point_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_points_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/ui_element_at_point/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_ys_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_slot_ys/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "airplane_points_subset_helper/THM",
+          "description": "Theorem",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_stays/ui_element_at_point_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_slot_height/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_ys_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Aircraft/ui_element_at_point_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/currentMousePosition_glue/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/then_not_at_airplane/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/currently_at_airplane_or_nothing/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/ui_element_at_point/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_slot_ys_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_slot_height_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/ui_element_at_point/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_ys/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/mouse_pos_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Block/at_block_slot/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_stays/no_overlap/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_points/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_points_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_points_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Hold/at_hold_button/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/mouse_pos_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/ui_element_at_point_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/then_at_airplane/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_slot_ys_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_slot_ys/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/block_slot_points_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Nothing/mouse_pos_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/ui_element_at_point/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Not_Zooming/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/block_slot_points/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_nothing/ui_element_at_point/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/time_ys_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/time_ys_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "changeZoom/airplane_ys_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/block_slot_points_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_ys/WD",
+          "description": "Well-definedness of action",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/airplane_points_type/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Zoom_Zooming/at_zoom_slider/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_to_airplane/ui_element_at_point_value/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/at_airplane/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "Move_Mouse_Airplane/mouse_pos_type/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_stays/not_at_airplane/WD",
+          "description": "Well-definedness of Guard",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "AMAN_Update_mouse_stays/currentMousePosition_glue/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "INITIALISATION/ui_element_at_point_value/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "ui_element_at_point_type/THM",
+          "description": "Theorem",
+          "selected": true
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M0_AMAN_Update_prob_mc",
+      "description": "",
+      "location": "M0_AMAN_Update_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M0_AMAN_Update_prob_mc2",
+      "description": "",
+      "location": "M0_AMAN_Update_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M1_Landing_Sequence_prob_mc",
+      "description": "",
+      "location": "M1_Landing_Sequence_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M1_Landing_Sequence_prob_mc2",
+      "description": "",
+      "location": "M1_Landing_Sequence_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M2_Hold_Button_prob_mc",
+      "description": "",
+      "location": "M2_Hold_Button_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M2_Hold_Button_prob_mc2",
+      "description": "",
+      "location": "M2_Hold_Button_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M3_Block_Timeslots_prob_mc",
+      "description": "",
+      "location": "M3_Block_Timeslots_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M3_Block_Timeslots_prob_mc2",
+      "description": "",
+      "location": "M3_Block_Timeslots_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M4_Zoom_prob_mc",
+      "description": "",
+      "location": "M4_Zoom_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M4_Zoom_prob_mc2",
+      "description": "",
+      "location": "M4_Zoom_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M5_AMAN_Timeout_prob_mc",
+      "description": "",
+      "location": "M5_AMAN_Timeout_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M5_AMAN_Timeout_prob_mc2",
+      "description": "",
+      "location": "M5_AMAN_Timeout_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane_prob_mc",
+      "description": "",
+      "location": "M6_Select_Airplane_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane_prob_mc2",
+      "description": "",
+      "location": "M6_Select_Airplane_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M7_Interaction_Pauses_Updates_prob_mc",
+      "description": "",
+      "location": "M7_Interaction_Pauses_Updates_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M7_Interaction_Pauses_Updates_prob_mc2",
+      "description": "",
+      "location": "M7_Interaction_Pauses_Updates_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M8_Interaction_Events_prob_mc",
+      "description": "",
+      "location": "M8_Interaction_Events_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "quick_operation_coverage": []
+      }
+    },
+    {
+      "name": "M8_Interaction_Events_prob_mc2",
+      "description": "",
+      "location": "M8_Interaction_Events_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_prob_mc",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_prob_mc2",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    }
+  ],
+  "requirements": [
+    {
+      "name": "Req1",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "Planes can be added to the flight sequence, e.g., planes arriving in a close range of the airport.",
+      "validationObligations": [
+        {
+          "machine": "M0_AMAN_Update",
+          "expression": "AMAN_Update_1"
+        }
+      ]
+    },
+    {
+      "name": "Req2",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "Planes can be removed from the flight sequence, e.g., planes changing their landing airport for some reason.",
+      "validationObligations": [
+        {
+          "machine": "M0_AMAN_Update",
+          "expression": "AMAN_Update_2"
+        }
+      ]
+    },
+    {
+      "name": "Req16",
+      "introducedAt": "M4_Zoom",
+      "type": "FUNCTIONAL",
+      "text": "The zoom value cannot be bigger than 45 and smaller than 15.",
+      "validationObligations": [
+        {
+          "machine": "M4_Zoom",
+          "expression": "ZOOM1 & ZOOM2"
+        }
+      ]
+    },
+    {
+      "name": "Req16.1",
+      "introducedAt": "M4_Zoom",
+      "type": "FUNCTIONAL",
+      "text": "The zoom can only be applied in steps of 5.",
+      "validationObligations": [
+        {
+          "machine": "M4_Zoom",
+          "expression": "ZOOM1 & ZOOM2"
+        }
+      ]
+    },
+    {
+      "name": "Req5.1",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "The space between two airplanes is always >= 3",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "DIST1 & DIST2 & DIST3"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_AMAN_Updates",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "1. Initially, there are no airplanes scheduled for landing.\n2. AMAN Update detects two airplanes (numbered 1 and 2) approaching the airport area for landing.\n3. AMAN Update detects a third airplane (numbered 3) approach the airport area for landing.\n4. AMAN Update does not modify the scheduled airplanes.\n5. Airplane 1 decides to change the destination airport; AMAN Update removes airplane 1 from the scheduled airplanes.",
+      "validationObligations": [
+        {
+          "machine": "M0_AMAN_Update",
+          "expression": "M0_Scenario_1"
+        },
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_1"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Move_Aircraft",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "1. Initially, there are no airplanes scheduled for landing.\n2. AMAN Update detects an airplane approaching the airport area for landing. The airplane is scheduled for landing in 12 minutes.\n3. PLAN ATCo moves airplane in 2. to timeslot for landing in 24 minutes.\n",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_2"
+        }
+      ]
+    },
+    {
+      "name": "Req_Move",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "When AMAN is running and there is at least one free time slot, \nthen PLAN ATCo can move one aircraft to another free time slot.",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "LTL_Move"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Hold",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "1.  AMAN Update detects to airplanes (numbered 1 and 2) approaching the airport for landing.\n2. PLAN ATCo sets airplane 1 on HOLD",
+      "validationObligations": [
+        {
+          "machine": "M2_Hold_Button",
+          "expression": "M2_Scenario_2"
+        }
+      ]
+    },
+    {
+      "name": "Dragging always finishes",
+      "introducedAt": "M8_Interaction_Events",
+      "type": "FUNCTIONAL",
+      "text": "Dragging interactions can always be finished.",
+      "validationObligations": [
+        {
+          "machine": "M8_Interaction_Events",
+          "expression": "Airplane_Drag_Finish & Zoom_Slider_Drag_Finish"
+        }
+      ]
+    },
+    {
+      "name": "Req_Hold_Airplanes",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "When AMAN is running and PLAN ATCo holds an airplane, \nthen this airplane is marked as held.",
+      "validationObligations": [
+        {
+          "machine": "M2_Hold_Button",
+          "expression": "LTL_Hold_Airplanes"
+        }
+      ]
+    },
+    {
+      "name": "Req6",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "An aircraft label cannot be moved into a blocked time period",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_3"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Block_Timeslots",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "1. Airplane (numbered with 1) approaches the airport and is detected via an AMAN update. Landing time is set to 10 minutes.\n2. PLAN ATCo blocks timeslots in 18, 19 and 20 minutes\n3. A minute passes and the landing sequence does not change. Thus, the blocked timeslots is in 17,18, and 19 minutes. Airplane 1 is set to land in 9 minutes.\n4. PLAN ATCo moves airplane 1 to landing slot in 20 minutes.",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_1"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Block_Timeslots_2",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "1. Airplane (numbered with 1) approaches the airport and is detected via an AMAN update. Landing time is set to 10 minutes.\n2. PLAN ATCo blocks timeslots in 18, 19 and 20 minutes.\n3. PLAN ATCo unblocks timeslot at minute 20\n4. PLAN ATCo moves airplane 1 to landing slot in 20 minutes.",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_2"
+        }
+      ]
+    },
+    {
+      "name": "Req_Block_Slots_AMAN",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "When blocked time slots are processed by AMAN, then there are no airplanes  scheduled in a blocked time slot:",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "BLOCK1 & BLOCK2 & BLOCK3 & BLOCK4 & BLOCK5"
+        }
+      ]
+    },
+    {
+      "name": "Req7",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "Moving an aircraft label might not be accepted by AMAN if it would require a speed up of the aircraft beyond the capacity of the aircraft.",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_3"
+        },
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_3 & M3_Scenario_4"
+        }
+      ]
+    },
+    {
+      "name": "Req7_Scenario",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "1. An airplane is scheduled to land for a specific time slot.\n2. PLAN ATCo moves the airplane for landing to an earlier time slot.\n3. AMAN detects that the airplane is not capable to land at the earlier time slot, thus processes the airplane again.",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_3"
+        },
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_3 & M3_Scenario_4"
+        }
+      ]
+    },
+    {
+      "name": "Coverage for Scenarios",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "NON_FUNCTIONAL",
+      "text": "coverage",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": ""
+        }
+      ]
+    }
+  ],
+  "preferences": [
+    {
+      "name": "higher max",
+      "preferences": {
+        "MAX_INITIALISATIONS": "100",
+        "TIME_OUT": "5001",
+        "MAX_OPERATIONS": "45"
+      }
+    },
+    {
+      "name": "coverage",
+      "preferences": {
+        "MAX_INITIALISATIONS": "0",
+        "MAX_OPERATIONS": "0"
+      }
+    }
+  ],
+  "metadata": {
+    "fileType": "Project",
+    "formatVersion": 34,
+    "savedAt": "2023-01-12T16:35:22.231904014Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}

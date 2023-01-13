@@ -1,0 +1,226 @@
+{
+  "svg":"AMAN.svg",
+  "definitions": [ 
+    { "name":"known_planes",
+      "value" : "dom(landing_sequence)"
+    },
+    { "name":"visible_planes",
+      "value" : "{plane|plane : known_planes & zoomLevel >= landing_sequence(plane)}"
+    },
+    { "name": "no_airplane_is_selected",
+      "value": "bool(card(selectedAirplane) = 0)"
+    },
+    { "name": "selected_airplane_is_held",
+      "value": "bool(#a.(a : held_airplanes & a : selectedAirplane))"
+    }
+  ],
+  "items":[
+    {
+      "for": {"from":1, "to":45},
+      "id":"ap_%0",
+      "attr":"visibility",
+      "value":"IF %0 : ran(landing_sequence) & zoomLevel >= %0 THEN \"visibile\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":"card(AIRPLANES)"},
+      "id":"tap_%0",
+      "attr":"visibility",
+      "value":"IF AIRPLANES%0 : visible_planes THEN \"visibile\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":"card(AIRPLANES)"},
+      "id":"tap_%0",
+      "attr":"y",
+      "value":"IF AIRPLANES%0 : known_planes THEN 760 - landing_sequence(AIRPLANES%0) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"minute_%0",
+      "attr":"visibility",
+      "value":"IF %0 : ran(landing_sequence) & zoomLevel >= %0 THEN \"visible\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"minute_%0",
+      "attr":"y",
+      "value":"IF %0 : ran(landing_sequence) & %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) + 5 ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":49},
+      "id":"line_left_%0",
+      "attr":"visibility",
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"line_left_%0",
+      "attr":"y1",
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"line_left_%0",
+      "attr":"y2",
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"line_right_%0",
+      "attr":"y1",
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"line_right_%0",
+      "attr":"y2",
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":49},
+      "id":"line_right_%0",
+      "attr":"visibility",
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
+    },
+    {
+      "repeat": [5, 10, 15, 20, 25, 30, 35, 40, 45],
+      "id":"tx_%0",
+      "attr":"y",
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END"
+    },
+    {
+      "repeat": [5, 10, 15, 20, 25, 30, 35, 40, 45],
+      "id":"tx_%0",
+      "attr":"visibility",
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"bl_%0",
+      "attr":"fill",
+      "value":"IF %0 : blockedTime THEN \"yellow\" ELSE \"#008000\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"bl_%0",
+      "attr":"visibility",
+      "value":"IF %0 <= zoomLevel THEN \"visibile\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"bl_%0",
+      "attr":"height",
+      "value":"TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) - 2"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"bl_%0",
+      "attr":"y",
+      "value":"IF %0 : dom(TIME_SLOT_YS_BY_ZOOM(zoomLevel)) THEN TIME_SLOT_YS_BY_ZOOM(zoomLevel)(%0) + 1 ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"mv_%0",
+      "attr":"visibility",
+      "value":"IF %0 <= zoomLevel THEN \"visibile\" ELSE \"hidden\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"mv_%0",
+      "attr":"height",
+      "value":"TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) - 2"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"mv_%0",
+      "attr":"y",
+      "value":"IF %0 : dom(TIME_SLOT_YS_BY_ZOOM(zoomLevel)) THEN TIME_SLOT_YS_BY_ZOOM(zoomLevel)(%0) + 1 ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"rect_ap_%0",
+      "attr":"y",
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) - 20 ELSE 0 END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"rect_ap_%0",
+      "attr":"stroke",
+      "value":"IF %0 : ran(landing_sequence) & landing_sequence~(%0) : held_airplanes THEN \"red\" ELSE \"black\" END"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"rect_ap_%0",
+      "attr":"stroke-width",
+      "value":"2"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id":"poly_ap_%0",
+      "attr":"points",
+      "value":"conc([\"300,\", INT_TO_STRING(IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END), \" 325,\", INT_TO_STRING(IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END + 20), \" 325,\", INT_TO_STRING(IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) ELSE 0 END - 20)])"
+    },
+    {
+      "id": "bt_hold",
+      "attr": "visibility",
+      "value":"IF no_airplane_is_selected=TRUE THEN \"hidden\" ELSE \"visible\" END"
+    },
+    {
+      "id": "tx_hold",
+      "attr": "visibility",
+      "value":"IF no_airplane_is_selected=TRUE or selected_airplane_is_held=TRUE THEN \"hidden\" ELSE \"visible\" END"
+    },
+    {
+      "id": "zoom_slider",
+      "attr": "x",
+      "value": "708 + 40 * (zoomLevel/5 - 3)"
+    },
+    {
+      "id": "aman_timeout",
+      "attr": "visibility",
+      "value": "IF timeout = TRUE THEN \"visible\" ELSE \"hidden\" END"
+    }
+  ],
+  "events": [
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Block_Time",
+      "predicates" : ["time=%0"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Deblock_Time",
+      "predicates" : ["time=%0"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "ap_%0",
+      "event": "selectAirplane",
+      "predicates" : ["airplane=landing_sequence~(%0)"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "ap_%0",
+      "event": "deselectAirplane",
+      "predicates" : ["airplane=landing_sequence~(%0)"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "mv_%0",
+      "event": "Move_Aircraft",
+      "predicates" : ["time=%0"]
+    },
+    {
+      "id": "bt_hold",
+      "event": "Hold_Button"
+    },
+    {
+      "repeat": [15, 20, 25, 30, 35, 40, 45],
+      "id": "zoom_%0",
+      "event": "changeZoom",
+      "predicates" : ["targetZoom=%0"]
+    }
+  ]
+
+}

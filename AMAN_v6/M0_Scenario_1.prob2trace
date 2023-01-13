@@ -1,0 +1,111 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "scheduledAirplanes": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "newScheduledAirplanes": "{AIRPLANES1,AIRPLANES2}"
+      },
+      "results": {},
+      "destState": {
+        "scheduledAirplanes": "{AIRPLANES1,AIRPLANES2}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "newScheduledAirplanes": "{AIRPLANES1,AIRPLANES2,AIRPLANES3}"
+      },
+      "results": {},
+      "destState": {
+        "scheduledAirplanes": "{AIRPLANES1,AIRPLANES2,AIRPLANES3}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "newScheduledAirplanes": "{AIRPLANES1,AIRPLANES2,AIRPLANES3}"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "newScheduledAirplanes": "{AIRPLANES2,AIRPLANES3}"
+      },
+      "results": {},
+      "destState": {
+        "scheduledAirplanes": "{AIRPLANES2,AIRPLANES3}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "scheduledAirplanes"
+  ],
+  "constantNames": [],
+  "setNames": [
+    "AIRPLANES"
+  ],
+  "machineOperationInfos": {
+    "AMAN_Update": {
+      "operationName": "AMAN_Update",
+      "parameterNames": [
+        "newScheduledAirplanes"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [],
+      "writtenVariables": [
+        "scheduledAirplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "newScheduledAirplanes": "set(global('AIRPLANES'))"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "scheduledAirplanes": "set(global('AIRPLANES'))"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2022-11-22T13:24:28.373056Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "M0_AMAN_Update"
+  }
+}

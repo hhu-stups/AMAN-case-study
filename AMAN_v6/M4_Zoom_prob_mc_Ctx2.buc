@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1673522826355" org.eventb.texttools.text_representation="context M4_Zoom_prob_mc_Ctx2 extends M4_Zoom_Ctx M1_Landing_Sequence_prob_mc_Ctx2&#10;&#10;axioms&#10;  @prob-min-zoom MIN_ZOOM = MAX_ZOOM&#10;end&#10;" version="3">
+    <org.eventb.core.extendsContext name="_T_L8wJECEe2QjLcYDoRhfA" org.eventb.core.target="M4_Zoom_Ctx"/>
+    <org.eventb.core.extendsContext name="_T_Mj0JECEe2QjLcYDoRhfA" org.eventb.core.target="M1_Landing_Sequence_prob_mc_Ctx2"/>
+    <org.eventb.core.axiom name="_C2eD0JJsEe2IE9iACDQPbw" org.eventb.core.generated="false" org.eventb.core.label="prob-min-zoom" org.eventb.core.predicate="MIN_ZOOM = MAX_ZOOM"/>
+</org.eventb.core.contextFile>

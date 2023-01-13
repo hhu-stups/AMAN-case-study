@@ -1,0 +1,529 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "AIRCRAFT_SEPARATION_MIN": "3",
+        "MAX_ZOOM": "15",
+        "MIN_ZOOM": "15",
+        "PLANNING_HORIZON": "15",
+        "ZOOM_LEVELS": "{15}",
+        "DIST": "/*@symbolic*/ λ(x,y).(x ∈ ℤ ∧ y ∈ ℤ|max({y - x,x - y}))",
+        "PLANNING_INTERVAL": "{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "zoomLevel": "15",
+        "landing_sequence": "∅",
+        "held_airplanes": "∅",
+        "dragged_zoom_level": "∅",
+        "scheduledAirplanes": "∅",
+        "blockedTime": "∅",
+        "dragging_airplane": "FALSE",
+        "selectedAirplane": "∅",
+        "timeout": "FALSE",
+        "dragged_airplane": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦4)}",
+        "passed_minute": "1"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦4)}",
+        "scheduledAirplanes": "{AIRPLANES1}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "held_airplanes",
+        "dragged_zoom_level",
+        "blockedTime",
+        "dragging_airplane",
+        "selectedAirplane",
+        "timeout",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "selectAirplane",
+      "params": {
+        "airplane": "AIRPLANES1"
+      },
+      "results": {},
+      "destState": {
+        "dragging_airplane": "TRUE",
+        "selectedAirplane": "{AIRPLANES1}",
+        "dragged_airplane": "{(AIRPLANES1↦4)}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "held_airplanes",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "blockedTime",
+        "timeout"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "stop_dragging_airplane",
+      "params": {
+        "airplane": "AIRPLANES1",
+        "time": "4"
+      },
+      "results": {},
+      "destState": {
+        "dragging_airplane": "FALSE",
+        "dragged_airplane": "∅"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "held_airplanes",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "blockedTime",
+        "selectedAirplane",
+        "timeout"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Hold_Button",
+      "params": {
+        "airplane": "AIRPLANES1"
+      },
+      "results": {},
+      "destState": {
+        "held_airplanes": "{AIRPLANES1}",
+        "selectedAirplane": "∅"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "blockedTime",
+        "dragging_airplane",
+        "timeout",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "blockedTime",
+    "dragged_airplane",
+    "dragged_zoom_level",
+    "dragging_airplane",
+    "held_airplanes",
+    "landing_sequence",
+    "scheduledAirplanes",
+    "selectedAirplane",
+    "timeout",
+    "zoomLevel"
+  ],
+  "constantNames": [
+    "AIRCRAFT_SEPARATION_MIN",
+    "DIST",
+    "PLANNING_HORIZON",
+    "PLANNING_INTERVAL",
+    "MAX_ZOOM",
+    "ZOOM_LEVELS",
+    "MIN_ZOOM"
+  ],
+  "setNames": [
+    "AIRPLANES"
+  ],
+  "machineOperationInfos": {
+    "AMAN_Timeout": {
+      "operationName": "AMAN_Timeout",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "dragging_airplane"
+      ],
+      "writtenVariables": [
+        "selectedAirplane",
+        "timeout"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "Move_Aircraft": {
+      "operationName": "Move_Aircraft",
+      "parameterNames": [
+        "aircraft",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "dragged_airplane",
+        "dragging_airplane",
+        "landing_sequence",
+        "selectedAirplane",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "dragged_airplane",
+        "dragging_airplane",
+        "landing_sequence"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "aircraft": "global('AIRPLANES')",
+        "time": "integer"
+      }
+    },
+    "selectAirplane": {
+      "operationName": "selectAirplane",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "dragged_zoom_level",
+        "dragging_airplane",
+        "landing_sequence",
+        "selectedAirplane",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "dragged_airplane",
+        "dragging_airplane",
+        "selectedAirplane"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    },
+    "Hold_Button": {
+      "operationName": "Hold_Button",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "dragging_airplane",
+        "held_airplanes",
+        "landing_sequence",
+        "selectedAirplane",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "held_airplanes",
+        "selectedAirplane"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    },
+    "start_dragging_zoom_slider": {
+      "operationName": "start_dragging_zoom_slider",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "dragged_zoom_level",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "dragged_zoom_level"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "Deblock_Time": {
+      "operationName": "Deblock_Time",
+      "parameterNames": [
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "blockedTime",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "blockedTime"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "time": "integer"
+      }
+    },
+    "Block_Time": {
+      "operationName": "Block_Time",
+      "parameterNames": [
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "blockedTime"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "time": "integer"
+      }
+    },
+    "drag_zoom_slider": {
+      "operationName": "drag_zoom_slider",
+      "parameterNames": [
+        "target_zoom"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "ZOOM_LEVELS",
+        "dragged_zoom_level"
+      ],
+      "writtenVariables": [
+        "dragged_zoom_level"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "target_zoom": "integer",
+        "'ZOOM_LEVELS'": "set(integer)"
+      }
+    },
+    "resume_dragging_airplane": {
+      "operationName": "resume_dragging_airplane",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "dragged_zoom_level",
+        "dragging_airplane",
+        "landing_sequence",
+        "selectedAirplane"
+      ],
+      "writtenVariables": [
+        "dragged_airplane",
+        "dragging_airplane"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    },
+    "changeZoom": {
+      "operationName": "changeZoom",
+      "parameterNames": [
+        "targetZoom"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "ZOOM_LEVELS",
+        "dragged_zoom_level",
+        "dragging_airplane",
+        "landing_sequence",
+        "selectedAirplane"
+      ],
+      "writtenVariables": [
+        "dragged_zoom_level",
+        "selectedAirplane",
+        "zoomLevel"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'ZOOM_LEVELS'": "set(integer)",
+        "targetZoom": "integer"
+      }
+    },
+    "drag_airplane": {
+      "operationName": "drag_airplane",
+      "parameterNames": [
+        "airplane",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "dragged_airplane"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')",
+        "time": "integer"
+      }
+    },
+    "AMAN_Update": {
+      "operationName": "AMAN_Update",
+      "parameterNames": [
+        "new_landing_sequence",
+        "passed_minute"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "dragged_airplane",
+        "dragging_airplane"
+      ],
+      "writtenVariables": [
+        "blockedTime",
+        "held_airplanes",
+        "landing_sequence",
+        "scheduledAirplanes",
+        "selectedAirplane",
+        "timeout"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "new_landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "passed_minute": "integer"
+      }
+    },
+    "deselectAirplane": {
+      "operationName": "deselectAirplane",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "dragged_airplane",
+        "dragging_airplane",
+        "landing_sequence",
+        "selectedAirplane",
+        "zoomLevel"
+      ],
+      "writtenVariables": [
+        "selectedAirplane"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    },
+    "stop_dragging_airplane": {
+      "operationName": "stop_dragging_airplane",
+      "parameterNames": [
+        "airplane",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "blockedTime",
+        "dragged_airplane",
+        "dragging_airplane",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "dragged_airplane",
+        "dragging_airplane"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "airplane": "global('AIRPLANES')",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "time": "integer"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "zoomLevel": "integer",
+    "landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+    "held_airplanes": "set(global('AIRPLANES'))",
+    "dragged_zoom_level": "set(integer)",
+    "scheduledAirplanes": "set(global('AIRPLANES'))",
+    "blockedTime": "set(integer)",
+    "dragging_airplane": "boolean",
+    "selectedAirplane": "set(global('AIRPLANES'))",
+    "timeout": "boolean",
+    "dragged_airplane": "set(couple(global('AIRPLANES'),integer))"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2022-11-29T13:01:48.150190443Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "M8_Interaction_Events"
+  }
+}

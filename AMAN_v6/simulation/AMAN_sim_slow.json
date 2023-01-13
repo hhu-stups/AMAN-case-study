@@ -1,0 +1,59 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants",
+            "fixedVariables": {
+              "PLANNING_HORIZON": "45"
+            }
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : ["AMAN_Update", "Continue_Update_Pass_Minute"]
+        },
+        {
+            "id": "AMAN_Update",
+            "chooseActivation": {
+              "SpawnNewAirplanes": "IF card(landing_sequence) > 0 THEN 0.0 ELSE 1.0 END",
+              "ContinueUpdate": "1.0 - IF card(landing_sequence) > 0 THEN 0.0 ELSE 1.0 END"
+            }
+        },
+        {
+            "id": "SpawnNewAirplanes",
+            "execute": "AMAN_Update",
+            "after": 0,
+            "priority": 2,
+            "activationKind": "single:max",
+            "fixedVariables": {
+              "new_landing_sequence": "{(AIRPLANES1 |-> 40), (AIRPLANES2 |-> 32)}",
+              "passed_minute": "0"
+            },
+            "activating" : ["AMAN_Update"]
+        },
+        {
+            "id": "ContinueUpdate",
+            "execute": "AMAN_Update",
+            "after": 4000,
+            "priority": 2,
+            "activationKind": "single:max",
+            "fixedVariables": {
+              "new_landing_sequence": "held_airplanes <<| landing_sequence",
+              "passed_minute": "0"
+            },
+            "activating" : ["AMAN_Update"]
+        },
+        {
+            "id": "Continue_Update_Pass_Minute",
+            "execute": "AMAN_Update",
+            "after": 24000,
+            "priority": 1,
+            "activationKind": "single",
+            "fixedVariables": {
+              "new_landing_sequence": "held_airplanes <<| (landing_sequence; pred) |>> {0}",
+              "passed_minute": "1"
+            },
+            "activating" : ["AMAN_Update", "Continue_Update_Pass_Minute"]
+        }
+    ]
+}

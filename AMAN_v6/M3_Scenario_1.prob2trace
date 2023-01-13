@@ -1,0 +1,316 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "AIRCRAFT_SEPARATION_MIN": "3",
+        "PLANNING_HORIZON": "45",
+        "DIST": "/*@symbolic*/ λ(x,y).(x ∈ ℤ ∧ y ∈ ℤ|max({y - x,x - y}))",
+        "PLANNING_INTERVAL": "{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "landing_sequence": "∅",
+        "scheduledAirplanes": "∅",
+        "blockedTime": "∅",
+        "held_airplanes": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦10)}",
+        "passed_minutes": "0"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦10)}",
+        "scheduledAirplanes": "{AIRPLANES1}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes",
+        "blockedTime"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "18"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{18}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "19"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{18,19}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "20"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{18,19,20}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [
+        {
+          "predicate": "blockedTime = {18,19,20}",
+          "kind": "PREDICATE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦9)}",
+        "passed_minutes": "1"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{17,18,19}",
+        "landing_sequence": "{(AIRPLANES1↦9)}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [
+        {
+          "operation": "Move_Aircraft",
+          "predicate": "time : {17,18,19}",
+          "kind": "DISABLEDNESS"
+        },
+        {
+          "operation": "Move_Aircraft",
+          "predicate": "time = 20",
+          "kind": "ENABLEDNESS"
+        },
+        {
+          "predicate": "blockedTime = {17, 18, 19}",
+          "kind": "PREDICATE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "name": "Move_Aircraft",
+      "params": {
+        "aircraft": "AIRPLANES1",
+        "time": "20"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦20)}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes",
+        "scheduledAirplanes",
+        "blockedTime"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "blockedTime",
+    "held_airplanes",
+    "landing_sequence",
+    "scheduledAirplanes"
+  ],
+  "constantNames": [
+    "AIRCRAFT_SEPARATION_MIN",
+    "DIST",
+    "PLANNING_HORIZON",
+    "PLANNING_INTERVAL"
+  ],
+  "setNames": [
+    "AIRPLANES"
+  ],
+  "machineOperationInfos": {
+    "Move_Aircraft": {
+      "operationName": "Move_Aircraft",
+      "parameterNames": [
+        "aircraft",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "landing_sequence"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "aircraft": "global('AIRPLANES')",
+        "time": "integer"
+      }
+    },
+    "AMAN_Update": {
+      "operationName": "AMAN_Update",
+      "parameterNames": [
+        "new_landing_sequence",
+        "passed_minutes"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "blockedTime"
+      ],
+      "writtenVariables": [
+        "blockedTime",
+        "held_airplanes",
+        "landing_sequence",
+        "scheduledAirplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "new_landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "passed_minutes": "integer"
+      }
+    },
+    "Hold_Button": {
+      "operationName": "Hold_Button",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "held_airplanes",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "held_airplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    },
+    "Deblock_Time": {
+      "operationName": "Deblock_Time",
+      "parameterNames": [
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "blockedTime"
+      ],
+      "writtenVariables": [
+        "blockedTime"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "time": "integer"
+      }
+    },
+    "Block_Time": {
+      "operationName": "Block_Time",
+      "parameterNames": [
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "PLANNING_INTERVAL",
+        "blockedTime"
+      ],
+      "writtenVariables": [
+        "blockedTime"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "time": "integer"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+    "held_airplanes": "set(global('AIRPLANES'))",
+    "scheduledAirplanes": "set(global('AIRPLANES'))",
+    "blockedTime": "set(integer)"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2022-11-26T23:18:51.701477Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "M3_Block_Timeslots"
+  }
+}

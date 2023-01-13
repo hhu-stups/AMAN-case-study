@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.poPredicate name="AIRPLANET" org.eventb.core.predicate="finite(AIRPLANES)" org.eventb.core.source="/AMAN_v6/M0_AMAN_Update_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_Ctx|org.eventb.core.axiom#_wFUvsUrzEe2jiPlvG5m5_Q"/>
+        <org.eventb.core.poIdentifier name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIO" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_Ctx.buc|org.eventb.core.contextFile#M1_Landing_Sequence_Ctx|org.eventb.core.axiom#_QW8AcUr1Ee2jiPlvG5m5_Q"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIP" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_Ctx.buc|org.eventb.core.contextFile#M1_Landing_Sequence_Ctx|org.eventb.core.axiom#_QW8Ackr1Ee2jiPlvG5m5_Q"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIQ" org.eventb.core.predicate="PLANNING_HORIZON∈ℕ1" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_Ctx.buc|org.eventb.core.contextFile#M1_Landing_Sequence_Ctx|org.eventb.core.axiom#_4vJoEEr6Ee2jiPlvG5m5_Q"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIR" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_Ctx.buc|org.eventb.core.contextFile#M1_Landing_Sequence_Ctx|org.eventb.core.axiom#_ELIQQUsIEe2nbO8NfDiKnQ"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIS" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN∈ℕ1" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_Ctx.buc|org.eventb.core.contextFile#M1_Landing_Sequence_Ctx|org.eventb.core.axiom#_TpulwWnUEe21Fse6RF_HiQ"/>
+        <org.eventb.core.poIdentifier name="MAX_ZOOM" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="ZOOM_LEVELS" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.poIdentifier name="MIN_ZOOM" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIT" org.eventb.core.predicate="MIN_ZOOM∈ℕ1" org.eventb.core.source="/AMAN_v6/M4_Zoom_Ctx.buc|org.eventb.core.contextFile#M4_Zoom_Ctx|org.eventb.core.axiom#_nvZtMHZOEe2_SoDJ7dQzzg"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIU" org.eventb.core.predicate="ZOOM_LEVELS⊆MIN_ZOOM ‥ MAX_ZOOM" org.eventb.core.source="/AMAN_v6/M4_Zoom_Ctx.buc|org.eventb.core.contextFile#M4_Zoom_Ctx|org.eventb.core.axiom#_jTG8QUsFEe2kV4Y3e_fvVw"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIV" org.eventb.core.predicate="MAX_ZOOM=PLANNING_HORIZON" org.eventb.core.source="/AMAN_v6/M4_Zoom_Ctx.buc|org.eventb.core.contextFile#M4_Zoom_Ctx|org.eventb.core.axiom#_jTHjUEsFEe2kV4Y3e_fvVw"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIW" org.eventb.core.predicate="MIN_ZOOM∈ZOOM_LEVELS" org.eventb.core.source="/AMAN_v6/M4_Zoom_Ctx.buc|org.eventb.core.contextFile#M4_Zoom_Ctx|org.eventb.core.axiom#_nvaUQHZOEe2_SoDJ7dQzzg"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIX" org.eventb.core.predicate="MAX_ZOOM∈ZOOM_LEVELS" org.eventb.core.source="/AMAN_v6/M4_Zoom_Ctx.buc|org.eventb.core.contextFile#M4_Zoom_Ctx|org.eventb.core.axiom#_nvaUQXZOEe2_SoDJ7dQzzg"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIY" org.eventb.core.predicate="ZOOM_LEVELS⊆PLANNING_INTERVAL" org.eventb.core.source="/AMAN_v6/M4_Zoom_Ctx.buc|org.eventb.core.contextFile#M4_Zoom_Ctx|org.eventb.core.axiom#_L3-r8GstEe2GEOS6_rrIrQ"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MIZ" org.eventb.core.predicate="card(AIRPLANES)=2" org.eventb.core.source="/AMAN_v6/M0_AMAN_Update_prob_mc_Ctx2.buc|org.eventb.core.contextFile#M0_AMAN_Update_prob_mc_Ctx2|org.eventb.core.axiom#_BeAgkZECEe2QjLcYDoRhfA"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MI[" org.eventb.core.predicate="PLANNING_HORIZON=5" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_prob_mc_Ctx2.buc|org.eventb.core.contextFile#M1_Landing_Sequence_prob_mc_Ctx2|org.eventb.core.axiom#_GeHkcpECEe2QjLcYDoRhfA"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MI\" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN=3" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence_prob_mc_Ctx2.buc|org.eventb.core.contextFile#M1_Landing_Sequence_prob_mc_Ctx2|org.eventb.core.axiom#_GeILgJECEe2QjLcYDoRhfA"/>
+        <org.eventb.core.poPredicate name="AIRCRAFT_SEPARATION_MI]" org.eventb.core.predicate="MIN_ZOOM=MAX_ZOOM" org.eventb.core.source="/AMAN_v6/M4_Zoom_prob_mc_Ctx2.buc|org.eventb.core.contextFile#M4_Zoom_prob_mc_Ctx2|org.eventb.core.axiom#_C2eD0JJsEe2IE9iACDQPbw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.poIdentifier name="zoomLevel" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.poIdentifier name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.poIdentifier name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessee" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES" org.eventb.core.source="/AMAN_v6/M0_AMAN_Update.bum|org.eventb.core.machineFile#M0_AMAN_Update|org.eventb.core.invariant#_hDvs82mqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessef" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.invariant#_jsvIcWmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcesseg" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.invariant#_jsvIcmmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcesseh" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.invariant#_jsvIc2mqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessei" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)" org.eventb.core.source="/AMAN_v6/M2_Hold_Button.bum|org.eventb.core.machineFile#M2_Hold_Button|org.eventb.core.invariant#_QUw8kEr9Ee2jiPlvG5m5_Q"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessej" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.invariant#_0vSqhmmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessek" org.eventb.core.predicate="blockedTimesProcessed∈BOOL" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.invariant#_AA3vAXY5Ee2G86I4NLLr6A"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessel" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.invariant#_AA3vAnY5Ee2G86I4NLLr6A"/>
+        <org.eventb.core.poPredicate name="blockedTimesProcessem" org.eventb.core.predicate="zoomLevel∈ZOOM_LEVELS" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.invariant#_4I--80sFEe2kV4Y3e_fvVw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx3" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="held_airplanes'" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.poIdentifier name="zoomLevel'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blockedTime'" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.poIdentifier name="blockedTimesProcessed'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="landing_sequence'" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx3" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx3" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx4" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="held_airplanes'" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.poIdentifier name="new_blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.poIdentifier name="passed_minutes" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.poIdentifier name="blockedTime'" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.poIdentifier name="blockedTimesProcessed'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="landing_sequence'" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx4" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx4" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="new_landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.event#_yCuQgUrzEe2jiPlvG5m5_S|org.eventb.core.guard#_QO_WUGmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧a1≠a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.event#_yCuQgUrzEe2jiPlvG5m5_S|org.eventb.core.guard#_jsuhYGmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="passed_minutes∈ℕ" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.event#_Ldd2cEr9Ee2jiPlvG5m5_S|org.eventb.core.guard#_kzvSgHY8Ee2G86I4NLLr6A"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="new_blockedTime={t⦂ℤ·t∈PLANNING_INTERVAL∧t+passed_minutes∈blockedTime ∣ t}" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.event#_Ldd2cEr9Ee2jiPlvG5m5_S|org.eventb.core.guard#_0vSqgWmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ran(new_landing_sequence)∩new_blockedTime=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.event#_Ldd2cEr9Ee2jiPlvG5m5_S|org.eventb.core.guard#_RrLngGmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="passed_minutes&lt;2" org.eventb.core.source="/AMAN_v6/M4_Zoom_prob_mc2.bum|org.eventb.core.machineFile#M4_Zoom_prob_mc2|org.eventb.core.event#_z2HFgHY8Ee2G86I4NLLr6C|org.eventb.core.guard#_yrwaIJE2Ee2dH42y3PJFFg"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx5" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="aircraft" org.eventb.core.type="AIRPLANES"/>
+        <org.eventb.core.poIdentifier name="landing_sequence'" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx5" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx5" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="aircraft∈dom(landing_sequence)" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.event#_UusuEEr5Ee2jiPlvG5m5_Q|org.eventb.core.guard#_jsuhYWmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="time∈PLANNING_INTERVAL" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.event#_UusuEEr5Ee2jiPlvG5m5_Q|org.eventb.core.guard#_jsuhYmmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="time≠landing_sequence(aircraft)" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.event#_UusuEEr5Ee2jiPlvG5m5_Q|org.eventb.core.guard#_jsuhY2mqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀a⦂AIRPLANES·a∈dom(landing_sequence) ∖ {aircraft}⇒DIST(landing_sequence(a) ↦ time)≥AIRCRAFT_SEPARATION_MIN" org.eventb.core.source="/AMAN_v6/M1_Landing_Sequence.bum|org.eventb.core.machineFile#M1_Landing_Sequence|org.eventb.core.event#_UusuEEr5Ee2jiPlvG5m5_Q|org.eventb.core.guard#_jsuhZGmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="time∉blockedTime" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.event#_Ldd2cEr9Ee2jiPlvG5m5_T|org.eventb.core.guard#_0vSqgmmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="landing_sequence(aircraft)≤zoomLevel" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.event#_vzAdYEsDEe2jiPlvG5m5_T|org.eventb.core.guard#_4I--8EsFEe2kV4Y3e_fvVw"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="time≤zoomLevel" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.event#_vzAdYEsDEe2jiPlvG5m5_T|org.eventb.core.guard#_4I--8UsFEe2kV4Y3e_fvVw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx6" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="held_airplanes'" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.poIdentifier name="airplane" org.eventb.core.type="AIRPLANES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx6" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx6" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="airplane∈dom(landing_sequence) ∖ held_airplanes" org.eventb.core.source="/AMAN_v6/M2_Hold_Button.bum|org.eventb.core.machineFile#M2_Hold_Button|org.eventb.core.event#_LdedgEr9Ee2jiPlvG5m5_Q|org.eventb.core.guard#_rKMYgmmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="landing_sequence(airplane)≤zoomLevel" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.event#_vzAdYEsDEe2jiPlvG5m5_U|org.eventb.core.guard#_DljmIFB7Ee2iD7Neb-ZRaw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx7" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blockedTimesProcessed'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="blockedTime'" org.eventb.core.type="ℙ(ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx7" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx7" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="time∈PLANNING_INTERVAL ∖ blockedTime" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.event#_vzAdYksDEe2jiPlvG5m5_Q|org.eventb.core.guard#_0vSqhGmqEe2s8uUhoFrjqA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="time≤zoomLevel" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.event#_vzAdYEsDEe2jiPlvG5m5_W|org.eventb.core.guard#_DljmIVB7Ee2iD7Neb-ZRaw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx8" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="blockedTime'" org.eventb.core.type="ℙ(ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx8" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx8" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="time∈blockedTime" org.eventb.core.source="/AMAN_v6/M3_Block_Timeslots.bum|org.eventb.core.machineFile#M3_Block_Timeslots|org.eventb.core.event#_vzAdZksDEe2jiPlvG5m5_Q|org.eventb.core.guard#_kzxHsHY8Ee2G86I4NLLr6A"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="time≤zoomLevel" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.event#_vzAdYEsDEe2jiPlvG5m5_X|org.eventb.core.guard#_DlkNMFB7Ee2iD7Neb-ZRaw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_prob_mc_Ctx9" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="targetZoom" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="zoomLevel'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPM1_Landing_Sequence_prob_mc_Ctx9" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#EVTIDENTM1_Landing_Sequence_prob_mc_Ctx9" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="targetZoom∈ZOOM_LEVELS" org.eventb.core.source="/AMAN_v6/M4_Zoom.bum|org.eventb.core.machineFile#M4_Zoom|org.eventb.core.event#_r38EEEsFEe2kV4Y3e_fvVw|org.eventb.core.guard#_DlkNMVB7Ee2iD7Neb-ZRaw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AMAN_v6/M4_Zoom_prob_mc2.bpo|org.eventb.core.poFile#M4_Zoom_prob_mc2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+</org.eventb.core.poFile>

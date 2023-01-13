@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1673526412532" org.eventb.texttools.text_representation="machine M1_Landing_Sequence_prob_mc refines M1_Landing_Sequence  sees M1_Landing_Sequence_prob_mc_Ctx&#10;&#10;variables landing_sequence // a total function from airplanes to planned landing time&#10;&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  end&#10;&#10;  event AMAN_Update extends AMAN_Update&#10;  end&#10;&#10;  event Move_Aircraft // the user moves an aircraft to a new landing time&#10;  extends Move_Aircraft&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="M1_Landing_Sequence"/>
+    <org.eventb.core.seesContext name="_Rd1vcJEEEe2QjLcYDoRhfA" org.eventb.core.target="M1_Landing_Sequence_prob_mc_Ctx"/>
+    <org.eventb.core.variable name="_2d0Q4Er1Ee2jiPlvG5m5_Q" org.eventb.core.comment="a total function from airplanes to planned landing time" org.eventb.core.generated="false" org.eventb.core.identifier="landing_sequence"/>
+    <org.eventb.core.event name="_7WIDoEr1Ee2jiPlvG5m5_R" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="_7WIDoEr1Ee2jiPlvG5m5_S" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AMAN_Update">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="AMAN_Update"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_7WIDoEr1Ee2jiPlvG5m5_T" org.eventb.core.comment="the user moves an aircraft to a new landing time" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="Move_Aircraft">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Move_Aircraft"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

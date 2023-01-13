@@ -1,0 +1,94 @@
+{
+    "activations": [
+        {
+            "id": "AMAN_Update",
+            "chooseActivation": {
+              "SpawnNewAirplanes": "IF card(landing_sequence) > 0 THEN 0.0 ELSE 1.0 END",
+              "ContinueUpdate": "1.0 - IF card(landing_sequence) > 0 THEN 0.0 ELSE 1.0 END"
+            }
+        },
+        {
+            "id": "SpawnNewAirplanes",
+            "execute": "AMAN_Update_mouse_to_nothing",
+            "after": 0,
+            "priority": 2,
+            "activationKind": "single:min",
+            "fixedVariables": {
+              "new_landing_sequence": "{(AIRPLANES1 |-> 40), (AIRPLANES2 |-> 32)}",
+              "passed_minutes": "0"
+            },
+            "activating" : ["AMAN_Update"]
+        },
+        {
+            "id": "ContinueUpdate",
+            "execute": "AMAN_Update_mouse_to_nothing",
+            "after": 4000,
+            "priority": 2,
+            "activationKind": "single:min",
+            "fixedVariables": {
+              "new_landing_sequence": "held_airplanes <<| landing_sequence",
+              "passed_minutes": "0"
+            },
+            "activating" : ["AMAN_Update"]
+        },
+        {
+            "id": "Continue_Update_Pass_Minute",
+            "execute": "AMAN_Update_mouse_to_nothing",
+            "after": 24000,
+            "priority": 1,
+            "activationKind": "single",
+            "fixedVariables": {
+              "new_landing_sequence": "held_airplanes <<| (landing_sequence; pred) |>> {0}",
+              "passed_minutes": "1"
+            },
+            "activating" : ["AMAN_Update", "Continue_Update_Pass_Minute"]
+        }
+    ],
+    "listeners": [
+      {
+          "id": "$initialise_machine",
+          "event": "$initialise_machine",
+          "activating" : ["AMAN_Update", "Continue_Update_Pass_Minute"]
+      },
+      {
+          "id": "changeZoom",
+          "event": "changeZoom",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "Move_Aircraft",
+          "event": "Move_Aircraft",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "Release_Trigger_Hold_Button",
+          "event": "Release_Trigger_Hold_Button",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "Release_Abort_Hold_Button",
+          "event": "Release_Abort_Hold_Button",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "Release_Trigger_Block_Time",
+          "event": "Release_Trigger_Block_Time",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "Release_Abort_Time_Button",
+          "event": "Release_Abort_Time_Button",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "Release_Trigger_Deblock_Time",
+          "event": "Release_Trigger_Deblock_Time",
+          "activating" : ["AMAN_Update"]
+      },
+      {
+          "id": "stop_dragging_airplane",
+          "event": "stop_dragging_airplane",
+          "activating" : ["AMAN_Update"]
+      }
+    ]
+}

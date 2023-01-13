@@ -1,0 +1,173 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "AIRCRAFT_SEPARATION_MIN": "3",
+        "PLANNING_HORIZON": "45",
+        "DIST": "/*@symbolic*/ λ(x,y).(x ∈ ℤ ∧ y ∈ ℤ|max({y - x,x - y}))",
+        "PLANNING_INTERVAL": "{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "landing_sequence": "∅",
+        "scheduledAirplanes": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦3),(AIRPLANES2↦9)}"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦3),(AIRPLANES2↦9)}",
+        "scheduledAirplanes": "{AIRPLANES1,AIRPLANES2}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦3),(AIRPLANES2↦9),(AIRPLANES3↦15)}"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦3),(AIRPLANES2↦9),(AIRPLANES3↦15)}",
+        "scheduledAirplanes": "{AIRPLANES1,AIRPLANES2,AIRPLANES3}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦3),(AIRPLANES2↦9),(AIRPLANES3↦15)}"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "landing_sequence",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES2↦9),(AIRPLANES3↦15)}"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES2↦9),(AIRPLANES3↦15)}",
+        "scheduledAirplanes": "{AIRPLANES2,AIRPLANES3}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "landing_sequence",
+    "scheduledAirplanes"
+  ],
+  "constantNames": [
+    "AIRCRAFT_SEPARATION_MIN",
+    "DIST",
+    "PLANNING_HORIZON",
+    "PLANNING_INTERVAL"
+  ],
+  "setNames": [
+    "AIRPLANES"
+  ],
+  "machineOperationInfos": {
+    "Move_Aircraft": {
+      "operationName": "Move_Aircraft",
+      "parameterNames": [
+        "aircraft",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "landing_sequence"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "aircraft": "global('AIRPLANES')",
+        "time": "integer"
+      }
+    },
+    "AMAN_Update": {
+      "operationName": "AMAN_Update",
+      "parameterNames": [
+        "new_landing_sequence"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL"
+      ],
+      "writtenVariables": [
+        "landing_sequence",
+        "scheduledAirplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "new_landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+    "scheduledAirplanes": "set(global('AIRPLANES'))"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2022-11-22T14:29:36.558570Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "M1_Landing_Sequence"
+  }
+}
