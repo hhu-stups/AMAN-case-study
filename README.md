@@ -6,16 +6,16 @@ This Repository contains our latest version of the AMAN_v6 case study.
 
 ### HTML Scenarios
 
-[Scenario 1](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M1_Scenario_1.html)
+[Scenario 1](https://hhu-stups.github.io/AMAN-case-study/M1_Scenario_1)
 
-[Scenario 2](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M1_Scenario_2.html)
+[Scenario 2](https://hhu-stups.github.io/AMAN-case-study/M1_Scenario_2)
 
-[Scenario 3](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M2_Scenario_1.html)
+[Scenario 3](https://hhu-stups.github.io/AMAN-case-study/M2_Scenario_1)
 
-[Scenario 4](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M3_Scenario_1.html)
+[Scenario 4](https://hhu-stups.github.io/AMAN-case-study/M3_Scenario_1)
 
-[Scenario 5](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M3_Scenario_2.html)
+[Scenario 5](https://hhu-stups.github.io/AMAN-case-study/M3_Scenario_2)
 
-[Scenario 6](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M3_Scenario_3.html)
+[Scenario 6](https://hhu-stups.github.io/AMAN-case-study/M3_Scenario_3)
 
-[Scenario 7](https://github.com/hhu-stups/AMAN-case-study/tree/master/AMAN_v6/HTML_Exports/M3_Scenario_4.html)
+[Scenario 7](https://hhu-stups.github.io/AMAN-case-study/M3_Scenario_4)
