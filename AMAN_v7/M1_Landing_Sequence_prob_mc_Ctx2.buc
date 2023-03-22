@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1673525058230" org.eventb.texttools.text_representation="context M1_Landing_Sequence_prob_mc_Ctx2 extends M0_AMAN_Update_prob_mc_Ctx2 M1_Landing_Sequence_Ctx&#10;&#10;axioms&#10;  @planning_horizon_init PLANNING_HORIZON = 5&#10;  @aircraft_separation_init AIRCRAFT_SEPARATION_MIN = 3&#10;end&#10;" version="3">
+    <org.eventb.core.extendsContext name="_GeHkcJECEe2QjLcYDoRhfA" org.eventb.core.target="M0_AMAN_Update_prob_mc_Ctx2"/>
+    <org.eventb.core.extendsContext name="_GeHkcZECEe2QjLcYDoRhfA" org.eventb.core.target="M1_Landing_Sequence_Ctx"/>
+    <org.eventb.core.axiom name="_GeHkcpECEe2QjLcYDoRhfA" org.eventb.core.generated="false" org.eventb.core.label="planning_horizon_init" org.eventb.core.predicate="PLANNING_HORIZON = 5"/>
+    <org.eventb.core.axiom name="_GeILgJECEe2QjLcYDoRhfA" org.eventb.core.generated="false" org.eventb.core.label="aircraft_separation_init" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN = 3"/>
+</org.eventb.core.contextFile>

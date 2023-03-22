@@ -1,0 +1,100 @@
+{
+  "variables": {
+    "passed_minutes_since_update": "0"
+  },
+  "activations": [
+    {
+      "id": "$setup_constants",
+      "execute": "$setup_constants"
+    },
+    {
+      "id": "$initialise_machine",
+      "execute": "$initialise_machine",
+      "activating" : ["SpawnAirplanes"]
+    },
+    {
+      "id": "SpawnAirplanes",
+      "execute": "AMAN_Update_mouse_to_nothing",
+      "after": 0,
+      "priority": 2,
+      "activationKind": "single",
+      "fixedVariables": {
+        "new_landing_sequence": "{(AIRPLANES1 |-> 40), (AIRPLANES2 |-> 32)}",
+        "passed_minutes": "$passed_minutes_since_update"
+      },
+      "activating" : ["Pass_Time_1"],
+      "activatingOnlyWhenExecuted": "false"
+    },
+    {
+      "id": "ContinueUpdate1",
+      "execute": "AMAN_Update_mouse_to_nothing",
+      "after": 4000,
+      "priority": 2,
+      "activationKind": "single",
+      "fixedVariables": {
+        "new_landing_sequence": "held_airplanes <<| {x |-> y | x : dom(landing_sequence) & y = landing_sequence(x) - $passed_minutes_since_update & y > 0}",
+        "passed_minutes": "$passed_minutes_since_update"
+      },
+      "activating" : ["ContinueUpdate1"],
+      "activatingOnlyWhenExecuted": "false",
+      "updating": {
+        "passed_minutes_since_update": "0"
+      }
+    },
+    {
+      "id": "ContinueUpdate2",
+      "execute": "AMAN_Update_mouse_stays",
+      "after": 4000,
+      "priority": 2,
+      "activationKind": "single",
+      "fixedVariables": {
+        "new_landing_sequence": "held_airplanes <<| {x |-> y | x : dom(landing_sequence) & y = landing_sequence(x) - $passed_minutes_since_update & y > 0}",
+        "passed_minutes": "$passed_minutes_since_update"
+      },
+      "activating" : ["ContinueUpdate2"],
+      "activatingOnlyWhenExecuted": "false",
+      "updating": {
+        "passed_minutes_since_update": "0"
+      }
+    },
+    {
+      "id": "Pass_Time_1",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_2", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_2",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_3", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_3",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_4", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_4",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_5", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_5",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_1", "ContinueUpdate1", "ContinueUpdate2"],
+      "updating": {
+        "passed_minutes_since_update": "$passed_minutes_since_update + 1"
+      }
+    }
+  ],
+  "listeners": []
+}

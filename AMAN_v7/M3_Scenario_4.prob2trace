@@ -1,0 +1,732 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "AIRCRAFT_SEPARATION_MIN": "3",
+        "PLANNING_HORIZON": "45",
+        "DIST": "/*@symbolic*/ λ(x,y).(x ∈ ℤ ∧ y ∈ ℤ|max({y - x,x - y}))",
+        "PLANNING_INTERVAL": "{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "landing_sequence": "∅",
+        "scheduledAirplanes": "∅",
+        "blockedTime": "∅",
+        "held_airplanes": "∅",
+        "blockedTimesProcessed": "TRUE"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦30)}",
+        "new_blockedTime": "∅",
+        "passed_minutes": "0"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦30)}",
+        "scheduledAirplanes": "{AIRPLANES1}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "blockedTime"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Move_Aircraft",
+      "params": {
+        "aircraft": "AIRPLANES1",
+        "time": "20"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦20)}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes",
+        "blockedTime"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "21"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "22"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "23"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "24"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "25"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "26"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "27"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "28"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "29"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "30"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "31"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "32"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "33"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "34"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "35"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "36"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "37"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "38"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "39"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "40"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "41"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "42"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "43"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "44"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Block_Time",
+      "params": {
+        "time": "45"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "∅",
+        "new_blockedTime": "{21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45}",
+        "passed_minutes": "0"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "∅",
+        "scheduledAirplanes": "∅"
+      },
+      "destStateNotChanged": [
+        "held_airplanes",
+        "blockedTimesProcessed",
+        "blockedTime"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "blockedTime",
+    "blockedTimesProcessed",
+    "held_airplanes",
+    "landing_sequence",
+    "scheduledAirplanes"
+  ],
+  "constantNames": [
+    "AIRCRAFT_SEPARATION_MIN",
+    "DIST",
+    "PLANNING_HORIZON",
+    "PLANNING_INTERVAL"
+  ],
+  "setNames": [
+    "AIRPLANES"
+  ],
+  "machineOperationInfos": {
+    "Move_Aircraft": {
+      "operationName": "Move_Aircraft",
+      "parameterNames": [
+        "aircraft",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "landing_sequence"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "aircraft": "global('AIRPLANES')",
+        "time": "integer"
+      }
+    },
+    "AMAN_Update": {
+      "operationName": "AMAN_Update",
+      "parameterNames": [
+        "new_landing_sequence",
+        "passed_minutes",
+        "new_blockedTime"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "held_airplanes"
+      ],
+      "writtenVariables": [
+        "blockedTime",
+        "blockedTimesProcessed",
+        "held_airplanes",
+        "landing_sequence",
+        "scheduledAirplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "new_landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "passed_minutes": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "new_blockedTime": "set(integer)"
+      }
+    },
+    "Hold_Button": {
+      "operationName": "Hold_Button",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "held_airplanes",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "held_airplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    },
+    "Deblock_Time": {
+      "operationName": "Deblock_Time",
+      "parameterNames": [
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "blockedTime"
+      ],
+      "writtenVariables": [
+        "blockedTime"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "time": "integer"
+      }
+    },
+    "Block_Time": {
+      "operationName": "Block_Time",
+      "parameterNames": [
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "PLANNING_INTERVAL",
+        "blockedTime",
+        "blockedTimesProcessed",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "blockedTime",
+        "blockedTimesProcessed"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "time": "integer"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+    "held_airplanes": "set(global('AIRPLANES'))",
+    "blockedTimesProcessed": "boolean",
+    "scheduledAirplanes": "set(global('AIRPLANES'))",
+    "blockedTime": "set(integer)"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2022-12-16T13:08:49.667378Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "M3_Block_Timeslots"
+  }
+}

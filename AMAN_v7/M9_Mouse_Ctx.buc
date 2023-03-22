@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1678368863347" org.eventb.texttools.text_representation="context M9_Mouse_Ctx extends M4_Zoom_Ctx&#10;&#10;sets mouse_positions interaction_modes&#10;&#10;constants hold_button_pos zoom_slider_pos airplane_pos nothing_pos block_time_pos NORMAL_MODE DRAG_AIRPLANE_MODE DRAG_ZOOM_MODE&#10;&#10;axioms&#10;  @valid_mouse_positions partition(mouse_positions, {hold_button_pos}, {zoom_slider_pos}, {airplane_pos}, {block_time_pos}, {nothing_pos})&#10;  @interaction_modes_partition partition(interaction_modes, {NORMAL_MODE}, {DRAG_AIRPLANE_MODE}, {DRAG_ZOOM_MODE})&#10;end&#10;" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="M4_Zoom_Ctx"/>
+    <org.eventb.core.carrierSet name="_cpOccG8bEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.identifier="mouse_positions"/>
+    <org.eventb.core.axiom name="_p4M_MG8bEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.label="valid_mouse_positions" org.eventb.core.predicate="partition(mouse_positions, {hold_button_pos}, {zoom_slider_pos}, {airplane_pos}, {block_time_pos}, {nothing_pos})"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="true" name="_7l56kG8cEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.identifier="hold_button_pos"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="true" name="_7l56kW8cEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.identifier="zoom_slider_pos"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="true" name="_7l56km8cEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.identifier="airplane_pos"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="true" name="_7l56k28cEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.identifier="nothing_pos"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="true" name="_7l56lG8cEe2yf4TIGcxCyA" org.eventb.core.generated="false" org.eventb.core.identifier="block_time_pos"/>
+    <org.eventb.core.carrierSet name="_GpC6kL5_Ee2KstIaBT7mfg" org.eventb.core.generated="false" org.eventb.core.identifier="interaction_modes"/>
+    <org.eventb.core.constant name="_GpEIsL5_Ee2KstIaBT7mfg" org.eventb.core.generated="false" org.eventb.core.identifier="NORMAL_MODE"/>
+    <org.eventb.core.constant name="_GpEIsb5_Ee2KstIaBT7mfg" org.eventb.core.generated="false" org.eventb.core.identifier="DRAG_AIRPLANE_MODE"/>
+    <org.eventb.core.constant name="_GpEvwL5_Ee2KstIaBT7mfg" org.eventb.core.generated="false" org.eventb.core.identifier="DRAG_ZOOM_MODE"/>
+    <org.eventb.core.axiom name="_GpEvwb5_Ee2KstIaBT7mfg" org.eventb.core.generated="false" org.eventb.core.label="interaction_modes_partition" org.eventb.core.predicate="partition(interaction_modes, {NORMAL_MODE}, {DRAG_AIRPLANE_MODE}, {DRAG_ZOOM_MODE})"/>
+</org.eventb.core.contextFile>

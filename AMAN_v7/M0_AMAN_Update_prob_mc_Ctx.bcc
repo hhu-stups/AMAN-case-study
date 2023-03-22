@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/AMAN_v7/M0_AMAN_Update_Ctx.bcc|org.eventb.core.scContextFile#M0_AMAN_Update_Ctx" org.eventb.core.source="/AMAN_v7/M0_AMAN_Update_prob_mc_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_prob_mc_Ctx|org.eventb.core.extendsContext#_mFzOwJEAEe2QjLcYDoRhfA"/>
+    <org.eventb.core.scInternalContext name="M0_AMAN_Update_Ctx">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm2,1" org.eventb.core.predicate="finite(AIRPLANES)" org.eventb.core.source="/AMAN_v7/M0_AMAN_Update_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_Ctx|org.eventb.core.axiom#_wFUvsUrzEe2jiPlvG5m5_Q" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scCarrierSet name="AIRPLANES" org.eventb.core.source="/AMAN_v7/M0_AMAN_Update_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_Ctx|org.eventb.core.carrierSet#_wFUvsErzEe2jiPlvG5m5_Q" org.eventb.core.type="ℙ(AIRPLANES)"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scAxiom name="M0_AMAN_Update_Cty" org.eventb.core.label="axm_init_airplanes" org.eventb.core.predicate="card(AIRPLANES)=3" org.eventb.core.source="/AMAN_v7/M0_AMAN_Update_prob_mc_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_prob_mc_Ctx|org.eventb.core.axiom#_mFzOwZEAEe2QjLcYDoRhfA" org.eventb.core.theorem="false"/>
+</org.eventb.core.scContextFile>

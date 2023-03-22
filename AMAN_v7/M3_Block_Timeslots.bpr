@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv5,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="0&lt;5"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ))⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Block_Time/inv5,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p5">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p10,p13,p8,p2,p1,p4,p11,p3,p5,p7,p17,p25,p26,p27">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="0≤PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="time∈PLANNING_INTERVAL ∖ blockedTime"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="PLANNING_HORIZON mod 5=0"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤∧time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="0&lt;5"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL∧time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="blockedTime∪{time}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="PLANNING_HORIZON∈15 ‥ 45"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Deblock_Time/inv5,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p13,p8,p2,p1,p4,p11,p3,p5,p7,p17,p22,p23,p24">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="0≤PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="blockedTime ∖ {time}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="time∈blockedTime"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="PLANNING_HORIZON mod 5=0"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="0&lt;5"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="PLANNING_HORIZON∈15 ‥ 45"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Pass_Minute/inv5,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{t⦂ℤ·t∈PLANNING_INTERVAL∧t+1∈blockedTime ∣ t}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="0&lt;5"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="AMAN_Update/inv5,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="passed_minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧a1≠a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥3">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧¬a1=a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥3">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="0&lt;5"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{t⦂ℤ·t∈PLANNING_INTERVAL∧t+passed_minute∈blockedTime ∣ t}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥3">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv3,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ))⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="AMAN_Update/inv3,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with new_blockedTime={t·t∈PLANNING_INTERVAL∧t+passed_minutes∈blockedTime ∣ t}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p19"/>
+                                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p18"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p21" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="new_blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="passed_minutes" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧a1≠a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="new_blockedTime={t⦂ℤ·t∈PLANNING_INTERVAL∧t+passed_minutes∈blockedTime ∣ t}"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧¬a1=a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)">
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="ran(new_landing_sequence)∩{t⦂ℤ·t∈PLANNING_INTERVAL∧t+passed_minutes∈blockedTime ∣ t}=(∅ ⦂ ℙ(ℤ))">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)">
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))">
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)">
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="{t⦂ℤ·t∈PLANNING_INTERVAL∧t+passed_minutes∈blockedTime ∣ t}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="new_blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))">
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="blockedTimesProcessed∈BOOL">
+            <org.eventb.core.prIdent name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="ran(new_landing_sequence)∩new_blockedTime=(∅ ⦂ ℙ(ℤ))">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES">
+            <org.eventb.core.prIdent name="AIRPLANES" org.eventb.core.type="ℙ(AIRPLANES)"/>
+            <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))">
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Block_Time/inv3,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p5">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p22"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p10,p7,p1,p2,p4,p11,p3,p5,p13,p8,p16,p25,p26,p27">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="time∈PLANNING_INTERVAL ∖ blockedTime"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="⊤∧time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="blockedTimesProcessed∈BOOL"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL∧time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN∈ℕ1"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="PLANNING_HORIZON∈ℕ1"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="blockedTime∪{time}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Deblock_Time/inv3,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p19"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p20"/>
+                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p7,p1,p2,p4,p11,p3,p5,p13,p8,p16,p22,p23,p24">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="blockedTime ∖ {time}⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="time∈blockedTime"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="blockedTimesProcessed∈BOOL"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN∈ℕ1"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="PLANNING_HORIZON∈ℕ1"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv3,3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒ran(∅ ⦂ ℙ(AIRPLANES×ℤ))∩(∅ ⦂ ℙ(ℤ))=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="AMAN_Update/inv3,3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="new_blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="new_landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧a1≠a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(new_landing_sequence)∧a2∈dom(new_landing_sequence)∧¬a1=a2⇒DIST(new_landing_sequence(a1) ↦ new_landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="TRUE=TRUE⇒ran(new_landing_sequence)∩new_blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="ran(new_landing_sequence)∩new_blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN">
+            <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+            <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="TRUE=TRUE⇒⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Move_Aircraft/inv3,3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p26"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p27"/>
+                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="p32">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p34"/>
+                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="p14,p12,p2,p4,p8,p15,p6,p9,p17,p1,p7,p5,p21,p22,p23,p29,p30,p31,p32,p35">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="aircraft" org.eventb.core.type="AIRPLANES"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="time∈PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="time≠landing_sequence(aircraft)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="time∉blockedTime"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="blockedTimesProcessed=TRUE"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="⊤⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬time=landing_sequence(aircraft)"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="blockedTimesProcessed∈BOOL"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="ran(landing_sequence{aircraft ↦ time})∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN∈ℕ1"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀a⦂AIRPLANES·a∈dom(landing_sequence) ∖ {aircraft}⇒DIST(landing_sequence(a) ↦ time)≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="PLANNING_HORIZON∈ℕ1"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence{aircraft ↦ time})∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="aircraft∈dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬time∈blockedTime"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Block_Time/inv3,3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p21"/>
+                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p28" org.eventb.core.prHyps="p26,p27">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p29"/>
+                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p28" org.eventb.core.prHyps="p10,p7,p1,p2,p4,p11,p3,p5,p8,p16,p23,p24,p25,p26,p27,p30">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="time∈PLANNING_INTERVAL ∖ blockedTime"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="blockedTimesProcessed=TRUE"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="⊤⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="blockedTimesProcessed∈BOOL"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬time∈ran(landing_sequence)"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN∈ℕ1"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="PLANNING_HORIZON∈ℕ1"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="bool(time∉ran(landing_sequence)∧blockedTimesProcessed=TRUE)=TRUE⇒ran(landing_sequence)∩(blockedTime∪{time})=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬time∈ran(landing_sequence)∧blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩(blockedTime∪{time})=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="ran(landing_sequence)∩(blockedTime∪{time})=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Deblock_Time/inv3,3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="AIRPLANES">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p21"/>
+                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p25"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p26">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p26" org.eventb.core.prInfHyps="p28"/>
+                                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p28" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29"/>
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p27" org.eventb.core.prHyps="p10,p7,p1,p2,p4,p11,p3,p5,p8,p16,p23,p24,p25,p26,p29">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="AIRCRAFT_SEPARATION_MIN" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="DIST" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PLANNING_HORIZON" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="PLANNING_INTERVAL" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTime" org.eventb.core.type="ℙ(ℤ)"/>
+        <org.eventb.core.prIdent name="blockedTimesProcessed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.prIdent name="held_airplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
+        <org.eventb.core.prIdent name="scheduledAirplanes" org.eventb.core.type="ℙ(AIRPLANES)"/>
+        <org.eventb.core.prIdent name="time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PLANNING_INTERVAL=1 ‥ PLANNING_HORIZON"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩(blockedTime ∖ {time})=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="landing_sequence∈AIRPLANES ⇸ PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧¬a1=a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="time∈blockedTime"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(AIRPLANES)"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="blockedTimesProcessed=TRUE"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="scheduledAirplanes=dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="⊤⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="blockedTimesProcessed∈BOOL"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="AIRCRAFT_SEPARATION_MIN∈ℕ1"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="held_airplanes⊆dom(landing_sequence)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="blockedTime⊆PLANNING_INTERVAL"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒DIST(x ↦ y)=DIST(y ↦ x)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·x∈ℤ∧y∈ℤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="PLANNING_HORIZON∈ℕ1"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime⊆{time}"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="ran(landing_sequence)∩blockedTime⊆{time}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀a1⦂AIRPLANES,a2⦂AIRPLANES·a1∈dom(landing_sequence)∧a2∈dom(landing_sequence)∧a1≠a2⇒DIST(landing_sequence(a1) ↦ landing_sequence(a2))≥AIRCRAFT_SEPARATION_MIN"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="blockedTimesProcessed=TRUE⇒ran(landing_sequence)∩blockedTime=(∅ ⦂ ℙ(ℤ))"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

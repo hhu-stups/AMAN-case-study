@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1673526479340" org.eventb.texttools.text_representation="machine M4_Zoom_prob_mc2 refines M4_Zoom  sees M4_Zoom_prob_mc_Ctx2&#10;&#10;variables landing_sequence held_airplanes blockedTime blockedTimesProcessed zoomLevel&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  end&#10;&#10;  event AMAN_Update extends AMAN_Update&#10;  where&#10;      @grd-pass-min passed_minutes &lt; 2 // we can delay at most 3 minutes before AMAN updates&#10;  end&#10;&#10;  event Move_Aircraft extends Move_Aircraft&#10;  end&#10;&#10;  event Hold_Button extends Hold_Button&#10;  end&#10;&#10;  event Block_Time extends Block_Time&#10;  end&#10;&#10;  event Deblock_Time extends Deblock_Time&#10;  end&#10;&#10;  event changeZoom extends changeZoom&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="M4_Zoom"/>
+    <org.eventb.core.seesContext name="_yruk8JE2Ee2dH42y3PJFFg" org.eventb.core.target="M4_Zoom_prob_mc_Ctx2"/>
+    <org.eventb.core.variable name="_2d0Q4Er1Ee2jiPlvG5m5_Q" org.eventb.core.generated="false" org.eventb.core.identifier="landing_sequence"/>
+    <org.eventb.core.variable name="_Ldd2cEr9Ee2jiPlvG5m5_Q" org.eventb.core.generated="false" org.eventb.core.identifier="held_airplanes"/>
+    <org.eventb.core.variable name="_vzAdYEsDEe2jiPlvG5m5_Q" org.eventb.core.generated="false" org.eventb.core.identifier="blockedTime"/>
+    <org.eventb.core.variable name="_z2HFgHY8Ee2G86I4NLLr6A" org.eventb.core.generated="false" org.eventb.core.identifier="blockedTimesProcessed"/>
+    <org.eventb.core.variable name="_X2mkoGsuEe2GEOS6_rrIrQ" org.eventb.core.generated="false" org.eventb.core.identifier="zoomLevel"/>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6B" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6C" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AMAN_Update">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="AMAN_Update"/>
+        <org.eventb.core.guard name="_yrwaIJE2Ee2dH42y3PJFFg" org.eventb.core.comment="we can delay at most 3 minutes before AMAN updates" org.eventb.core.generated="false" org.eventb.core.label="grd-pass-min" org.eventb.core.predicate="passed_minutes &lt; 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6D" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="Move_Aircraft">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Move_Aircraft"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6E" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="Hold_Button">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Hold_Button"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6F" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="Block_Time">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Block_Time"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6G" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="Deblock_Time">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Deblock_Time"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_z2HFgHY8Ee2G86I4NLLr6H" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="changeZoom">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="changeZoom"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

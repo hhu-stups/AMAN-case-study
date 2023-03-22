@@ -1,0 +1,1598 @@
+{
+  "name": "AMAN_v7",
+  "description": "",
+  "machines": [
+    {
+      "name": "M0_AMAN_Update",
+      "description": "",
+      "location": "M0_AMAN_Update.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [
+        {
+          "type": "LTL",
+          "id": "AMAN_Update_1",
+          "description": "",
+          "code": "GF(BA({scheduledAirplanes /= scheduledAirplanes$0})) => \nGF(BA({#x.(x : scheduledAirplanes & x /: scheduledAirplanes$0)}))",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "LTL",
+          "id": "AMAN_Update_2",
+          "description": "",
+          "code": "GF(BA({scheduledAirplanes /= scheduledAirplanes$0})) => GF(BA({#x.(x : scheduledAirplanes$0 & x /: scheduledAirplanes)}))",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_Remove_1",
+          "description": "",
+          "code": "AF ({card(scheduledAirplanes) = 1} => EX{card(scheduledAirplanes) < 1})",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_Remove_2",
+          "description": "",
+          "code": "AF ({card(scheduledAirplanes) = 2} => EX{card(scheduledAirplanes) < 2})",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_Remove_3",
+          "description": "",
+          "code": "AF ({card(scheduledAirplanes) = 3} => EX{card(scheduledAirplanes) < 3})",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_1",
+          "description": "",
+          "code": "EF {card(scheduledAirplanes) = 1}",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_2",
+          "description": "",
+          "code": "EF {card(scheduledAirplanes) = 2}",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_3",
+          "description": "",
+          "code": "EF {card(scheduledAirplanes) = 3}",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_Add_1",
+          "description": "",
+          "code": "AF ({card(scheduledAirplanes) = 1} => EX{card(scheduledAirplanes) > 1})",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_Add_2",
+          "description": "",
+          "code": "AF ({card(scheduledAirplanes) = 2} => EX{card(scheduledAirplanes) > 2})",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_Add_0",
+          "description": "",
+          "code": "AF ({card(scheduledAirplanes) = 0} => EX{card(scheduledAirplanes) > 0})",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "CTL",
+          "id": "CTL_0",
+          "description": "",
+          "code": "EF {card(scheduledAirplanes) = 0}",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M0_Scenario_1",
+          "location": "M0_Scenario_1.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M1_Landing_Sequence",
+      "description": "",
+      "location": "M1_Landing_Sequence.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [
+        {
+          "type": "LTL",
+          "id": "LTL_Move",
+          "description": "",
+          "code": "G([Move_Aircraft] => BA({#a.(a : dom(landing_sequence) & a : dom(landing_sequence$0) & landing_sequence(a) /= landing_sequence$0(a))}))",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M1_Scenario_1",
+          "location": "M1_Scenario_1.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M1_Scenario_2",
+          "location": "M1_Scenario_2.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M1_Scenario_3",
+          "location": "M1_Scenario_3.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        },
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "goal": "2 /: ran(landing_sequence)",
+          "shouldExecute": true
+        },
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [
+        {
+          "id": "DIST2",
+          "name": "INITIALISATION/inv13,2/INV"
+        },
+        {
+          "id": "DIST3",
+          "name": "AMAN_Update/inv13,2/INV"
+        },
+        {
+          "id": "DIST1",
+          "name": "Move_Aircraft/inv13,2/INV"
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "enable_graph": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M2_Hold_Button",
+      "description": "",
+      "location": "M2_Hold_Button.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [
+        {
+          "type": "LTL",
+          "id": "LTL_Hold_Airplanes",
+          "description": "",
+          "code": "G([Hold_Button] => BA({#x.(x : held_airplanes & x /: held_airplanes$0)}))",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M2_Scenario_2",
+          "location": "M2_Scenario_1.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M2_Scenario_Hold_Reappear",
+          "location": "M2_Scenario_Hold_Reappear.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": "HOLD1",
+          "name": "AMAN_Update/inv4,1/INV"
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M3_Block_Timeslots",
+      "description": "",
+      "location": "M3_Block_Timeslots.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M3_Scenario_1",
+          "location": "M3_Scenario_1.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M3_Scenario_2",
+          "location": "M3_Scenario_2.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M3_Scenario_3",
+          "location": "M3_Scenario_3.prob2trace",
+          "selected": true
+        },
+        {
+          "id": "M3_Scenario_4",
+          "location": "M3_Scenario_4.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [
+        {
+          "id": "BLOCK1",
+          "name": "INITIALISATION/inv3,3/INV"
+        },
+        {
+          "id": "BLOCK2",
+          "name": "AMAN_Update/inv3,3/INV"
+        },
+        {
+          "id": "BLOCK3",
+          "name": "Move_Aircraft/inv3,3/INV"
+        },
+        {
+          "id": "BLOCK4",
+          "name": "Block_Time/inv3,3/INV"
+        },
+        {
+          "id": "BLOCK5",
+          "name": "Deblock_Time/inv3,3/INV"
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "enable_graph": []
+      },
+      "tableVisualizationItems": {
+        "precise_operation_coverage": [],
+        "machine_statistics": [],
+        "quick_operation_coverage": [],
+        "variable_coverage": [],
+        "prob_opcache_info": [],
+        "vacuous_guards": [],
+        "minmax_table": [],
+        "constants_coverage": [],
+        "variable_read_write_matrix": [],
+        "constants_analysis": [],
+        "prob_memo_profile": [],
+        "show_typing": [],
+        "det_check_constants": [],
+        "wd_pos": [],
+        "unsat_core_properties": [],
+        "expression_coverage": []
+      }
+    },
+    {
+      "name": "M4_Zoom_Ctx",
+      "description": "",
+      "location": "M4_Zoom_Ctx.buc",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M4_Zoom",
+      "description": "",
+      "location": "M4_Zoom.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": "ZOOM1",
+          "name": "INITIALISATION/inv6,1/INV"
+        },
+        {
+          "id": "ZOOM2",
+          "name": "changeZoom/inv6,1/INV"
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "variable_read_write_matrix": []
+      }
+    },
+    {
+      "name": "M5_AMAN_Timeout",
+      "description": "",
+      "location": "M5_AMAN_Timeout.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": "M5_Scenario_AMAN_Timeout",
+          "location": "M5_Scenario_AMAN_Timeout.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane",
+      "description": "",
+      "location": "M6_Select_Airplane.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "SimB_Trace.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": "hold_2",
+          "name": "INITIALISATION/hold_button_enabled_value/INV"
+        },
+        {
+          "id": "hold_5",
+          "name": "AMAN_Update/hold_button_enabled_value/INV"
+        },
+        {
+          "id": "hold_7",
+          "name": "AMAN_Timeout/hold_button_enabled_value/INV"
+        },
+        {
+          "id": "hold_4",
+          "name": "Hold_Button/hold_button_enabled_value/INV"
+        },
+        {
+          "id": "hold_6",
+          "name": "changeZoom/hold_button_enabled_value/INV"
+        },
+        {
+          "id": "hold_3",
+          "name": "selectAirplane/hold_button_enabled_value/INV"
+        },
+        {
+          "id": "hold_1",
+          "name": "deselectAirplane/hold_button_enabled_value/INV"
+        }
+      ],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim.json",
+          "simulationItems": []
+        },
+        {
+          "path": "simulation/AMAN_sim_slow.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "transition_diagram": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane_vis",
+      "description": "",
+      "location": "M6_Select_Airplane_vis.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "M6_Scenario_Timeout.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "expr_as_graph": [],
+        "transition_diagram": [],
+        "dfa_merge": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M7_Interaction_Pauses_Updates",
+      "description": "",
+      "location": "M7_Interaction_Pauses_Updates.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M8_Interaction_Events",
+      "description": "",
+      "location": "M8_Interaction_Events.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [
+        {
+          "type": "LTL",
+          "id": "Airplane_Drag_Finish",
+          "description": "Dragging an airplane can always be completed or aborted.",
+          "code": "G {dragged_airplane /= {}} => (e(Move_Aircraft) or e(stop_dragging_airplane))",
+          "expectedResult": true,
+          "selected": true
+        },
+        {
+          "type": "LTL",
+          "id": "Zoom_Slider_Drag_Finish",
+          "description": "Dragging the zoom slider can always be finished.",
+          "code": "G {dragged_zoom_level /= {}} => e(changeZoom)",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_prob",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_prob.bum",
+      "lastUsedPreferenceName": "higher max",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "StateError.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": "visualization/AMAN_vis_M9.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M10_GUI_Ctx",
+      "description": "",
+      "location": "M10_GUI_Ctx.buc",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "expr_as_table": [],
+        "det_check_constants": [],
+        "unsat_core_properties": []
+      }
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_vis",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_vis.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "Zooming_Bug.prob2trace",
+          "selected": true
+        }
+      ],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "visualization/AMAN_vis_M9.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M10_GUI",
+      "description": "",
+      "location": "M10_GUI.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": "no_overlap_3",
+          "name": "INITIALISATION/no_overlap/INV"
+        },
+        {
+          "id": "no_overlap_2",
+          "name": "AMAN_Update_mouse_to_nothing/no_overlap/INV"
+        },
+        {
+          "id": "no_overlap_5",
+          "name": "AMAN_Update_mouse_to_airplane/no_overlap/INV"
+        },
+        {
+          "id": "no_overlap_6",
+          "name": "AMAN_Update_mouse_stays/no_overlap/INV"
+        },
+        {
+          "id": "no_overlap_4",
+          "name": "Move_Aircraft/no_overlap/INV"
+        },
+        {
+          "id": "no_overlap_1",
+          "name": "changeZoom/no_overlap/INV"
+        }
+      ],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M0_AMAN_Update_prob_mc",
+      "description": "",
+      "location": "M0_AMAN_Update_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M0_AMAN_Update_prob_mc2",
+      "description": "",
+      "location": "M0_AMAN_Update_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M1_Landing_Sequence_prob_mc",
+      "description": "",
+      "location": "M1_Landing_Sequence_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M1_Landing_Sequence_prob_mc2",
+      "description": "",
+      "location": "M1_Landing_Sequence_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M2_Hold_Button_prob_mc",
+      "description": "",
+      "location": "M2_Hold_Button_prob_mc.bum",
+      "lastUsedPreferenceName": "ALLOW-ALL",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        },
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "transition_diagram": [],
+        "state_space": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M2_Hold_Button_prob_mc2",
+      "description": "",
+      "location": "M2_Hold_Button_prob_mc2.bum",
+      "lastUsedPreferenceName": "ALLOW-ALL",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "enable_graph": [],
+        "transition_diagram": []
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M3_Block_Timeslots_prob_mc",
+      "description": "",
+      "location": "M3_Block_Timeslots_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M3_Block_Timeslots_prob_mc2",
+      "description": "",
+      "location": "M3_Block_Timeslots_prob_mc2.bum",
+      "lastUsedPreferenceName": "ALLOW-ALL",
+      "temporalFormulas": [
+        {
+          "type": "LTL",
+          "id": "BLOCK_LTL",
+          "description": "",
+          "code": "G(BA({ran(landing_sequence - landing_sequence$0) /\\ blockedTime = {}}))",
+          "expectedResult": true,
+          "selected": true
+        }
+      ],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M4_Zoom_prob_mc",
+      "description": "",
+      "location": "M4_Zoom_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M4_Zoom_prob_mc2",
+      "description": "",
+      "location": "M4_Zoom_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M5_AMAN_Timeout_prob_mc",
+      "description": "",
+      "location": "M5_AMAN_Timeout_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M5_AMAN_Timeout_prob_mc2",
+      "description": "",
+      "location": "M5_AMAN_Timeout_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "id": "MC_TIMEOUT",
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {
+        "transition_diagram": [
+          {
+            "id": "SPRJ_TIMEOUT",
+            "commandType": "transition_diagram",
+            "formula": "timeout"
+          }
+        ]
+      },
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane_prob_mc",
+      "description": "",
+      "location": "M6_Select_Airplane_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M6_Select_Airplane_prob_mc2",
+      "description": "",
+      "location": "M6_Select_Airplane_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M7_Interaction_Pauses_Updates_prob_mc",
+      "description": "",
+      "location": "M7_Interaction_Pauses_Updates_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M7_Interaction_Pauses_Updates_prob_mc2",
+      "description": "",
+      "location": "M7_Interaction_Pauses_Updates_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M8_Interaction_Events_prob_mc",
+      "description": "",
+      "location": "M8_Interaction_Events_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {
+        "quick_operation_coverage": []
+      }
+    },
+    {
+      "name": "M8_Interaction_Events_prob_mc2",
+      "description": "",
+      "location": "M8_Interaction_Events_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_prob_mc",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_prob_mc.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
+          ],
+          "shouldExecute": true
+        }
+      ],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_prob_mc2",
+      "description": "",
+      "location": "M9_Push_Mouse_Buttons_prob_mc2.bum",
+      "lastUsedPreferenceName": "default",
+      "temporalFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    }
+  ],
+  "requirements": [
+    {
+      "name": "Req1",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "Planes can added to the flight sequence e.g. planes arriving in a close range of the airport",
+      "validationObligations": [
+        {
+          "machine": "M0_AMAN_Update",
+          "expression": "AMAN_Update_1 & CTL_0 & CTL_1 & CTL_2 & CTL_Add_0 & CTL_Add_1 & CTL_Add_2"
+        }
+      ]
+    },
+    {
+      "name": "Req2",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "Planes can be removed from the flight sequence e.g. planes changing their landing airport for some reason",
+      "validationObligations": [
+        {
+          "machine": "M0_AMAN_Update",
+          "expression": "AMAN_Update_2 & CTL_1 & CTL_2 & CTL_3 & CTL_Remove_1 & CTL_Remove_2 & CTL_Remove_3"
+        }
+      ]
+    },
+    {
+      "name": "Req16",
+      "introducedAt": "M4_Zoom",
+      "type": "FUNCTIONAL",
+      "text": "the zoom value cannot be bigger than 45 and smaller than 15",
+      "validationObligations": [
+        {
+          "machine": "M4_Zoom",
+          "expression": "ZOOM1 & ZOOM2"
+        }
+      ]
+    },
+    {
+      "name": "Req16.1",
+      "introducedAt": "M4_Zoom",
+      "type": "FUNCTIONAL",
+      "text": "The zoom can only be applied in steps of 5.",
+      "validationObligations": [
+        {
+          "machine": "M4_Zoom",
+          "expression": "ZOOM1 & ZOOM2"
+        }
+      ]
+    },
+    {
+      "name": "Req5.1",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "The space between two airplanes is always >= 3",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "DIST1 & DIST2 & DIST3"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_AMAN_Updates",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "1. Initially, there are no airplanes scheduled for landing.\n2. AMAN Update detects two airplanes (numbered 1 and 2) approaching the airport area for landing.\n3. AMAN Update detects a third airplane (numbered 3) approach the airport area for landing.\n4. AMAN Update does not modify the scheduled airplanes.\n5. Airplane 1 decides to change the destination airport; AMAN Update removes airplane 1 from the scheduled airplanes.",
+      "validationObligations": [
+        {
+          "machine": "M0_AMAN_Update",
+          "expression": "M0_Scenario_1"
+        },
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_1"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Move_Aircraft",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "1. Initially, there are no airplanes scheduled for landing.\n2. AMAN Update detects an airplane approaching the airport area for landing. The airplane is scheduled for landing in 12 minutes.\n3. PLAN ATCo moves airplane in 2. to timeslot for landing in 24 minutes.\n",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_2"
+        }
+      ]
+    },
+    {
+      "name": "Req_Move",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "When AMAN is running and there is at least one free time slot, \nthen PLAN ATCo can move one aircraft to another free time slot.",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "LTL_Move"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Hold",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "1.  AMAN Update detects to airplanes (numbered 1 and 2) approaching the airport for landing.\n2. PLAN ATCo sets airplane 1 on HOLD",
+      "validationObligations": [
+        {
+          "machine": "M2_Hold_Button",
+          "expression": "M2_Scenario_2"
+        }
+      ]
+    },
+    {
+      "name": "Dragging always finishes",
+      "introducedAt": "M8_Interaction_Events",
+      "type": "FUNCTIONAL",
+      "text": "Dragging interactions can always be finished.",
+      "validationObligations": [
+        {
+          "machine": "M8_Interaction_Events",
+          "expression": "Airplane_Drag_Finish & Zoom_Slider_Drag_Finish"
+        }
+      ]
+    },
+    {
+      "name": "Req_Hold_Airplanes",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "When AMAN is running and PLAN ATCo holds an airplane, \nthen this airplane is marked as held.",
+      "validationObligations": [
+        {
+          "machine": "M2_Hold_Button",
+          "expression": "LTL_Hold_Airplanes"
+        }
+      ]
+    },
+    {
+      "name": "Req6",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "An aircraft label cannot be moved into a blocked time period",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "BLOCK1 & BLOCK2 & BLOCK3 & BLOCK4 & BLOCK5"
+        },
+        {
+          "machine": "M3_Block_Timeslots_prob_mc2",
+          "expression": "BLOCK_LTL"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Block_Timeslots",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "1. Airplane (numbered with 1) approaches the airport and is detected via an AMAN update. Landing time is set to 10 minutes.\n2. PLAN ATCo blocks timeslots in 18, 19 and 20 minutes\n3. A minute passes and the landing sequence does not change. Thus, the blocked timeslots is in 17,18, and 19 minutes. Airplane 1 is set to land in 9 minutes.\n4. PLAN ATCo moves airplane 1 to landing slot in 20 minutes.",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_1"
+        }
+      ]
+    },
+    {
+      "name": "Scenario_Block_Timeslots_2",
+      "introducedAt": "M3_Block_Timeslots",
+      "type": "FUNCTIONAL",
+      "text": "1. Airplane (numbered with 1) approaches the airport and is detected via an AMAN update. Landing time is set to 10 minutes.\n2. PLAN ATCo blocks timeslots in 18, 19 and 20 minutes.\n3. PLAN ATCo unblocks timeslot at minute 20\n4. PLAN ATCo moves airplane 1 to landing slot in 20 minutes.",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_2"
+        }
+      ]
+    },
+    {
+      "name": "Req7",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "Moving an aircraft label might not be accepted by AMAN if it would require a speed up of the aircraft beyond the capacity of the aircraft",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_3"
+        },
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_3 & M3_Scenario_4"
+        }
+      ]
+    },
+    {
+      "name": "Req7_Scenario",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "1. An airplane is scheduled to land for a specific time slot.\n2. PLAN ATCo moves the airplane for landing to an earlier time slot.\n3. AMAN detects that the airplane is not capable to land at the earlier time slot, thus processes the airplane again.",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "M1_Scenario_3"
+        },
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_3 & M3_Scenario_4"
+        }
+      ]
+    },
+    {
+      "name": "Req3",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "Planes moved earlier or later on the timeline by the PLAN ATCo thus requiring from AMAN the processing of a new prediction",
+      "validationObligations": [
+        {
+          "machine": "M1_Landing_Sequence",
+          "expression": "LTL_Move"
+        }
+      ]
+    },
+    {
+      "name": "Req4",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "Planes put on hold by the PLAN ATCo. Planes removed from HOLD will appear as normal aircrafts handled by AMAN",
+      "validationObligations": [
+        {
+          "machine": "M2_Hold_Button",
+          "expression": "HOLD1 & M2_Scenario_Hold_Reappear"
+        }
+      ]
+    },
+    {
+      "name": "Req5",
+      "introducedAt": "M10_GUI",
+      "type": "FUNCTIONAL",
+      "text": "Aircraft labels should not overlap",
+      "validationObligations": [
+        {
+          "machine": "M10_GUI",
+          "expression": "no_overlap_1 & no_overlap_2 & no_overlap_3 & no_overlap_4 & no_overlap_5 & no_overlap_6"
+        }
+      ]
+    },
+    {
+      "name": "Req8",
+      "introducedAt": "M5_AMAN_Timeout",
+      "type": "FUNCTIONAL",
+      "text": "If AMAN is not functioning (e.g. no update after 10 seconds) the ATCo must be informed about the failure and landing sequence preparation will be done manually (without AMAN).",
+      "validationObligations": [
+        {
+          "machine": "M5_AMAN_Timeout",
+          "expression": "M5_Scenario_AMAN_Timeout"
+        },
+        {
+          "machine": "M5_AMAN_Timeout_prob_mc2",
+          "expression": "MC_TIMEOUT; SPRJ_TIMEOUT"
+        }
+      ]
+    },
+    {
+      "name": "Req9",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "displays should provide recognisable feedback on:\nEntries made by the ATCo into the system so that the ATCo can detect and correct errors.",
+      "validationObligations": []
+    },
+    {
+      "name": "Req10",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "displays should provide recognisable feedback on:\nPresent state of the automated system or mode of operation. (What is it doing?)",
+      "validationObligations": []
+    },
+    {
+      "name": "Req11",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "displays should provide recognisable feedback on:\nActions taken by the system to achieve or maintain a desired state. (What is it trying to do?)",
+      "validationObligations": []
+    },
+    {
+      "name": "Req12",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "displays should provide recognisable feedback on:\nFuture states scheduled by the automation. (What is it going to do next?)",
+      "validationObligations": []
+    },
+    {
+      "name": "Req13",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "displays should provide recognisable feedback on:\nTransitions between system states.",
+      "validationObligations": []
+    },
+    {
+      "name": "Req14",
+      "introducedAt": "M1_Landing_Sequence",
+      "type": "FUNCTIONAL",
+      "text": "the set of tasks identified must be feasible on the interactive systems; this may be ensured by checking behavioural equivalence of the task model with respect to a model of the interactive application (as for instance in [8];",
+      "validationObligations": []
+    },
+    {
+      "name": "Req15",
+      "introducedAt": "M6_Select_Airplane",
+      "type": "FUNCTIONAL",
+      "text": "the HOLD button must be available only when one aircraft label is selected",
+      "validationObligations": [
+        {
+          "machine": "M6_Select_Airplane",
+          "expression": "hold_1 & hold_2 & hold_3 & hold_4 & hold_5 & hold_6 & hold_7"
+        }
+      ]
+    },
+    {
+      "name": "Req17",
+      "introducedAt": "M0_AMAN_Update",
+      "type": "FUNCTIONAL",
+      "text": "aircraft labels must always be positioned in front of a small bar of the timeline",
+      "validationObligations": []
+    },
+    {
+      "name": "Req18",
+      "introducedAt": "M4_Zoom",
+      "type": "FUNCTIONAL",
+      "text": "Lift of the zoom slider should always be located on the slider bar",
+      "validationObligations": []
+    },
+    {
+      "name": "Req19",
+      "introducedAt": "M4_Zoom",
+      "type": "FUNCTIONAL",
+      "text": "the value displayed next to the zoom slider must belong to the list of seven acceptable values for the zoom",
+      "validationObligations": []
+    },
+    {
+      "name": "Req20",
+      "introducedAt": "M10_GUI",
+      "type": "FUNCTIONAL",
+      "text": "each movement of the mouse on the ATCo table must be reflected by a movement of the cursor on the screen",
+      "validationObligations": []
+    },
+    {
+      "name": "Req21",
+      "introducedAt": "M9_Push_Mouse_Buttons",
+      "type": "FUNCTIONAL",
+      "text": "there must be one and only one mouse cursor on the screen",
+      "validationObligations": []
+    },
+    {
+      "name": "Req22",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "Hold(aircraft) function can only be triggered after a mouse press and a mouse released have been performed on the HOLD button.",
+      "validationObligations": []
+    },
+    {
+      "name": "Req23",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "Hold(aircraft) function must not be triggered if there is not a mouse press and a mouse released performed on the HOLD button.",
+      "validationObligations": []
+    }
+  ],
+  "preferences": [
+    {
+      "name": "higher max",
+      "preferences": {
+        "MAX_INITIALISATIONS": "100",
+        "TIME_OUT": "5001",
+        "MAX_OPERATIONS": "45",
+        "DEFAULT_SETSIZE": "3"
+      }
+    },
+    {
+      "name": "ALLOW-ALL",
+      "preferences": {
+        "MAX_INITIALISATIONS": "422",
+        "MAX_OPERATIONS": "1000"
+      }
+    }
+  ],
+  "metadata": {
+    "fileType": "Project",
+    "formatVersion": 37,
+    "savedAt": "2023-03-21T22:14:02.259755Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}

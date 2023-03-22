@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="800"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="AMAN.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <rect id="background" style="fill:#008000" width="1000" height="800" x="0" y="0"/>
+
+
+
+  <line id="line_left_1" x1="200" x2="215" y1="740" y2="740" stroke="white" stroke-width="2" />
+  <line id="line_right_1" x1="285" x2="300" y1="740" y2="740" stroke="white" stroke-width="2" />
+  <rect id="bl_1" fill="yellow" visibility="visible" width="15" height="13" x="201" y="741"/>
+  <rect id="mv_1" fill="green" visibility="visible" width="15" height="13" x="284" y="741"/>
+
+  <g id="ap_1" visibility="hidden">
+    <polyline id="poly_ap_1" points="300,740 325,760 325,720" />
+    <rect id="rect_ap_1" fill="black" width="150" height="40" x="325" y="720"/>
+  </g>
+
+  <line id="line_left_2" x1="200" x2="215" y1="725" y2="725" stroke="white" stroke-width="2" />
+  <line id="line_right_2" x1="285" x2="300" y1="725" y2="725" stroke="white" stroke-width="2" />
+  <rect id="bl_2" fill="yellow" visibility="visible" width="15" height="13" x="201" y="726"/>
+  <rect id="mv_2" fill="green" visibility="visible" width="15" height="13" x="284" y="726"/>
+
+
+  <g id="ap_2" visibility="hidden">
+    <polyline id="poly_ap_2" points="300,725 325,745 325,705" />
+    <rect id="rect_ap_2" fill="black" width="150" height="40" x="325" y="705"/>
+  </g>
+
+  <line id="line_left_3" x1="200" x2="215" y1="710" y2="710" stroke="white" stroke-width="2" />
+  <line id="line_right_3" x1="285" x2="300" y1="710" y2="710" stroke="white" stroke-width="2" />
+  <rect id="bl_3" fill="yellow" visibility="visible" width="15" height="13" x="201" y="711"/>
+  <rect id="mv_3" fill="green" visibility="visible" width="15" height="13" x="284" y="711"/>
+
+  <g id="ap_3" visibility="hidden">
+    <polyline id="poly_ap_3" points="300,710 325,730 325,690" />
+    <rect id="rect_ap_3" fill="black" width="150" height="40" x="325" y="690"/>
+  </g>
+
+  <line id="line_left_4" x1="200" x2="215" y1="695" y2="695" stroke="white" stroke-width="2" />
+  <line id="line_right_4" x1="285" x2="300" y1="695" y2="695" stroke="white" stroke-width="2" />
+  <rect id="bl_4" fill="yellow" visibility="visible" width="15" height="13" x="201" y="696"/>
+  <rect id="mv_4" fill="green" visibility="visible" width="15" height="13" x="284" y="696"/>
+
+  <g id="ap_4" visibility="hidden">
+    <polyline id="poly_ap_4" points="300,695 325,715 325,675" />
+    <rect id="rect_ap_4" fill="black" width="150" height="40" x="325" y="675"/>
+  </g>
+
+  <line id="line_left_5" x1="200" x2="230" y1="680" y2="680" stroke="white" stroke-width="2" />
+  <line id="line_right_5" x1="270" x2="300" y1="680" y2="680" stroke="white" stroke-width="2" />
+  <rect id="bl_5" fill="yellow" visibility="visible" width="15" height="13" x="201" y="681"/>
+  <rect id="mv_5" fill="green" visibility="visible" width="15" height="13" x="284" y="681"/>
+  <text id="tx_5" x="245" y="680" fill="white">5</text>
+
+  <g id="ap_5" visibility="hidden">
+    <polyline id="poly_ap_5" points="300,680 325,700 325,660" />
+    <rect id="rect_ap_5" fill="black" width="150" height="40" x="325" y="660"/>
+  </g>
+
+  <line id="line_left_6" x1="200" x2="215" y1="665" y2="665" stroke="white" stroke-width="2" />
+  <line id="line_right_6" x1="285" x2="300" y1="665" y2="665" stroke="white" stroke-width="2" />
+  <rect id="bl_6" fill="yellow" visibility="visible" width="15" height="13" x="201" y="666"/>
+  <rect id="mv_6" fill="green" visibility="visible" width="15" height="13" x="284" y="666"/>
+
+  <g id="ap_6" visibility="hidden">
+    <polyline id="poly_ap_6" points="300,665 325,685 325,645" />
+    <rect id="rect_ap_6" fill="black" width="150" height="40" x="325" y="645"/>
+  </g>
+
+  <line id="line_left_7" x1="200" x2="215" y1="650" y2="650" stroke="white" stroke-width="2" />
+  <line id="line_right_7" x1="285" x2="300" y1="650" y2="650" stroke="white" stroke-width="2" />
+  <rect id="bl_7" fill="yellow" visibility="visible" width="15" height="13" x="201" y="651"/>
+  <rect id="mv_7" fill="green" visibility="visible" width="15" height="13" x="284" y="651"/>
+
+  <g id="ap_7" visibility="hidden">
+    <polyline id="poly_ap_7" points="300,650 325,670 325,630" />
+    <rect id="rect_ap_7" fill="black" width="150" height="40" x="325" y="630"/>
+  </g>
+
+  <line id="line_left_8" x1="200" x2="215" y1="635" y2="635" stroke="white" stroke-width="2" />
+  <line id="line_right_8" x1="285" x2="300" y1="635" y2="635" stroke="white" stroke-width="2" />
+  <rect id="bl_8" fill="yellow" visibility="visible" width="15" height="13" x="201" y="636"/>
+  <rect id="mv_8" fill="green" visibility="visible" width="15" height="13" x="284" y="636"/>
+
+  <g id="ap_8" visibility="hidden">
+    <polyline id="poly_ap_8" points="300,635 325,655 325,615" />
+    <rect id="rect_ap_8" fill="black" width="150" height="40" x="325" y="615"/>
+  </g>
+
+  <line id="line_left_9" x1="200" x2="215" y1="620" y2="620" stroke="white" stroke-width="2" />
+  <line id="line_right_9" x1="285" x2="300" y1="620" y2="620" stroke="white" stroke-width="2" />
+  <rect id="bl_9" fill="yellow" visibility="visible" width="15" height="13" x="201" y="621"/>
+  <rect id="mv_9" fill="green" visibility="visible" width="15" height="13" x="284" y="621"/>
+
+  <g id="ap_9" visibility="hidden">
+    <polyline id="poly_ap_9" points="300,620 325,640 325,600" />
+    <rect id="rect_ap_9" fill="black" width="150" height="40" x="325" y="600"/>
+  </g>
+
+  <line id="line_left_10" x1="200" x2="230" y1="605" y2="605" stroke="white" stroke-width="2" />
+  <line id="line_right_10" x1="270" x2="300" y1="605" y2="605" stroke="white" stroke-width="2" />
+  <rect id="bl_10" fill="yellow" visibility="visible" width="15" height="13" x="201" y="606"/>
+  <rect id="mv_10" fill="green" visibility="visible" width="15" height="13" x="284" y="606"/>
+  <text id="tx_10" x="240" y="605" fill="white">10</text>
+
+  <g id="ap_10" visibility="hidden">
+    <polyline id="poly_ap_10" points="300,605 325,625 325,585" />
+    <rect id="rect_ap_10" fill="black" width="150" height="40" x="325" y="585"/>
+  </g>
+
+  <line id="line_left_11" x1="200" x2="215" y1="590" y2="590" stroke="white" stroke-width="2" />
+  <line id="line_right_11" x1="285" x2="300" y1="590" y2="590" stroke="white" stroke-width="2" />
+  <rect id="bl_11" fill="yellow" visibility="visible" width="15" height="13" x="201" y="591"/>
+  <rect id="mv_11" fill="green" visibility="visible" width="15" height="13" x="284" y="591"/>
+
+  <g id="ap_11" visibility="hidden">
+    <polyline id="poly_ap_11" points="300,590 325,610 325,570" />
+    <rect id="rect_ap_11" fill="black" width="150" height="40" x="325" y="570"/>
+  </g>
+
+  <line id="line_left_12" x1="200" x2="215" y1="575" y2="575" stroke="white" stroke-width="2" />
+  <line id="line_right_12" x1="285" x2="300" y1="575" y2="575" stroke="white" stroke-width="2" />
+  <rect id="bl_12" fill="yellow" visibility="visible" width="15" height="13" x="201" y="576"/>
+  <rect id="mv_12" fill="green" visibility="visible" width="15" height="13" x="284" y="576"/>
+
+  <g id="ap_12" visibility="hidden">
+    <polyline id="poly_ap_12" points="300,575 325,595 325,555" />
+    <rect id="rect_ap_12" fill="black" width="150" height="40" x="325" y="555"/>
+  </g>
+
+  <line id="line_left_13" x1="200" x2="215" y1="560" y2="560" stroke="white" stroke-width="2" />
+  <line id="line_right_13" x1="285" x2="300" y1="560" y2="560" stroke="white" stroke-width="2" />
+  <rect id="bl_13" fill="yellow" visibility="visible" width="15" height="13" x="201" y="561"/>
+  <rect id="mv_13" fill="green" visibility="visible" width="15" height="13" x="284" y="561"/>
+
+  <g id="ap_13" visibility="hidden">
+    <polyline id="poly_ap_13" points="300,560 325,580 325,540" />
+    <rect id="rect_ap_13" fill="black" width="150" height="40" x="325" y="540"/>
+  </g>
+
+  <line id="line_left_14" x1="200" x2="215" y1="545" y2="545" stroke="white" stroke-width="2" />
+  <line id="line_right_14" x1="285" x2="300" y1="545" y2="545" stroke="white" stroke-width="2" />
+  <rect id="bl_14" fill="yellow" visibility="visible" width="15" height="13" x="201" y="546"/>
+  <rect id="mv_14" fill="green" visibility="visible" width="15" height="13" x="284" y="546"/>
+
+  <g id="ap_14" visibility="hidden">
+    <polyline id="poly_ap_14" points="300,545 325,565 325,525" />
+    <rect id="rect_ap_14" fill="black" width="150" height="40" x="325" y="525"/>
+  </g>
+
+  <line id="line_left_15" x1="200" x2="230" y1="530" y2="530" stroke="white" stroke-width="2" />
+  <line id="line_right_15" x1="270" x2="300" y1="530" y2="530" stroke="white" stroke-width="2" />
+  <rect id="bl_15" fill="yellow" visibility="visible" width="15" height="13" x="201" y="531"/>
+  <rect id="mv_15" fill="green" visibility="visible" width="15" height="13" x="284" y="531"/>
+  <text id="tx_15" x="240" y="530" fill="white">15</text>
+
+  <g id="ap_15" visibility="hidden">
+    <polyline id="poly_ap_15" points="300,530 325,550 325,510" />
+    <rect id="rect_ap_15" fill="black" width="150" height="40" x="325" y="510"/>
+  </g>
+
+  <line id="line_left_16" x1="200" x2="215" y1="515" y2="515" stroke="white" stroke-width="2" />
+  <line id="line_right_16" x1="285" x2="300" y1="515" y2="515" stroke="white" stroke-width="2" />
+  <rect id="bl_16" fill="yellow" visibility="visible" width="15" height="13" x="201" y="516"/>
+  <rect id="mv_16" fill="green" visibility="visible" width="15" height="13" x="284" y="516"/>
+
+  <g id="ap_16" visibility="hidden">
+    <polyline id="poly_ap_16" points="300,515 325,535 325,495" />
+    <rect id="rect_ap_16" fill="black" width="150" height="40" x="325" y="495"/>
+  </g>
+
+  <line id="line_left_17" x1="200" x2="215" y1="500" y2="500" stroke="white" stroke-width="2" />
+  <line id="line_right_17" x1="285" x2="300" y1="500" y2="500" stroke="white" stroke-width="2" />
+  <rect id="bl_17" fill="yellow" visibility="visible" width="15" height="13" x="201" y="501"/>
+  <rect id="mv_17" fill="green" visibility="visible" width="15" height="13" x="284" y="501"/>
+
+  <g id="ap_17" visibility="hidden">
+    <polyline id="poly_ap_17" points="300,500 325,520 325,480" />
+    <rect id="rect_ap_17" fill="black" width="150" height="40" x="325" y="480"/>
+  </g>
+
+  <line id="line_left_18" x1="200" x2="215" y1="485" y2="485" stroke="white" stroke-width="2" />
+  <line id="line_right_18" x1="285" x2="300" y1="485" y2="485" stroke="white" stroke-width="2" />
+  <rect id="bl_18" fill="yellow" visibility="visible" width="15" height="13" x="201" y="486"/>
+  <rect id="mv_18" fill="green" visibility="visible" width="15" height="13" x="284" y="486"/>
+
+  <g id="ap_18" visibility="hidden">
+    <polyline id="poly_ap_18" points="300,485 325,505 325,465" />
+    <rect id="rect_ap_18" fill="black" width="150" height="40" x="325" y="465"/>
+  </g>
+
+  <line id="line_left_19" x1="200" x2="215" y1="470" y2="470" stroke="white" stroke-width="2" />
+  <line id="line_right_19" x1="285" x2="300" y1="470" y2="470" stroke="white" stroke-width="2" />
+  <rect id="bl_19" fill="yellow" visibility="visible" width="15" height="13" x="201" y="471"/>
+  <rect id="mv_19" fill="green" visibility="visible" width="15" height="13" x="284" y="471"/>
+
+  <g id="ap_19" visibility="hidden">
+    <polyline id="poly_ap_19" points="300,470 325,490 325,450" />
+    <rect id="rect_ap_19" fill="black" width="150" height="40" x="325" y="450"/>
+  </g>
+
+  <line id="line_left_20" x1="200" x2="230" y1="455" y2="455" stroke="white" stroke-width="2" />
+  <line id="line_right_20" x1="270" x2="300" y1="455" y2="455" stroke="white" stroke-width="2" />
+  <rect id="bl_20" fill="yellow" visibility="visible" width="15" height="13" x="201" y="456"/>
+  <rect id="mv_20" fill="green" visibility="visible" width="15" height="13" x="284" y="456"/>
+  <text id="tx_20" x="240" y="455" fill="white">20</text>
+
+  <g id="ap_20" visibility="hidden">
+    <polyline id="poly_ap_20" points="300,455 325,475 325,435" />
+    <rect id="rect_ap_20" fill="black" width="150" height="40" x="325" y="435"/>
+  </g>
+
+  <line id="line_left_21" x1="200" x2="215" y1="440" y2="440" stroke="white" stroke-width="2" />
+  <line id="line_right_21" x1="285" x2="300" y1="440" y2="440" stroke="white" stroke-width="2" />
+  <rect id="bl_21" fill="yellow" visibility="visible" width="15" height="13" x="201" y="441"/>
+  <rect id="mv_21" fill="green" visibility="visible" width="15" height="13" x="284" y="441"/>
+
+  <g id="ap_21" visibility="hidden">
+    <polyline id="poly_ap_21" points="300,440 325,460 325,420" />
+    <rect id="rect_ap_21" fill="black" width="150" height="40" x="325" y="420"/>
+  </g>
+
+  <line id="line_left_22" x1="200" x2="215" y1="425" y2="425" stroke="white" stroke-width="2" />
+  <line id="line_right_22" x1="285" x2="300" y1="425" y2="425" stroke="white" stroke-width="2" />
+  <rect id="bl_22" fill="yellow" visibility="visible" width="15" height="13" x="201" y="426"/>
+  <rect id="mv_22" fill="green" visibility="visible" width="15" height="13" x="284" y="426"/>
+
+  <g id="ap_22" visibility="hidden">
+    <polyline id="poly_ap_22" points="300,425 325,445 325,405" />
+    <rect id="rect_ap_22" fill="black" width="150" height="40" x="325" y="405"/>
+  </g>
+
+  <line id="line_left_23" x1="200" x2="215" y1="410" y2="410" stroke="white" stroke-width="2" />
+  <line id="line_right_23" x1="285" x2="300" y1="410" y2="410" stroke="white" stroke-width="2" />
+  <rect id="bl_23" fill="yellow" visibility="visible" width="15" height="13" x="201" y="411"/>
+  <rect id="mv_23" fill="green" visibility="visible" width="15" height="13" x="284" y="411"/>
+
+  <g id="ap_23" visibility="hidden">
+    <polyline id="poly_ap_23" points="300,410 325,430 325,390" />
+    <rect id="rect_ap_23" fill="black" width="150" height="40" x="325" y="390"/>
+  </g>
+
+  <line id="line_left_24" x1="200" x2="215" y1="395" y2="395" stroke="white" stroke-width="2" />
+  <line id="line_right_24" x1="285" x2="300" y1="395" y2="395" stroke="white" stroke-width="2" />
+  <rect id="bl_24" fill="yellow" visibility="visible" width="15" height="13" x="201" y="396"/>
+  <rect id="mv_24" fill="green" visibility="visible" width="15" height="13" x="284" y="396"/>
+
+  <g id="ap_24" visibility="hidden">
+    <polyline id="poly_ap_24" points="300,395 325,415 325,375" />
+    <rect id="rect_ap_24" fill="black" width="150" height="40" x="325" y="375"/>
+  </g>
+
+  <line id="line_left_25" x1="200" x2="230" y1="380" y2="380" stroke="white" stroke-width="2" />
+  <line id="line_right_25" x1="270" x2="300" y1="380" y2="380" stroke="white" stroke-width="2" />
+  <rect id="bl_25" fill="yellow" visibility="visible" width="15" height="13" x="201" y="381"/>
+  <rect id="mv_25" fill="green" visibility="visible" width="15" height="13" x="284" y="381"/>
+  <text id="tx_25" x="240" y="380" fill="white">25</text>
+
+  <g id="ap_25" visibility="hidden">
+    <polyline id="poly_ap_25" points="300,380 325,400 325,360" />
+    <rect id="rect_ap_25" fill="black" width="150" height="40" x="325" y="360"/>
+  </g>
+
+  <line id="line_left_26" x1="200" x2="215" y1="365" y2="365" stroke="white" stroke-width="2" />
+  <line id="line_right_26" x1="285" x2="300" y1="365" y2="365" stroke="white" stroke-width="2" />
+  <rect id="bl_26" fill="yellow" visibility="visible" width="15" height="13" x="201" y="366"/>
+  <rect id="mv_26" fill="green" visibility="visible" width="15" height="13" x="284" y="366"/>
+
+  <g id="ap_26" visibility="hidden">
+    <polyline id="poly_ap_26" points="300,365 325,385 325,345" />
+    <rect id="rect_ap_26" fill="black" width="150" height="40" x="325" y="345"/>
+  </g>
+
+  <line id="line_left_27" x1="200" x2="215" y1="350" y2="350" stroke="white" stroke-width="2" />
+  <line id="line_right_27" x1="285" x2="300" y1="350" y2="350" stroke="white" stroke-width="2" />
+  <rect id="bl_27" fill="yellow" visibility="visible" width="15" height="13" x="201" y="351"/>
+  <rect id="mv_27" fill="green" visibility="visible" width="15" height="13" x="284" y="351"/>
+
+  <g id="ap_27" visibility="hidden">
+    <polyline id="poly_ap_27" points="300,350 325,370 325,330" />
+    <rect id="rect_ap_27" fill="black" width="150" height="40" x="325" y="330"/>
+  </g>
+
+  <line id="line_left_28" x1="200" x2="215" y1="335" y2="335" stroke="white" stroke-width="2" />
+  <line id="line_right_28" x1="285" x2="300" y1="335" y2="335" stroke="white" stroke-width="2" />
+  <rect id="bl_28" fill="yellow" visibility="visible" width="15" height="13" x="201" y="336"/>
+  <rect id="mv_28" fill="green" visibility="visible" width="15" height="13" x="284" y="336"/>
+
+  <g id="ap_28" visibility="hidden">
+    <polyline id="poly_ap_28" points="300,335 325,355 325,315" />
+    <rect id="rect_ap_28" fill="black" width="150" height="40" x="325" y="315"/>
+  </g>
+
+  <line id="line_left_29" x1="200" x2="215" y1="320" y2="320" stroke="white" stroke-width="2" />
+  <line id="line_right_29" x1="285" x2="300" y1="320" y2="320" stroke="white" stroke-width="2" />
+  <rect id="bl_29" fill="yellow" visibility="visible" width="15" height="13" x="201" y="321"/>
+  <rect id="mv_29" fill="green" visibility="visible" width="15" height="13" x="284" y="321"/>
+
+  <g id="ap_29" visibility="hidden">
+    <polyline id="poly_ap_29" points="300,320 325,340 325,300" />
+    <rect id="rect_ap_29" fill="black" width="150" height="40" x="325" y="300"/>
+  </g>
+
+  <line id="line_left_30" x1="200" x2="230" y1="305" y2="305" stroke="white" stroke-width="2" />
+  <line id="line_right_30" x1="270" x2="300" y1="305" y2="305" stroke="white" stroke-width="2" />
+  <rect id="bl_30" fill="yellow" visibility="visible" width="15" height="13" x="201" y="306"/>
+  <rect id="mv_30" fill="green" visibility="visible" width="15" height="13" x="284" y="306"/>
+  <text id="tx_30" x="240" y="305" fill="white">30</text>
+
+  <g id="ap_30" visibility="hidden">
+    <polyline id="poly_ap_30" points="300,305 325,325 325,285" />
+    <rect id="rect_ap_30" fill="black" width="150" height="40" x="325" y="285"/>
+  </g>
+
+  <line id="line_left_31" x1="200" x2="215" y1="290" y2="290" stroke="white" stroke-width="2" />
+  <line id="line_right_31" x1="285" x2="300" y1="290" y2="290" stroke="white" stroke-width="2" />
+  <rect id="bl_31" fill="yellow" visibility="visible" width="15" height="13" x="201" y="291"/>
+  <rect id="mv_31" fill="green" visibility="visible" width="15" height="13" x="284" y="291"/>
+
+  <g id="ap_31" visibility="hidden">
+    <polyline id="poly_ap_31" points="300,290 325,310 325,270" />
+    <rect id="rect_ap_31" fill="black" width="150" height="40" x="325" y="270"/>
+  </g>
+
+  <line id="line_left_32" x1="200" x2="215" y1="275" y2="275" stroke="white" stroke-width="2" />
+  <line id="line_right_32" x1="285" x2="300" y1="275" y2="275" stroke="white" stroke-width="2" />
+  <rect id="bl_32" fill="yellow" visibility="visible" width="15" height="13" x="201" y="276"/>
+  <rect id="mv_32" fill="green" visibility="visible" width="15" height="13" x="284" y="276"/>
+
+  <g id="ap_32" visibility="hidden">
+    <polyline id="poly_ap_32" points="300,275 325,295 325,255" />
+    <rect id="rect_ap_32" fill="black" width="150" height="40" x="325" y="255"/>
+  </g>
+
+  <line id="line_left_33" x1="200" x2="215" y1="260" y2="260" stroke="white" stroke-width="2" />
+  <line id="line_right_33" x1="285" x2="300" y1="260" y2="260" stroke="white" stroke-width="2" />
+  <rect id="bl_33" fill="yellow" visibility="visible" width="15" height="13" x="201" y="261"/>
+  <rect id="mv_33" fill="green" visibility="visible" width="15" height="13" x="284" y="261"/>
+
+  <g id="ap_33" visibility="hidden">
+    <polyline id="poly_ap_33" points="300,260 325,280 325,240" />
+    <rect id="rect_ap_33" fill="black" width="150" height="40" x="325" y="240"/>
+  </g>
+
+  <line id="line_left_34" x1="200" x2="215" y1="245" y2="245" stroke="white" stroke-width="2" />
+  <line id="line_right_34" x1="285" x2="300" y1="245" y2="245" stroke="white" stroke-width="2" />
+  <rect id="bl_34" fill="yellow" visibility="visible" width="15" height="13" x="201" y="246"/>
+  <rect id="mv_34" fill="green" visibility="visible" width="15" height="13" x="284" y="246"/>
+
+  <g id="ap_34" visibility="hidden">
+    <polyline id="poly_ap_34" points="300,245 325,265 325,225" />
+    <rect id="rect_ap_34" fill="black" width="150" height="40" x="325" y="225"/>
+  </g>
+
+  <line id="line_left_35" x1="200" x2="230" y1="230" y2="230" stroke="white" stroke-width="2" />
+  <line id="line_right_35" x1="270" x2="300" y1="230" y2="230" stroke="white" stroke-width="2" />
+  <rect id="bl_35" fill="yellow" visibility="visible" width="15" height="13" x="201" y="231"/>
+  <rect id="mv_35" fill="green" visibility="visible" width="15" height="13" x="284" y="231"/>
+  <text id="tx_35" x="240" y="230" fill="white">35</text>
+
+  <g id="ap_35" visibility="hidden">
+    <polyline id="poly_ap_35" points="300,230 325,250 325,210" />
+    <rect id="rect_ap_35" fill="black" width="150" height="40" x="325" y="210"/>
+  </g>
+
+  <line id="line_left_36" x1="200" x2="215" y1="215" y2="215" stroke="white" stroke-width="2" />
+  <line id="line_right_36" x1="285" x2="300" y1="215" y2="215" stroke="white" stroke-width="2" />
+  <rect id="bl_36" fill="yellow" visibility="visible" width="15" height="13" x="201" y="216"/>
+  <rect id="mv_36" fill="green" visibility="visible" width="15" height="13" x="284" y="216"/>
+
+  <g id="ap_36" visibility="hidden">
+    <polyline id="poly_ap_36" points="300,215 325,235 325,195" />
+    <rect id="rect_ap_36" fill="black" width="150" height="40" x="325" y="195"/>
+  </g>
+
+  <line id="line_left_37" x1="200" x2="215" y1="200" y2="200" stroke="white" stroke-width="2" />
+  <line id="line_right_37" x1="285" x2="300" y1="200" y2="200" stroke="white" stroke-width="2" />
+  <rect id="bl_37" fill="yellow" visibility="visible" width="15" height="13" x="201" y="201"/>
+  <rect id="mv_37" fill="green" visibility="visible" width="15" height="13" x="284" y="201"/>
+
+  <g id="ap_37" visibility="hidden">
+    <polyline id="poly_ap_37" points="300,200 325,220 325,180" />
+    <rect id="rect_ap_37" fill="black" width="150" height="40" x="325" y="180"/>
+  </g>
+
+  <line id="line_left_38" x1="200" x2="215" y1="185" y2="185" stroke="white" stroke-width="2" />
+  <line id="line_right_38" x1="285" x2="300" y1="185" y2="185" stroke="white" stroke-width="2" />
+  <rect id="bl_38" fill="yellow" visibility="visible" width="15" height="13" x="201" y="186"/>
+  <rect id="mv_38" fill="green" visibility="visible" width="15" height="13" x="284" y="186"/>
+
+  <g id="ap_38" visibility="hidden">
+    <polyline id="poly_ap_38" points="300,185 325,205 325,165" />
+    <rect id="rect_ap_38" fill="black" width="150" height="40" x="325" y="165"/>
+  </g>
+
+  <line id="line_left_39" x1="200" x2="215" y1="170" y2="170" stroke="white" stroke-width="2" />
+  <line id="line_right_39" x1="285" x2="300" y1="170" y2="170" stroke="white" stroke-width="2" />
+  <rect id="bl_39" fill="yellow" visibility="visible" width="15" height="13" x="201" y="171"/>
+  <rect id="mv_39" fill="green" visibility="visible" width="15" height="13" x="284" y="171"/>
+
+  <g id="ap_39" visibility="hidden">
+    <polyline id="poly_ap_39" points="300,170 325,190 325,150" />
+    <rect id="rect_ap_39" fill="black" width="150" height="40" x="325" y="150"/>
+  </g>
+
+  <line id="line_left_40" x1="200" x2="230" y1="155" y2="155" stroke="white" stroke-width="2" />
+  <line id="line_right_40" x1="270" x2="300" y1="155" y2="155" stroke="white" stroke-width="2" />
+  <rect id="bl_40" fill="yellow" visibility="visible" width="15" height="13" x="201" y="156"/>
+  <rect id="mv_40" fill="green" visibility="visible" width="15" height="13" x="284" y="156"/>
+  <text id="tx_40" x="240" y="155" fill="white">40</text>
+
+  <g id="ap_40" visibility="hidden">
+    <polyline id="poly_ap_40" points="300,155 325,175 325,135" />
+    <rect id="rect_ap_40" fill="black" width="150" height="40" x="325" y="135"/>
+  </g>
+
+  <line id="line_left_41" x1="200" x2="215" y1="140" y2="140" stroke="white" stroke-width="2" />
+  <line id="line_right_41" x1="285" x2="300" y1="140" y2="140" stroke="white" stroke-width="2" />
+  <rect id="bl_41" fill="yellow" visibility="visible" width="15" height="13" x="201" y="141"/>
+  <rect id="mv_41" fill="green" visibility="visible" width="15" height="13" x="284" y="141"/>
+
+  <g id="ap_41" visibility="hidden">
+    <polyline id="poly_ap_41" points="300,140 325,160 325,120" />
+    <rect id="rect_ap_41" fill="black" width="150" height="40" x="325" y="120"/>
+  </g>
+
+  <line id="line_left_42" x1="200" x2="215" y1="125" y2="125" stroke="white" stroke-width="2" />
+  <line id="line_right_42" x1="285" x2="300" y1="125" y2="125" stroke="white" stroke-width="2" />
+  <rect id="bl_42" fill="yellow" visibility="visible" width="15" height="13" x="201" y="126"/>
+  <rect id="mv_42" fill="green" visibility="visible" width="15" height="13" x="284" y="126"/>
+
+  <g id="ap_42" visibility="hidden">
+    <polyline id="poly_ap_42" points="300,125 325,145 325,105" />
+    <rect id="rect_ap_42" fill="black" width="150" height="40" x="325" y="105"/>
+  </g>
+
+  <line id="line_left_43" x1="200" x2="215" y1="110" y2="110" stroke="white" stroke-width="2" />
+  <line id="line_right_43" x1="285" x2="300" y1="110" y2="110" stroke="white" stroke-width="2" />
+  <rect id="bl_43" fill="yellow" visibility="visible" width="15" height="13" x="201" y="111"/>
+  <rect id="mv_43" fill="green" visibility="visible" width="15" height="13" x="284" y="111"/>
+
+  <g id="ap_43" visibility="hidden">
+    <polyline id="poly_ap_43" points="300,110 325,130 325,90" />
+    <rect id="rect_ap_43" fill="black" width="150" height="40" x="325" y="90"/>
+  </g>
+
+  <line id="line_left_44" x1="200" x2="215" y1="95" y2="95" stroke="white" stroke-width="2" />
+  <line id="line_right_44" x1="285" x2="300" y1="95" y2="95" stroke="white" stroke-width="2" />
+  <rect id="bl_44" fill="yellow" visibility="visible" width="15" height="13" x="201" y="96"/>
+  <rect id="mv_44" fill="green" visibility="visible" width="15" height="13" x="284" y="96"/>
+
+  <g id="ap_44" visibility="hidden">
+    <polyline id="poly_ap_44" points="300,95 325,115 325,75" />
+    <rect id="rect_ap_44" fill="black" width="150" height="40" x="325" y="75"/>
+  </g>
+
+  <line id="line_left_45" x1="200" x2="230" y1="80" y2="80" stroke="white" stroke-width="2" />
+  <line id="line_right_45" x1="270" x2="300" y1="80" y2="80" stroke="white" stroke-width="2" />
+  <rect id="bl_45" fill="yellow" visibility="visible" width="15" height="13" x="201" y="81"/>
+  <rect id="mv_45" fill="green" visibility="visible" width="15" height="13" x="284" y="81"/>
+  <text id="tx_45" x="240" y="80" fill="white">45</text>
+
+  <g id="ap_45" visibility="hidden">
+    <polyline id="poly_ap_45" points="300,80 325,100 325,60" />
+    <rect id="rect_ap_45" fill="black" width="150" height="40" x="325" y="60"/>
+  </g>
+
+  <line id="line_left_46" x1="200" x2="215" y1="65" y2="65" stroke="white" stroke-width="2" />
+  <line id="line_right_46" x1="285" x2="300" y1="65" y2="65" stroke="white" stroke-width="2" />
+
+  <line id="line_left_47" x1="200" x2="215" y1="50" y2="50" stroke="white" stroke-width="2" />
+  <line id="line_right_47" x1="285" x2="300" y1="50" y2="50" stroke="white" stroke-width="2" />
+
+  <line id="line_left_48" x1="200" x2="215" y1="35" y2="35" stroke="white" stroke-width="2" />
+  <line id="line_right_48" x1="285" x2="300" y1="35" y2="35" stroke="white" stroke-width="2" />
+
+  <line id="line_left_49" x1="200" x2="215" y1="20" y2="20" stroke="white" stroke-width="2" />
+  <line id="line_right_49" x1="285" x2="300" y1="20" y2="20" stroke="white" stroke-width="2" />
+
+  <text id="tap_1" visibility="hidden" x="325" y="745" fill="white">AIRPLANE1</text>
+  <text id="tap_2" visibility="hidden" x="325" y="745" fill="white">AIRPLANE2</text>
+  <text id="tap_3" visibility="hidden" x="325" y="745" fill="white">AIRPLANE3</text>
+  <text id="tap_4" visibility="hidden" x="325" y="745" fill="white">AIRPLANE4</text>
+  <text id="tap_5" visibility="hidden" x="325" y="745" fill="white">AIRPLANE5</text>
+  <text id="tap_6" visibility="hidden" x="325" y="745" fill="white">AIRPLANE6</text>
+  <text id="tap_7" visibility="hidden" x="325" y="745" fill="white">AIRPLANE7</text>
+  <text id="tap_8" visibility="hidden" x="325" y="745" fill="white">AIRPLANE8</text>
+  <text id="tap_9" visibility="hidden" x="325" y="745" fill="white">AIRPLANE9</text>
+  <text id="tap_10" visibility="hidden" x="325" y="745" fill="white">AIRPLANE10</text>
+  <text id="tap_11" visibility="hidden" x="325" y="745" fill="white">AIRPLANE11</text>
+  <text id="tap_12" visibility="hidden" x="325" y="745" fill="white">AIRPLANE12</text>
+  <text id="tap_13" visibility="hidden" x="325" y="745" fill="white">AIRPLANE13</text>
+  <text id="tap_14" visibility="hidden" x="325" y="745" fill="white">AIRPLANE14</text>
+  <text id="tap_15" visibility="hidden" x="325" y="745" fill="white">AIRPLANE15</text>
+
+  <text id="tap_ghost_1" visibility="hidden" x="325" y="745" fill="white">AIRPLANE1</text>
+  <text id="tap_ghost_2" visibility="hidden" x="325" y="745" fill="white">AIRPLANE2</text>
+  <text id="tap_ghost_3" visibility="hidden" x="325" y="745" fill="white">AIRPLANE3</text>
+  <text id="tap_ghost_4" visibility="hidden" x="325" y="745" fill="white">AIRPLANE4</text>
+  <text id="tap_ghost_5" visibility="hidden" x="325" y="745" fill="white">AIRPLANE5</text>
+  <text id="tap_ghost_6" visibility="hidden" x="325" y="745" fill="white">AIRPLANE6</text>
+  <text id="tap_ghost_7" visibility="hidden" x="325" y="745" fill="white">AIRPLANE7</text>
+  <text id="tap_ghost_8" visibility="hidden" x="325" y="745" fill="white">AIRPLANE8</text>
+  <text id="tap_ghost_9" visibility="hidden" x="325" y="745" fill="white">AIRPLANE9</text>
+  <text id="tap_ghost_10" visibility="hidden" x="325" y="745" fill="white">AIRPLANE10</text>
+  <text id="tap_ghost_11" visibility="hidden" x="325" y="745" fill="white">AIRPLANE11</text>
+  <text id="tap_ghost_12" visibility="hidden" x="325" y="745" fill="white">AIRPLANE12</text>
+  <text id="tap_ghost_13" visibility="hidden" x="325" y="745" fill="white">AIRPLANE13</text>
+  <text id="tap_ghost_14" visibility="hidden" x="325" y="745" fill="white">AIRPLANE14</text>
+  <text id="tap_ghost_15" visibility="hidden" x="325" y="745" fill="white">AIRPLANE15</text>
+
+  <rect id="bt_hold" fill="black" visibility="visible" width="120" height="30" x="650" y="500"/>
+  <text id="tx_hold" stroke="red" fill="red" visibility="true" x="688" y="520">HOLD</text>
+
+  <rect fill="black" stroke="white" width="280" height="40" x="700" y="50"/>
+
+  <rect id="zoom_25" fill="grey" stroke="white" width="20" height="40" x="788" y="50"/>
+  <rect id="zoom_20" fill="grey" stroke="white" width="20" height="40" x="748" y="50"/>
+  <rect id="zoom_15" fill="grey" stroke="white" width="20" height="40" x="708" y="50"/>
+
+  <rect id="zoom_30" fill="grey" stroke="white" width="20" height="40" x="828" y="50"/>
+
+  <rect id="zoom_35" fill="grey" stroke="white" width="20" height="40" x="868" y="50"/>
+  <rect id="zoom_40" fill="grey" stroke="white" width="20" height="40" x="908" y="50"/>
+  <rect id="zoom_45" fill="grey" stroke="white" width="20" height="40" x="948" y="50"/>
+
+  <rect id="zoom_slider" fill="black" stroke="white" width="20" height="60" x="828" y="40"/>
+
+  <text fill="white" visibility="true" x="710" y="120">15</text>
+  <text fill="white" visibility="true" x="750" y="120">20</text>
+  <text fill="white" visibility="true" x="790" y="120">25</text>
+  <text fill="white" visibility="true" x="830" y="120">30</text>
+  <text fill="white" visibility="true" x="870" y="120">35</text>
+  <text fill="white" visibility="true" x="910" y="120">40</text>
+  <text fill="white" visibility="true" x="950" y="120">45</text>
+
+  <text id="aman_timeout" fill="pink" font-size="48" visibility="hidden" x="400" y="300">AMAN is not functioning!</text>
+
+  <line x1="700" x2="980" y1="70" y2="70" stroke="white" stroke-width="1" />
+  <line x1="838" x2="838" y1="40" y2="100" stroke="white" stroke-width="1" />
+
+  <text id="minute_1" visibility="hidden" x="445" y="745" fill="white">:01</text>
+  <text id="minute_2" visibility="hidden" x="445" y="745" fill="white">:02</text>
+  <text id="minute_3" visibility="hidden" x="445" y="745" fill="white">:03</text>
+  <text id="minute_4" visibility="hidden" x="445" y="745" fill="white">:04</text>
+  <text id="minute_5" visibility="hidden" x="445" y="745" fill="white">:05</text>
+  <text id="minute_6" visibility="hidden" x="445" y="745" fill="white">:06</text>
+  <text id="minute_7" visibility="hidden" x="445" y="745" fill="white">:07</text>
+  <text id="minute_8" visibility="hidden" x="445" y="745" fill="white">:08</text>
+  <text id="minute_9" visibility="hidden" x="445" y="745" fill="white">:09</text>
+  <text id="minute_10" visibility="hidden" x="445" y="745" fill="white">:10</text>
+
+  <text id="minute_11" visibility="hidden" x="445" y="745" fill="white">:11</text>
+  <text id="minute_12" visibility="hidden" x="445" y="745" fill="white">:12</text>
+  <text id="minute_13" visibility="hidden" x="445" y="745" fill="white">:13</text>
+  <text id="minute_14" visibility="hidden" x="445" y="745" fill="white">:14</text>
+  <text id="minute_15" visibility="hidden" x="445" y="745" fill="white">:15</text>
+  <text id="minute_16" visibility="hidden" x="445" y="745" fill="white">:16</text>
+  <text id="minute_17" visibility="hidden" x="445" y="745" fill="white">:17</text>
+  <text id="minute_18" visibility="hidden" x="445" y="745" fill="white">:18</text>
+  <text id="minute_19" visibility="hidden" x="445" y="745" fill="white">:19</text>
+  <text id="minute_20" visibility="hidden" x="445" y="745" fill="white">:20</text>
+
+  <text id="minute_21" visibility="hidden" x="445" y="745" fill="white">:21</text>
+  <text id="minute_22" visibility="hidden" x="445" y="745" fill="white">:22</text>
+  <text id="minute_23" visibility="hidden" x="445" y="745" fill="white">:23</text>
+  <text id="minute_24" visibility="hidden" x="445" y="745" fill="white">:24</text>
+  <text id="minute_25" visibility="hidden" x="445" y="745" fill="white">:25</text>
+  <text id="minute_26" visibility="hidden" x="445" y="745" fill="white">:26</text>
+  <text id="minute_27" visibility="hidden" x="445" y="745" fill="white">:27</text>
+  <text id="minute_28" visibility="hidden" x="445" y="745" fill="white">:28</text>
+  <text id="minute_29" visibility="hidden" x="445" y="745" fill="white">:29</text>
+  <text id="minute_30" visibility="hidden" x="445" y="745" fill="white">:30</text>
+
+  <text id="minute_31" visibility="hidden" x="445" y="745" fill="white">:31</text>
+  <text id="minute_32" visibility="hidden" x="445" y="745" fill="white">:32</text>
+  <text id="minute_33" visibility="hidden" x="445" y="745" fill="white">:33</text>
+  <text id="minute_34" visibility="hidden" x="445" y="745" fill="white">:34</text>
+  <text id="minute_35" visibility="hidden" x="445" y="745" fill="white">:35</text>
+  <text id="minute_36" visibility="hidden" x="445" y="745" fill="white">:36</text>
+  <text id="minute_37" visibility="hidden" x="445" y="745" fill="white">:37</text>
+  <text id="minute_38" visibility="hidden" x="445" y="745" fill="white">:38</text>
+  <text id="minute_39" visibility="hidden" x="445" y="745" fill="white">:39</text>
+  <text id="minute_40" visibility="hidden" x="445" y="745" fill="white">:40</text>
+
+  <text id="minute_41" visibility="hidden" x="445" y="745" fill="white">:41</text>
+  <text id="minute_42" visibility="hidden" x="445" y="745" fill="white">:42</text>
+  <text id="minute_43" visibility="hidden" x="445" y="745" fill="white">:43</text>
+  <text id="minute_44" visibility="hidden" x="445" y="745" fill="white">:44</text>
+  <text id="minute_45" visibility="hidden" x="445" y="745" fill="white">:45</text>
+
+  <image xlink:href="cursor_1.png" id="mouse" x="500" y="500" width="20" height="20"/>
+
+  <line x1="200" x2="200" y1="750" y2="10" stroke="white" stroke-width="2" />
+  <line x1="300" x2="300" y1="750" y2="10" stroke="white" stroke-width="2" />
+  <line x1="198" x2="302" y1="10" y2="10" stroke="white" stroke-width="2" />
+  <line x1="198" x2="302" y1="750" y2="750" stroke="white" stroke-width="2" />
+</svg>

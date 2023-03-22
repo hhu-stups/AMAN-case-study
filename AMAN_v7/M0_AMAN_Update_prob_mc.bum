@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1673525049311" org.eventb.texttools.text_representation="machine M0_AMAN_Update_prob_mc refines M0_AMAN_Update sees M0_AMAN_Update_prob_mc_Ctx&#10;&#10;variables scheduledAirplanes&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  end&#10;&#10;  event AMAN_Update extends AMAN_Update&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="M0_AMAN_Update"/>
+    <org.eventb.core.seesContext name="_Q3bsMJEDEe2QjLcYDoRhfA" org.eventb.core.target="M0_AMAN_Update_prob_mc_Ctx"/>
+    <org.eventb.core.variable name="_yCuQgUrzEe2jiPlvG5m5_Q" org.eventb.core.generated="false" org.eventb.core.identifier="scheduledAirplanes"/>
+    <org.eventb.core.event name="_yCuQgUrzEe2jiPlvG5m5_R" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="_yCuQgUrzEe2jiPlvG5m5_S" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AMAN_Update">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="AMAN_Update"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

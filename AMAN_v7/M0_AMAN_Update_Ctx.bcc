@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm2,1" org.eventb.core.predicate="finite(AIRPLANES)" org.eventb.core.source="/AMAN_v7/M0_AMAN_Update_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_Ctx|org.eventb.core.axiom#_wFUvsUrzEe2jiPlvG5m5_Q" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scCarrierSet name="AIRPLANES" org.eventb.core.source="/AMAN_v7/M0_AMAN_Update_Ctx.buc|org.eventb.core.contextFile#M0_AMAN_Update_Ctx|org.eventb.core.carrierSet#_wFUvsErzEe2jiPlvG5m5_Q" org.eventb.core.type="ℙ(AIRPLANES)"/>
+</org.eventb.core.scContextFile>
