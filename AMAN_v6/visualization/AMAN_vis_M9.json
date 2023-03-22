@@ -5,7 +5,7 @@
       "for": {"from":1, "to":45},
       "id":"ap_%0",
       "attr":"visibility",
-      "value":"IF (%0 : ran(landing_sequence) or %0 : ran(dragged_airplane)) & zoomLevel >= %0 THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF (%0 : ran(landing_sequence) or %0 : ran(dragged_airplane)) & zoomLevel >= %0 THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":45},
@@ -17,7 +17,7 @@
       "for": {"from":1, "to":"card(AIRPLANES)"},
       "id":"tap_%0",
       "attr":"visibility",
-      "value":"IF AIRPLANES%0 : dom(landing_sequence) & zoomLevel >= landing_sequence(AIRPLANES%0) THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF AIRPLANES%0 : dom(landing_sequence) & zoomLevel >= landing_sequence(AIRPLANES%0) THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":"card(AIRPLANES)"},
@@ -29,7 +29,7 @@
       "for": {"from":1, "to":"card(AIRPLANES)"},
       "id":"tap_ghost_%0",
       "attr":"visibility",
-      "value":"IF AIRPLANES%0 : dom(dragged_airplane) & zoomLevel >= dragged_airplane(AIRPLANES%0) THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF AIRPLANES%0 : dom(dragged_airplane) & zoomLevel >= dragged_airplane(AIRPLANES%0) THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":"card(AIRPLANES)"},
@@ -107,7 +107,7 @@
       "for": {"from":1, "to":45},
       "id":"bl_%0",
       "attr":"visibility",
-      "value":"IF %0 <= zoomLevel THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":45},
@@ -125,7 +125,7 @@
       "for": {"from":1, "to":45},
       "id":"mv_%0",
       "attr":"visibility",
-      "value":"IF %0 <= zoomLevel THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":45},

@@ -172,7 +172,7 @@
       "name": "M3_Block_Timeslots",
       "description": "",
       "location": "M3_Block_Timeslots.bum",
-      "lastUsedPreferenceName": "coverage",
+      "lastUsedPreferenceName": "higher max",
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
@@ -237,11 +237,8 @@
       "historyChartItems": [],
       "dotVisualizationItems": {},
       "tableVisualizationItems": {
-        "precise_operation_coverage": [],
-        "expr_as_table": [],
         "prob_memo_profile": [],
         "machine_statistics": [],
-        "quick_operation_coverage": [],
         "wd_pos": [],
         "unsat_core_properties": [],
         "prob_opcache_info": []
@@ -369,37 +366,37 @@
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M1_Scenario_1_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M1_Scenario_1_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M1_Scenario_2_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M1_Scenario_2_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M2_Scenario_1_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M2_Scenario_1_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M3_Scenario_1_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M3_Scenario_1_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M3_Scenario_2_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M3_Scenario_2_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M3_Scenario_3_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M3_Scenario_3_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "../../abz-2023-aman/AMAN_v6/M3_Scenario_4_on_M6_Select_Airplane_vis.prob2trace",
+          "location": "M3_Scenario_4_on_M6_Select_Airplane_vis.prob2trace",
           "selected": true
         }
       ],
@@ -1237,18 +1234,6 @@
           "expression": "M3_Scenario_3 & M3_Scenario_4"
         }
       ]
-    },
-    {
-      "name": "Coverage for Scenarios",
-      "introducedAt": "M3_Block_Timeslots",
-      "type": "NON_FUNCTIONAL",
-      "text": "coverage",
-      "validationObligations": [
-        {
-          "machine": "M3_Block_Timeslots",
-          "expression": ""
-        }
-      ]
     }
   ],
   "preferences": [
@@ -1259,19 +1244,12 @@
         "TIME_OUT": "5001",
         "MAX_OPERATIONS": "45"
       }
-    },
-    {
-      "name": "coverage",
-      "preferences": {
-        "MAX_INITIALISATIONS": "0",
-        "MAX_OPERATIONS": "0"
-      }
     }
   ],
   "metadata": {
     "fileType": "Project",
     "formatVersion": 36,
-    "savedAt": "2023-02-02T14:06:58.753579Z",
+    "savedAt": "2023-02-02T13:44:39.158395Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
