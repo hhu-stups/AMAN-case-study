@@ -1,0 +1,189 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "AIRCRAFT_SEPARATION_MIN": "1",
+        "PLANNING_HORIZON": "3",
+        "DIST": "/*@symbolic*/ λ(x,y).(x ∈ ℤ ∧ y ∈ ℤ|max({y - x,x - y}))",
+        "PLANNING_INTERVAL": "{1,2,3}"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "landing_sequence": "∅",
+        "scheduledAirplanes": "∅",
+        "held_airplanes": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦1),(AIRPLANES2↦2),(AIRPLANES3↦3)}"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦1),(AIRPLANES2↦2),(AIRPLANES3↦3)}",
+        "scheduledAirplanes": "{AIRPLANES1,AIRPLANES2,AIRPLANES3}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Hold_Button",
+      "params": {
+        "airplane": "AIRPLANES1"
+      },
+      "results": {},
+      "destState": {
+        "held_airplanes": "{AIRPLANES1}"
+      },
+      "destStateNotChanged": [
+        "landing_sequence",
+        "scheduledAirplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦3)}"
+      },
+      "results": {},
+      "destState": {
+        "landing_sequence": "{(AIRPLANES1↦3)}",
+        "scheduledAirplanes": "{AIRPLANES1}"
+      },
+      "destStateNotChanged": [
+        "held_airplanes"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "held_airplanes",
+    "landing_sequence",
+    "scheduledAirplanes"
+  ],
+  "constantNames": [
+    "AIRCRAFT_SEPARATION_MIN",
+    "DIST",
+    "PLANNING_HORIZON",
+    "PLANNING_INTERVAL"
+  ],
+  "setNames": [
+    "AIRPLANES"
+  ],
+  "machineOperationInfos": {
+    "Move_Aircraft": {
+      "operationName": "Move_Aircraft",
+      "parameterNames": [
+        "aircraft",
+        "time"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "landing_sequence"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))",
+        "aircraft": "global('AIRPLANES')",
+        "time": "integer"
+      }
+    },
+    "AMAN_Update": {
+      "operationName": "AMAN_Update",
+      "parameterNames": [
+        "new_landing_sequence"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "AIRCRAFT_SEPARATION_MIN",
+        "DIST",
+        "PLANNING_INTERVAL",
+        "held_airplanes"
+      ],
+      "writtenVariables": [
+        "held_airplanes",
+        "landing_sequence",
+        "scheduledAirplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "new_landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+        "'AIRCRAFT_SEPARATION_MIN'": "integer",
+        "'PLANNING_INTERVAL'": "set(integer)",
+        "'DIST'": "set(couple(couple(integer,integer),integer))"
+      }
+    },
+    "Hold_Button": {
+      "operationName": "Hold_Button",
+      "parameterNames": [
+        "airplane"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "held_airplanes",
+        "landing_sequence"
+      ],
+      "writtenVariables": [
+        "held_airplanes"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "airplane": "global('AIRPLANES')"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "landing_sequence": "set(couple(global('AIRPLANES'),integer))",
+    "held_airplanes": "set(global('AIRPLANES'))",
+    "scheduledAirplanes": "set(global('AIRPLANES'))"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2023-03-23T09:43:44.368784476Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "M2_Hold_Button"
+  }
+}

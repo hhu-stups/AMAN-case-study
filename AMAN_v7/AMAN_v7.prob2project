@@ -10,7 +10,7 @@
       "temporalFormulas": [
         {
           "type": "LTL",
-          "id": "AMAN_Update_1",
+          "id": "LTL_1",
           "description": "",
           "code": "GF(BA({scheduledAirplanes /= scheduledAirplanes$0})) => \nGF(BA({#x.(x : scheduledAirplanes & x /: scheduledAirplanes$0)}))",
           "expectedResult": true,
@@ -18,7 +18,7 @@
         },
         {
           "type": "LTL",
-          "id": "AMAN_Update_2",
+          "id": "LTL_2",
           "description": "",
           "code": "GF(BA({scheduledAirplanes /= scheduledAirplanes$0})) => GF(BA({#x.(x : scheduledAirplanes$0 & x /: scheduledAirplanes)}))",
           "expectedResult": true,
@@ -28,7 +28,7 @@
           "type": "CTL",
           "id": "CTL_Remove_1",
           "description": "",
-          "code": "AF ({card(scheduledAirplanes) = 1} => EX{card(scheduledAirplanes) < 1})",
+          "code": "AG ({card(scheduledAirplanes) = 1} => EX{card(scheduledAirplanes) < 1})",
           "expectedResult": true,
           "selected": true
         },
@@ -36,7 +36,7 @@
           "type": "CTL",
           "id": "CTL_Remove_2",
           "description": "",
-          "code": "AF ({card(scheduledAirplanes) = 2} => EX{card(scheduledAirplanes) < 2})",
+          "code": "AG ({card(scheduledAirplanes) = 2} => EX{card(scheduledAirplanes) < 2})",
           "expectedResult": true,
           "selected": true
         },
@@ -44,7 +44,7 @@
           "type": "CTL",
           "id": "CTL_Remove_3",
           "description": "",
-          "code": "AF ({card(scheduledAirplanes) = 3} => EX{card(scheduledAirplanes) < 3})",
+          "code": "AG ({card(scheduledAirplanes) = 3} => EX{card(scheduledAirplanes) < 3})",
           "expectedResult": true,
           "selected": true
         },
@@ -76,7 +76,7 @@
           "type": "CTL",
           "id": "CTL_Add_1",
           "description": "",
-          "code": "AF ({card(scheduledAirplanes) = 1} => EX{card(scheduledAirplanes) > 1})",
+          "code": "AG ({card(scheduledAirplanes) = 1} => EX{card(scheduledAirplanes) > 1})",
           "expectedResult": true,
           "selected": true
         },
@@ -84,7 +84,7 @@
           "type": "CTL",
           "id": "CTL_Add_2",
           "description": "",
-          "code": "AF ({card(scheduledAirplanes) = 2} => EX{card(scheduledAirplanes) > 2})",
+          "code": "AG ({card(scheduledAirplanes) = 2} => EX{card(scheduledAirplanes) > 2})",
           "expectedResult": true,
           "selected": true
         },
@@ -92,7 +92,7 @@
           "type": "CTL",
           "id": "CTL_Add_0",
           "description": "",
-          "code": "AF ({card(scheduledAirplanes) = 0} => EX{card(scheduledAirplanes) > 0})",
+          "code": "AG ({card(scheduledAirplanes) = 0} => EX{card(scheduledAirplanes) > 0})",
           "expectedResult": true,
           "selected": true
         },
@@ -246,6 +246,11 @@
         {
           "id": "M2_Scenario_Hold_Reappear",
           "location": "M2_Scenario_Hold_Reappear.prob2trace",
+          "selected": true
+        },
+        {
+          "id": null,
+          "location": "timetravlePlane.prob2trace",
           "selected": true
         }
       ],
@@ -759,7 +764,7 @@
         }
       ],
       "simulations": [],
-      "visBVisualisation": null,
+      "visBVisualisation": "visualization/AMAN_vis_M10.json",
       "historyChartItems": [],
       "dotVisualizationItems": {},
       "tableVisualizationItems": {}
@@ -1256,7 +1261,7 @@
       "validationObligations": [
         {
           "machine": "M0_AMAN_Update",
-          "expression": "AMAN_Update_1 & CTL_0 & CTL_1 & CTL_2 & CTL_Add_0 & CTL_Add_1 & CTL_Add_2"
+          "expression": "LTL_1 & CTL_Add_0 & CTL_Add_1 & CTL_Add_2"
         }
       ]
     },
@@ -1268,7 +1273,7 @@
       "validationObligations": [
         {
           "machine": "M0_AMAN_Update",
-          "expression": "AMAN_Update_2 & CTL_1 & CTL_2 & CTL_3 & CTL_Remove_1 & CTL_Remove_2 & CTL_Remove_3"
+          "expression": "LTL_2 & CTL_Remove_1 & CTL_Remove_2 & CTL_Remove_3"
         }
       ]
     },
@@ -1610,6 +1615,13 @@
       "type": "FUNCTIONAL",
       "text": "Hold(aircraft) function must not be triggered if there is not a mouse press and a mouse released performed on the HOLD button.",
       "validationObligations": []
+    },
+    {
+      "name": "Hold planes can rescheduled a later time",
+      "introducedAt": "M2_Hold_Button",
+      "type": "FUNCTIONAL",
+      "text": "Depending on the number of aircraft on arrival, this might be a complex constraint of which the satisfaction may require speeding up or slowing down some aircraft but also having some aircraft on HOLD which means sending them to a waiting zone for later processing. In such a case, the aircraft will be removed\n(after a while) from the landing sequence.\n\nNOTE Sebastian: What we have here is a extremly high level requirement which would require us to have a notion of airplane speed. Which is not implemented (Yet). However, we can show that an airplane that is put on hold, can have its arrival time reduced.",
+      "validationObligations": []
     }
   ],
   "preferences": [
@@ -1633,7 +1645,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 37,
-    "savedAt": "2023-03-22T13:07:14.162382Z",
+    "savedAt": "2023-03-27T12:39:09.566404Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
