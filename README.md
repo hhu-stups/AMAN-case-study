@@ -3,6 +3,18 @@ This Repository contains our latest version of the AMAN_v6 case study.
     * The VO manager can be started under the "Advanced" menu.
 * The folder can also be treated as a Rodin project and started from within the IDE.
 
+### Citation
+
+```
+@INPROCEEDINGS{AMAN2023a,
+author={Geleßus, David and Stock, Sebastian and Vu, Fabian and Leuschel, Michael and Mashkoor, Atif},
+title={{Modeling and Analysis of a Safety-critical Interactive System through Validation Obligations}},
+booktitle = {Proceedings ABZ},
+series = {LNCS 14010},
+pages={284–-302},
+year = 2023
+}
+```
 
 ### HTML Scenarios
 
