@@ -190,8 +190,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "IGNORE_OTHER_ERRORS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "IGNORE_OTHER_ERRORS"
           ],
           "shouldExecute": true
         }
@@ -303,8 +303,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "IGNORE_OTHER_ERRORS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "IGNORE_OTHER_ERRORS"
           ],
           "shouldExecute": true
         }
@@ -398,7 +398,7 @@
         }
       ],
       "simulations": [],
-      "visBVisualisation": "visualization/AMAN_vis.json",
+      "visBVisualisation": null,
       "historyChartItems": [],
       "dotVisualizationItems": {},
       "tableVisualizationItems": {
@@ -763,7 +763,12 @@
           "name": "changeZoom/no_overlap_block_slots/INV"
         }
       ],
-      "simulations": [],
+      "simulations": [
+        {
+          "path": "simulation/AMAN_sim_interactive.json",
+          "simulationItems": []
+        }
+      ],
       "visBVisualisation": "visualization/AMAN_vis_M10.json",
       "historyChartItems": [],
       "dotVisualizationItems": {},
@@ -813,7 +818,10 @@
       "simulations": [],
       "visBVisualisation": null,
       "historyChartItems": [],
-      "dotVisualizationItems": {},
+      "dotVisualizationItems": {
+        "expr_as_graph": [],
+        "transition_diagram": []
+      },
       "tableVisualizationItems": {}
     },
     {
@@ -970,13 +978,83 @@
       "symbolicAnimationFormulas": [],
       "testCases": [],
       "traces": [],
-      "modelcheckingItems": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "FIND_DEADLOCKS",
+            "FIND_INVARIANT_VIOLATIONS"
+          ],
+          "shouldExecute": true
+        },
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
       "proofObligationItems": [],
       "simulations": [],
       "visBVisualisation": null,
       "historyChartItems": [],
-      "dotVisualizationItems": {},
-      "tableVisualizationItems": {}
+      "dotVisualizationItems": {
+        "variable_modification_graph": [],
+        "predicate_dependency": [],
+        "goal": [],
+        "transition_diagram": [
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "held_airplanes"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "dom(landing_sequence)"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "blockedTimesProcessed\n"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "bool(ran(landing_sequence) /\\ blockedTime = {})"
+          }
+        ],
+        "dfa_merge": [],
+        "state_space_sfdp": [],
+        "id_value_formula_tree": [],
+        "state_space": [],
+        "definitions": [],
+        "dependence_graph": []
+      },
+      "tableVisualizationItems": {
+        "precise_operation_coverage": [],
+        "specialized_invariants": [],
+        "expr_as_table": [],
+        "machine_statistics": [],
+        "quick_operation_coverage": [],
+        "wd_pos_and_hyps": [],
+        "minmax_table": [],
+        "vacuous_invariants": [],
+        "vacuous_guards": [],
+        "constants_coverage": [],
+        "constants_analysis": [],
+        "variable_read_write_matrix": [],
+        "read_write_matrix": [],
+        "show_typing": [],
+        "prob_memo_profile": [],
+        "mcdc_coverage": [],
+        "det_check_constants": [],
+        "wd_pos": [],
+        "unsat_core_properties": [],
+        "inv_coverage": [],
+        "mcdc_inv_coverage": []
+      }
     },
     {
       "name": "M4_Zoom_prob_mc",
@@ -1017,13 +1095,30 @@
       "symbolicAnimationFormulas": [],
       "testCases": [],
       "traces": [],
-      "modelcheckingItems": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
       "proofObligationItems": [],
       "simulations": [],
       "visBVisualisation": null,
       "historyChartItems": [],
-      "dotVisualizationItems": {},
-      "tableVisualizationItems": {}
+      "dotVisualizationItems": {
+        "transition_diagram": []
+      },
+      "tableVisualizationItems": {
+        "precise_operation_coverage": [],
+        "constants_analysis": [],
+        "show_typing": [],
+        "quick_operation_coverage": [],
+        "variable_coverage": [],
+        "constants_coverage": []
+      }
     },
     {
       "name": "M5_AMAN_Timeout_prob_mc",
@@ -1645,9 +1740,9 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 37,
-    "savedAt": "2023-03-27T12:39:09.566404Z",
+    "savedAt": "2023-11-13T10:32:07.367099Z",
     "creator": "User",
-    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proB2KernelVersion": "4.12.3-SNAPSHOT",
     "proBCliVersion": null,
     "modelName": null
   }
