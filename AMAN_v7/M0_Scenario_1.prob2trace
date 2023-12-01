@@ -2,6 +2,16 @@
   "description": "",
   "transitionList": [
     {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
       "name": "$initialise_machine",
       "params": {},
       "results": {},
@@ -102,10 +112,10 @@
   "metadata": {
     "fileType": "Trace",
     "formatVersion": 5,
-    "savedAt": "2022-11-22T13:24:28.373056Z",
+    "savedAt": "2023-04-06T15:00:55.694703Z",
     "creator": "traceReplay",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
-    "proBCliVersion": "1.12.0-nightly",
+    "proBCliVersion": "1.12.1-nightly",
     "modelName": "M0_AMAN_Update"
   }
 }
