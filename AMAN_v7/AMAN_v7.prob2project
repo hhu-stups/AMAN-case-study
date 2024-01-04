@@ -120,8 +120,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         }
@@ -173,16 +173,16 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         },
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "goal": "2 /: ran(landing_sequence)",
           "shouldExecute": true
@@ -190,8 +190,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_INVARIANT_VIOLATIONS",
-            "IGNORE_OTHER_ERRORS"
+            "IGNORE_OTHER_ERRORS",
+            "FIND_INVARIANT_VIOLATIONS"
           ],
           "shouldExecute": true
         }
@@ -303,8 +303,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_INVARIANT_VIOLATIONS",
-            "IGNORE_OTHER_ERRORS"
+            "IGNORE_OTHER_ERRORS",
+            "FIND_INVARIANT_VIOLATIONS"
           ],
           "shouldExecute": true
         }
@@ -789,8 +789,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         }
@@ -858,8 +858,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         }
@@ -886,8 +886,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         },
@@ -982,8 +982,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         },
@@ -1071,8 +1071,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         }
@@ -1205,12 +1205,43 @@
       "symbolicAnimationFormulas": [],
       "testCases": [],
       "traces": [],
-      "modelcheckingItems": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
       "proofObligationItems": [],
       "simulations": [],
       "visBVisualisation": null,
       "historyChartItems": [],
-      "dotVisualizationItems": {},
+      "dotVisualizationItems": {
+        "transition_diagram": [
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "dom(landing_sequence)"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "held_airplanes"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "blockedTimesProcessed"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "bool(ran(landing_sequence) /\\ blockedTime = {})"
+          }
+        ]
+      },
       "tableVisualizationItems": {}
     },
     {
@@ -1291,12 +1322,43 @@
       "symbolicAnimationFormulas": [],
       "testCases": [],
       "traces": [],
-      "modelcheckingItems": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
       "proofObligationItems": [],
       "simulations": [],
       "visBVisualisation": null,
       "historyChartItems": [],
-      "dotVisualizationItems": {},
+      "dotVisualizationItems": {
+        "transition_diagram": [
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "dom(landing_sequence)"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "held_airplanes"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "blockedTimesProcessed"
+          },
+          {
+            "id": null,
+            "commandType": "transition_diagram",
+            "formula": "bool(ran(landing_sequence) /\\ blockedTime = {})"
+          }
+        ]
+      },
       "tableVisualizationItems": {}
     },
     {
@@ -1314,8 +1376,8 @@
         {
           "searchStrategy": "MIXED_BF_DF",
           "options": [
-            "FIND_DEADLOCKS",
-            "FIND_INVARIANT_VIOLATIONS"
+            "FIND_INVARIANT_VIOLATIONS",
+            "FIND_DEADLOCKS"
           ],
           "shouldExecute": true
         }
@@ -1338,7 +1400,15 @@
       "symbolicAnimationFormulas": [],
       "testCases": [],
       "traces": [],
-      "modelcheckingItems": [],
+      "modelcheckingItems": [
+        {
+          "searchStrategy": "MIXED_BF_DF",
+          "options": [
+            "IGNORE_OTHER_ERRORS"
+          ],
+          "shouldExecute": true
+        }
+      ],
       "proofObligationItems": [],
       "simulations": [],
       "visBVisualisation": null,
@@ -1740,7 +1810,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 37,
-    "savedAt": "2023-11-13T10:32:07.367099Z",
+    "savedAt": "2023-11-17T11:55:18.664133Z",
     "creator": "User",
     "proB2KernelVersion": "4.12.3-SNAPSHOT",
     "proBCliVersion": null,
