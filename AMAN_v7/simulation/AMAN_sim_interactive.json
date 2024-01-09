@@ -10,18 +10,18 @@
     {
       "id": "$initialise_machine",
       "execute": "$initialise_machine",
-      "activating" : ["Pass_Time_1", "MaybeSpawnAirplane"]
+      "activating" : ["Pass_Time_1"]
     },
     {
       "id": "MaybeSpawnAirplane",
       "chooseActivation": {
-        "SpawnAirplaneIfFree": "0.1",
-        "DoNotSpawnAirplane": "0.9"}
+        "SpawnAirplaneIfFree": "IF {x | x : 1..45 & x /: ran(landing_sequence) & x+1 /: ran(landing_sequence) & x+2 /: ran(landing_sequence) & x-1 /: ran(landing_sequence) & x-2 /: ran(landing_sequence)} = {} THEN 0.0 ELSE 0.1 END",
+        "DoNotSpawnAirplane": "1.0 - IF {x | x : 1..45 & x /: ran(landing_sequence) & x+1 /: ran(landing_sequence) & x+2 /: ran(landing_sequence) & x-1 /: ran(landing_sequence) & x-2 /: ran(landing_sequence)} = {} THEN 0.0 ELSE 0.1 END"}
     },
     {
       "id": "DoNotSpawnAirplane",
       "execute": "AMAN_Update_mouse_to_nothing",
-      "after": 4000,
+      "after": 0,
       "priority": 2,
       "fixedVariables": {
         "new_landing_sequence": "held_airplanes <<| {x |-> y | x : dom(landing_sequence) & y = landing_sequence(x) - $passed_minutes_since_update & y > 0}",
@@ -34,7 +34,7 @@
     {
       "id": "SpawnAirplaneIfFree",
       "execute": "AMAN_Update_mouse_to_nothing",
-      "after": 4000,
+      "after": 0,
       "priority": 2,
       "fixedVariables": {
         "new_landing_sequence": "(held_airplanes <<| {x |-> y | x : dom(landing_sequence) & y = landing_sequence(x) - $passed_minutes_since_update & y > 0}) \\/ {{AIRPLANES1 |-> 1, AIRPLANES2 |-> 2, AIRPLANES3 |-> 3, AIRPLANES4 |-> 4, AIRPLANES5 |-> 5, AIRPLANES6 |-> 6, AIRPLANES7 |-> 7, AIRPLANES8 |-> 8, AIRPLANES9 |-> 9, AIRPLANES10 |-> 10, AIRPLANES11 |-> 11, AIRPLANES12 |-> 12, AIRPLANES13 |-> 13, AIRPLANES14 |-> 14, AIRPLANES15 |-> 15}~(min(1..15 \\ {AIRPLANES1 |-> 1, AIRPLANES2 |-> 2, AIRPLANES3 |-> 3, AIRPLANES4 |-> 4, AIRPLANES5 |-> 5, AIRPLANES6 |-> 6, AIRPLANES7 |-> 7, AIRPLANES8 |-> 8, AIRPLANES9 |-> 9, AIRPLANES10 |-> 10, AIRPLANES11 |-> 11, AIRPLANES12 |-> 12, AIRPLANES13 |-> 13, AIRPLANES14 |-> 14, AIRPLANES15 |-> 15}[dom(landing_sequence)])) |-> random_element({x | x : 1..45 & x /: ran(landing_sequence) & x+1 /: ran(landing_sequence) & x+2 /: ran(landing_sequence) & x-1 /: ran(landing_sequence) & x-2 /: ran(landing_sequence)})}",
