@@ -1,8 +1,5 @@
-/.idea/.gitignore
-/.idea/AMAN-case-study.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
+*.iml
+.idea
 
 # Rodin temporary files
 *.b??_tmp
