@@ -1,0 +1,673 @@
+
+================
+Checking M0_AMAN_Update_prob_mc_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 2 ms (2 ms walltime)
+States analysed: 9
+Transitions fired: 66
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.315 MB ( 55.457 MB program) 
+
+Run 1: walltime 0:00.37 sec, max RSS 172112 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2 ms (2 ms walltime)
+States analysed: 9
+Transitions fired: 66
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.315 MB ( 55.457 MB program) 
+
+Run 2: walltime 0:00.35 sec, max RSS 171920 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2 ms (2 ms walltime)
+States analysed: 9
+Transitions fired: 66
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.315 MB ( 55.457 MB program) 
+
+Run 3: walltime 0:00.33 sec, max RSS 172096 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2 ms (2 ms walltime)
+States analysed: 9
+Transitions fired: 66
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.315 MB ( 55.457 MB program) 
+
+Run 4: walltime 0:00.34 sec, max RSS 171888 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 3 ms (2 ms walltime)
+States analysed: 9
+Transitions fired: 66
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.315 MB ( 55.457 MB program) 
+
+Run 5: walltime 0:00.35 sec, max RSS 172144 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M1_Landing_Sequence_prob_mc_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 320947 ms (333781 ms walltime)
+States analysed: 1505
+Transitions fired: 2287908
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  1425.511 MB ( 1320.654 MB program) 
+
+Run 1: walltime 5:34.18 sec, max RSS 1392752 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 323069 ms (335491 ms walltime)
+States analysed: 1505
+Transitions fired: 2287908
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  1425.523 MB ( 1320.665 MB program) 
+
+Run 2: walltime 5:35.85 sec, max RSS 1392768 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 323250 ms (335900 ms walltime)
+States analysed: 1505
+Transitions fired: 2287908
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  1425.508 MB ( 1320.650 MB program) 
+
+Run 3: walltime 5:36.28 sec, max RSS 1000976 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 324739 ms (336972 ms walltime)
+States analysed: 1505
+Transitions fired: 2287908
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  1425.501 MB ( 1320.644 MB program) 
+
+Run 4: walltime 5:37.37 sec, max RSS 739216 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 322397 ms (335095 ms walltime)
+States analysed: 1505
+Transitions fired: 2287908
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  1425.562 MB ( 1320.704 MB program) 
+
+Run 5: walltime 5:35.48 sec, max RSS 600464 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M2_Hold_Button_prob_mc_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 2273641 ms (2356565 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.167 MB ( 8249.309 MB program) 
+
+Run 1: walltime 39:17.27 sec, max RSS 2674832 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2291690 ms (2376293 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.468 MB ( 8249.610 MB program) 
+
+Run 2: walltime 39:37.01 sec, max RSS 2645072 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2272563 ms (2350571 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.367 MB ( 8249.509 MB program) 
+
+Run 2: walltime 39:11.25 sec, max RSS 4014800 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2289131 ms (2370335 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.092 MB ( 8249.234 MB program) 
+
+Run 3: walltime 39:31.04 sec, max RSS 3877632 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2230321 ms (2292644 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.092 MB ( 8249.234 MB program) 
+
+Run 3: walltime 38:13.30 sec, max RSS 5253632 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2199327 ms (2254937 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.473 MB ( 8249.616 MB program) 
+
+Run 4: walltime 37:35.60 sec, max RSS 5142560 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2230277 ms (2287779 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.211 MB ( 8249.353 MB program) 
+
+Run 4: walltime 38:08.45 sec, max RSS 4995456 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2228520 ms (2288820 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.140 MB ( 8249.283 MB program) 
+
+Run 5: walltime 38:09.51 sec, max RSS 4930256 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2054758 ms (2033616 ms walltime)
+States analysed: 9884
+Transitions fired: 15045795
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  8354.152 MB ( 8249.295 MB program) 
+
+Run 5: walltime 33:54.03 sec, max RSS 8165232 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M0_AMAN_Update_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 1 ms (1 ms walltime)
+States analysed: 5
+Transitions fired: 18
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.292 MB ( 55.435 MB program) 
+
+Run 1: walltime 0:00.35 sec, max RSS 172112 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 1 ms (1 ms walltime)
+States analysed: 5
+Transitions fired: 18
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.292 MB ( 55.435 MB program) 
+
+Run 2: walltime 0:00.33 sec, max RSS 171904 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 1 ms (1 ms walltime)
+States analysed: 5
+Transitions fired: 18
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.292 MB ( 55.435 MB program) 
+
+Run 3: walltime 0:00.33 sec, max RSS 172160 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 1 ms (1 ms walltime)
+States analysed: 5
+Transitions fired: 18
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.292 MB ( 55.435 MB program) 
+
+Run 4: walltime 0:00.33 sec, max RSS 172000 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 1 ms (1 ms walltime)
+States analysed: 5
+Transitions fired: 18
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.292 MB ( 55.435 MB program) 
+
+Run 5: walltime 0:00.34 sec, max RSS 172016 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M0_AMAN_Update_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M1_Landing_Sequence_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 18 ms (19 ms walltime)
+States analysed: 18
+Transitions fired: 339
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.684 MB ( 55.826 MB program) 
+
+Run 1: walltime 0:00.36 sec, max RSS 172384 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 18 ms (19 ms walltime)
+States analysed: 18
+Transitions fired: 339
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.684 MB ( 55.826 MB program) 
+
+Run 2: walltime 0:00.35 sec, max RSS 171904 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 19 ms (20 ms walltime)
+States analysed: 18
+Transitions fired: 339
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.684 MB ( 55.826 MB program) 
+
+Run 3: walltime 0:00.35 sec, max RSS 172016 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 20 ms (21 ms walltime)
+States analysed: 18
+Transitions fired: 339
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.684 MB ( 55.826 MB program) 
+
+Run 4: walltime 0:00.36 sec, max RSS 172112 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 19 ms (19 ms walltime)
+States analysed: 18
+Transitions fired: 339
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  160.684 MB ( 55.826 MB program) 
+
+Run 5: walltime 0:00.35 sec, max RSS 172192 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M1_Landing_Sequence_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M2_Hold_Button_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 50 ms (52 ms walltime)
+States analysed: 46
+Transitions fired: 913
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  161.066 MB ( 56.209 MB program) 
+
+Run 1: walltime 0:00.40 sec, max RSS 172208 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 50 ms (52 ms walltime)
+States analysed: 46
+Transitions fired: 913
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  161.066 MB ( 56.209 MB program) 
+
+Run 2: walltime 0:00.39 sec, max RSS 172336 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 50 ms (51 ms walltime)
+States analysed: 46
+Transitions fired: 913
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  161.064 MB ( 56.207 MB program) 
+
+Run 3: walltime 0:00.40 sec, max RSS 172336 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 50 ms (51 ms walltime)
+States analysed: 46
+Transitions fired: 913
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  161.064 MB ( 56.207 MB program) 
+
+Run 4: walltime 0:00.39 sec, max RSS 172144 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 50 ms (52 ms walltime)
+States analysed: 46
+Transitions fired: 913
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  161.064 MB ( 56.207 MB program) 
+
+Run 5: walltime 0:00.39 sec, max RSS 172224 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M2_Hold_Button_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M3_Block_Timeslots_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 2295 ms (2383 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.541 MB ( 83.683 MB program) 
+
+Run 1: walltime 0:02.73 sec, max RSS 196576 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M3_Block_Timeslots_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2280 ms (2369 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.220 MB ( 83.363 MB program) 
+
+Run 2: walltime 0:02.71 sec, max RSS 196336 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M3_Block_Timeslots_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2277 ms (2362 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.193 MB ( 83.336 MB program) 
+
+Run 3: walltime 0:02.72 sec, max RSS 196416 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M3_Block_Timeslots_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2275 ms (2362 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.214 MB ( 83.356 MB program) 
+
+Run 4: walltime 0:02.71 sec, max RSS 196064 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M3_Block_Timeslots_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2275 ms (2359 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.184 MB ( 83.326 MB program) 
+
+Run 5: walltime 0:02.71 sec, max RSS 196464 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M3_Block_Timeslots_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M4_Zoom_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 2362 ms (2453 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.475 MB ( 83.617 MB program) 
+
+Run 1: walltime 0:02.81 sec, max RSS 196496 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M4_Zoom_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2364 ms (2454 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.307 MB ( 83.449 MB program) 
+
+Run 2: walltime 0:02.80 sec, max RSS 196544 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M4_Zoom_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2353 ms (2442 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.364 MB ( 83.506 MB program) 
+
+Run 3: walltime 0:02.79 sec, max RSS 196080 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M4_Zoom_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2306 ms (2394 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.437 MB ( 83.579 MB program) 
+
+Run 4: walltime 0:02.75 sec, max RSS 196352 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M4_Zoom_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 2352 ms (2443 ms walltime)
+States analysed: 1953
+Transitions fired: 49154
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  188.329 MB ( 83.471 MB program) 
+
+Run 5: walltime 0:02.80 sec, max RSS 196688 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M4_Zoom_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M5_AMAN_Timeout_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 3966 ms (4148 ms walltime)
+States analysed: 3905
+Transitions fired: 102210
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  212.343 MB ( 107.485 MB program) 
+
+Run 1: walltime 0:04.51 sec, max RSS 221168 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M5_AMAN_Timeout_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 3964 ms (4144 ms walltime)
+States analysed: 3905
+Transitions fired: 102210
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  212.392 MB ( 107.535 MB program) 
+
+Run 2: walltime 0:04.50 sec, max RSS 221264 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M5_AMAN_Timeout_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 3962 ms (4141 ms walltime)
+States analysed: 3905
+Transitions fired: 102210
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  212.347 MB ( 107.489 MB program) 
+
+Run 3: walltime 0:04.49 sec, max RSS 221088 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M5_AMAN_Timeout_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 3964 ms (4142 ms walltime)
+States analysed: 3905
+Transitions fired: 102210
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  213.377 MB ( 108.520 MB program) 
+
+Run 4: walltime 0:04.50 sec, max RSS 221648 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M5_AMAN_Timeout_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 3947 ms (4126 ms walltime)
+States analysed: 3905
+Transitions fired: 102210
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  212.343 MB ( 107.485 MB program) 
+
+Run 5: walltime 0:04.49 sec, max RSS 221072 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M5_AMAN_Timeout_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M6_Select_Airplane_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 9014 ms (9510 ms walltime)
+States analysed: 9665
+Transitions fired: 256962
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  286.341 MB ( 181.484 MB program) 
+
+Run 1: walltime 0:09.89 sec, max RSS 292464 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M6_Select_Airplane_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 9031 ms (9530 ms walltime)
+States analysed: 9665
+Transitions fired: 256962
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  286.411 MB ( 181.553 MB program) 
+
+Run 2: walltime 0:09.90 sec, max RSS 292464 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M6_Select_Airplane_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 9054 ms (9541 ms walltime)
+States analysed: 9665
+Transitions fired: 256962
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  286.461 MB ( 181.603 MB program) 
+
+Run 3: walltime 0:09.90 sec, max RSS 292544 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M6_Select_Airplane_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 9021 ms (9512 ms walltime)
+States analysed: 9665
+Transitions fired: 256962
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  286.522 MB ( 181.665 MB program) 
+
+Run 4: walltime 0:09.89 sec, max RSS 292544 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M6_Select_Airplane_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 8922 ms (9403 ms walltime)
+States analysed: 9665
+Transitions fired: 256962
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  286.385 MB ( 181.527 MB program) 
+
+Run 5: walltime 0:09.78 sec, max RSS 292704 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M6_Select_Airplane_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M7_Interaction_Pauses_Updates_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 10362 ms (11043 ms walltime)
+States analysed: 15425
+Transitions fired: 297282
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  301.041 MB ( 196.183 MB program) 
+
+Run 1: walltime 0:11.41 sec, max RSS 308016 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M7_Interaction_Pauses_Updates_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 10369 ms (11054 ms walltime)
+States analysed: 15425
+Transitions fired: 297282
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  301.099 MB ( 196.242 MB program) 
+
+Run 2: walltime 0:11.42 sec, max RSS 307952 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M7_Interaction_Pauses_Updates_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 10387 ms (11066 ms walltime)
+States analysed: 15425
+Transitions fired: 297282
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  301.073 MB ( 196.216 MB program) 
+
+Run 3: walltime 0:11.44 sec, max RSS 308192 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M7_Interaction_Pauses_Updates_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 10176 ms (10860 ms walltime)
+States analysed: 15425
+Transitions fired: 297282
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  301.168 MB ( 196.311 MB program) 
+
+Run 4: walltime 0:11.23 sec, max RSS 308224 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M7_Interaction_Pauses_Updates_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 10264 ms (10940 ms walltime)
+States analysed: 15425
+Transitions fired: 297282
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  301.125 MB ( 196.268 MB program) 
+
+Run 5: walltime 0:11.31 sec, max RSS 308016 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M7_Interaction_Pauses_Updates_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M8_Interaction_Events_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 24108 ms (26231 ms walltime)
+States analysed: 48129
+Transitions fired: 611970
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  462.384 MB ( 357.526 MB program) 
+
+Run 1: walltime 0:26.63 sec, max RSS 465840 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M8_Interaction_Events_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 24132 ms (26296 ms walltime)
+States analysed: 48129
+Transitions fired: 611970
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  462.396 MB ( 357.538 MB program) 
+
+Run 2: walltime 0:26.68 sec, max RSS 465696 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M8_Interaction_Events_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 24128 ms (26289 ms walltime)
+States analysed: 48129
+Transitions fired: 611970
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  462.405 MB ( 357.547 MB program) 
+
+Run 3: walltime 0:26.69 sec, max RSS 465328 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M8_Interaction_Events_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 23639 ms (25699 ms walltime)
+States analysed: 48129
+Transitions fired: 611970
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  462.268 MB ( 357.410 MB program) 
+
+Run 4: walltime 0:26.09 sec, max RSS 465504 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M8_Interaction_Events_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 24098 ms (26238 ms walltime)
+States analysed: 48129
+Transitions fired: 611970
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  462.451 MB ( 357.594 MB program) 
+
+Run 5: walltime 0:26.62 sec, max RSS 465568 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M8_Interaction_Events_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+
+================
+Checking M9_Push_Mouse_Buttons_prob_mc2_mch.eventb...
+================
+% Model checking finished, all open states visited
+Model checking time: 362498 ms (413913 ms walltime)
+States analysed: 687169
+Transitions fired: 10224194
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  3994.246 MB ( 3889.388 MB program) 
+
+Run 1: walltime 6:54.43 sec, max RSS 2836688 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M9_Push_Mouse_Buttons_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 368118 ms (418071 ms walltime)
+States analysed: 687169
+Transitions fired: 10224194
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  3994.141 MB ( 3889.284 MB program) 
+
+Run 2: walltime 6:58.52 sec, max RSS 3931456 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M9_Push_Mouse_Buttons_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 365793 ms (416343 ms walltime)
+States analysed: 687169
+Transitions fired: 10224194
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  3996.573 MB ( 3891.716 MB program) 
+
+Run 3: walltime 6:56.80 sec, max RSS 3933168 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M9_Push_Mouse_Buttons_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 367730 ms (418004 ms walltime)
+States analysed: 687169
+Transitions fired: 10224194
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  3996.330 MB ( 3891.472 MB program) 
+
+Run 4: walltime 6:58.49 sec, max RSS 3444272 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M9_Push_Mouse_Buttons_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000
+% Model checking finished, all open states visited
+Model checking time: 368159 ms (419573 ms walltime)
+States analysed: 687169
+Transitions fired: 10224194
+[32mNo counter example found. ALL states visited.[0m
+
+ProB memory used:  3996.165 MB ( 3891.308 MB program) 
+
+Run 5: walltime 7:00.10 sec, max RSS 2740176 kB for /Users/dgelessus/Downloads/out/ProB.macos/probcli M9_Push_Mouse_Buttons_prob_mc2_mch.eventb --model-check -disable-time-out -p OPERATION_REUSE full -pref_group model_check unlimited -p COMPRESSION TRUE -noass -memory -p TIME_OUT 5000 -p MAX_OPERATIONS 100000 -p MAX_INITIALISATIONS 100000

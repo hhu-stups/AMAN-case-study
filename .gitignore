@@ -3,3 +3,13 @@
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+
+# Rodin temporary files
+*.b??_tmp
+
+# ProB files and model checking logs
+*.log
+*.prob
+model_check_results.csv
+!/*/saved_results/*/model_check_results.csv
+!/*/saved_results/*/model_check_results.log
