@@ -8,12 +8,6 @@
     { "name":"scaling",
       "value" : "10"
     },
-    { "name":"VISB_SVG_OBJECTS",
-      "value" : "ran(%(i,j).(i:1..999/scaling & j:1..799/scaling|rec(svg_class:\"rect\",opacity:0.4,x:i*scaling,y:j*scaling,width:scaling, height:scaling,`id`:\"pixel_\"^TO_STRING(i)^\"_\"^TO_STRING(j))))"
-    },
-    { "name":"VISB_SVG_UPDATES",
-      "value" : "ran(%(i,j).(i:1..999/scaling & j:1..799/scaling|rec(`id`:\"pixel_\"^TO_STRING(i)^\"_\"^TO_STRING(j), fill: {nothing_pos |-> \"none\", hold_button_pos |-> \"red\", zoom_slider_pos |-> \"blue\", airplane_pos |-> \"white\", block_time_pos |-> \"yellow\"}( ((POINTS * {nothing_pos}) <+ ui_element_at_point)(i*scaling |-> j*scaling) ))))"
-    },
     { "name":"VISB_SVG_UPDATES1",
       "value" : "{i•i:1..45|rec(`id`:\"ap_\"^TO_STRING(i), visibility: IF (i:ran(landing_sequence) or i : ran(dragged_airplane)) & zoomLevel >= i THEN \"visible\" ELSE \"hidden\" END, `fill-opacity`:IF i : ran(dragged_airplane) & dragged_airplane~[{i}] /= landing_sequence~[{i}] THEN 0.4 ELSE 1.0 END)}"
     },
@@ -21,10 +15,10 @@
       "value" : "{i•i:1..45|rec(`id`:\"minute_\"^TO_STRING(i), visibility: IF (i : ran(landing_sequence) or i : ran(dragged_airplane)) & zoomLevel >= i THEN \"visible\" ELSE \"hidden\" END, y:IF (i : ran(landing_sequence) or i : ran(dragged_airplane)) & i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) + 5 ELSE 0 END)}"
     },
     { "name":"VISB_SVG_UPDATES3",
-      "value" : "{i•i:1..45|rec(`id`:\"line_left_\"^TO_STRING(i), y1:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, y2:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, visbility:IF i <= zoomLevel THEN \"visible\" ELSE \"hidden\" END)}"
+      "value" : "{i•i:1..45|rec(`id`:\"line_left_\"^TO_STRING(i), y1:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, y2:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, visibility:IF i <= zoomLevel THEN \"visible\" ELSE \"hidden\" END)}"
     },
     { "name":"VISB_SVG_UPDATES4",
-      "value" : "{i•i:1..45|rec(`id`:\"line_right_\"^TO_STRING(i), y1:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, y2:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, visbility:IF i <= zoomLevel THEN \"visible\" ELSE \"hidden\" END)}"
+      "value" : "{i•i:1..45|rec(`id`:\"line_right_\"^TO_STRING(i), y1:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, y2:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END, visibility:IF i <= zoomLevel THEN \"visible\" ELSE \"hidden\" END)}"
     },
     { "name":"VISB_SVG_UPDATES5",
       "value" : "{i•i:1..45|rec(`id`:\"bl_\"^TO_STRING(i), fill:IF i : blockedTime THEN \"yellow\" ELSE \"#008000\" END, visibility:IF i <= zoomLevel THEN \"visible\" ELSE \"hidden\" END, height:TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) - 2, y:IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) + 1 ELSE 0 END )}"
@@ -37,6 +31,12 @@
     },
     { "name":"VISB_SVG_UPDATES8",
       "value" : "{i•i:1..45|rec(`id`:\"poly_ap_\"^TO_STRING(i),  points:conc([\"300,\", INT_TO_STRING(IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END), \" 325,\", INT_TO_STRING(IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END + 20), \" 325,\", INT_TO_STRING(IF i : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(i) ELSE 0 END - 20)]), fill:IF i : ran(dragged_airplane) & dragged_airplane~[{i}] /= landing_sequence~[{i}] THEN \"white\" ELSE \"black\" END)}"
+    },
+    { "name":"VISB_SVG_OBJECTS",
+      "value" : "ran(%(i,j).(i:1..999/scaling & j:1..799/scaling|rec(svg_class:\"rect\",opacity:0.4,x:i*scaling,y:j*scaling,width:scaling, height:scaling,`id`:\"pixel_\"^TO_STRING(i)^\"_\"^TO_STRING(j))))"
+    },
+    { "name":"VISB_SVG_UPDATES",
+      "value" : "ran(%(i,j).(i:1..999/scaling & j:1..799/scaling|rec(`id`:\"pixel_\"^TO_STRING(i)^\"_\"^TO_STRING(j), fill: {nothing_pos |-> \"none\", hold_button_pos |-> \"red\", zoom_slider_pos |-> \"blue\", airplane_pos |-> \"white\", block_time_pos |-> \"yellow\"}( ((POINTS * {nothing_pos}) <+ ui_element_at_point)(i*scaling |-> j*scaling) ))))"
     }
   ],
   "items":[
