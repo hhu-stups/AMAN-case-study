@@ -125,6 +125,205 @@
     }
   ],
   "events": [
+    {
+      "id": "background",
+      "event": "Release_Abort_Hold_Button"
+    },
+    {
+      "id": "background",
+      "event": "Release_Abort_Time_Button"
+    },
+    {
+      "id": "background",
+      "event": "deselectAirplane",
+      "predicates" : []
+    },
+    {
+      "id": "background",
+      "event": "stop_dragging_airplane_mouse_to_other",
+      "predicates" : ["new_mouse_pos = nothing_pos"]
+    },
+    {
+      "id": "background",
+      "event": "stop_dragging_zoom_slider_mouse_to_other",
+      "predicates" : ["new_mouse_pos = nothing_pos"]
+    },
+    {
+      "id": "background",
+      "event": "stop_dragging_airplane",
+      "predicates" : []
+    },
+    {
+      "id": "background",
+      "event": "Move_Mouse_Nothing"
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Move_Mouse_Block",
+      "predicates" : ["block=%0", "%0 /: mousePositionBlockSlot$0"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Release_Trigger_Block_Time",
+      "predicates" : []
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Release_Trigger_Deblock_Time",
+      "predicates" : []
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Click_Block_Time",
+      "predicates" : []
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "Release_Abort_Time_Button",
+      "predicates" : []
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "stop_dragging_airplane_mouse_to_block",
+      "predicates" : ["new_mouse_pos_block = %0"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "bl_%0",
+      "event": "stop_dragging_zoom_slider_mouse_to_block",
+      "predicates" : ["new_mouse_pos_block = %0"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "ap_%0",
+      "event": "selectAirplane",
+      "predicates" : ["airplane |-> %0 : landing_sequence"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "ap_%0",
+      "event": "stop_dragging_airplane_mouse_to_airplane",
+      "predicates" : ["new_mouse_pos_airplane = landing_sequence~(%0)"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "ap_%0",
+      "event": "stop_dragging_zoom_slider_mouse_to_airplane",
+      "predicates" : ["new_mouse_pos_airplane = landing_sequence~(%0)"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "mv_%0",
+      "event": "Move_Aircraft",
+      "predicates" : ["time=%0"]
+    },
+    {
+      "id": "bt_hold",
+      "event": "stop_dragging_airplane_mouse_to_other",
+      "predicates" : ["new_mouse_pos = hold_button_pos"]
+    },
+    {
+      "id": "bt_hold",
+      "event": "stop_dragging_zoom_slider_mouse_to_other",
+      "predicates" : ["new_mouse_pos = hold_button_pos"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "mv_%0",
+      "event": "resume_dragging_airplane",
+      "predicates" : []
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "mv_%0",
+      "event": "drag_airplane",
+      "predicates" : ["time=%0"]
+    },
+    {
+      "for": {"from":1, "to":45},
+      "id": "ap_%0",
+      "event": "Move_Mouse_Airplane",
+      "predicates" : ["airplane |-> %0 : landing_sequence", "landing_sequence~(%0) /: mousePositionAirplane$0"]
+    },
+    {
+      "id": "bt_hold",
+      "event": "Release_Trigger_Hold_Button"
+    },
+    {
+      "id": "bt_hold",
+      "event": "Release_Abort_Hold_Button"
+    },
+    {
+      "id": "bt_hold",
+      "event": "Click_Hold_Button"
+    },
+    {
+      "id": "bt_hold",
+      "event": "Move_Mouse_Hold",
+      "predicates": ["currentMousePosition$0 /= hold_button_pos"]
+    },
+    {
+      "id": "zoom_slider",
+      "event": "Release_Abort_Time_Button"
+    },
+    {
+      "id": "zoom_slider",
+      "event": "Release_Abort_Hold_Button"
+    },
+    {
+      "id": "zoom_slider",
+      "event": "start_dragging_zoom_slider"
+    },
+    {
+      "id": "zoom_slider",
+      "event": "changeZoom",
+      "predicates" : ["targetZoom = zoomLevel"]
+    },
+    {
+      "id": "zoom_slider",
+      "event": "Move_Mouse_Zoom_Not_Zooming",
+      "predicates": ["zoom = zoomLevel", "currentMousePosition$0 /= zoom_slider_pos"]
+    },
+    {
+      "id": "zoom_slider",
+      "event": "stop_dragging_airplane_mouse_to_zoom",
+      "predicates" : ["new_mouse_pos_zoom = zoomLevel"]
+    },
+    {
+      "id": "zoom_slider",
+      "event": "stop_dragging_zoom_slider_mouse_to_zoom",
+      "predicates" : []
+    },
+    {
+      "repeat": [15, 20, 25, 30, 35, 40, 45],
+      "id": "zoom_%0",
+      "event": "Move_Mouse_Zoom_Zooming",
+      "predicates": ["target_zoom = %0", "currentMousePosition = zoom_slider_pos"]
+    },
+    {
+      "repeat": [15, 20, 25, 30, 35, 40, 45],
+      "id": "zoom_%0",
+      "event": "changeZoom",
+      "predicates" : ["targetZoom=%0"]
+    },
+    {
+      "repeat": [15, 20, 25, 30, 35, 40, 45],
+      "id": "zoom_%0",
+      "event": "stop_dragging_airplane_mouse_to_zoom",
+      "predicates": ["new_mouse_pos_zoom = %0"]
+    },
+    {
+      "repeat": [15, 20, 25, 30, 35, 40, 45],
+      "id": "zoom_%0",
+      "event": "stop_dragging_zoom_slider_mouse_to_zoom",
+      "predicates": []
+    }
   ],
   "svg_objects": [
   ]
