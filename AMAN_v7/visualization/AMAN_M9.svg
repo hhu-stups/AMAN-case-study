@@ -603,7 +603,7 @@
 
   <image xlink:href="cursor_1.png" id="mouse" x="500" y="500" width="20" height="20"/>
 
-  <!-- https://freesvg.org/mouse-cursor-pointer License: Creative Commons; also applies to mouse clicked graphic!-->
+  <!-- https://freesvg.org/mouse-cursor-pointer License: CC0 1.0 Public Domain; also applies to mouse clicked graphic!-->
 
   <line x1="200" x2="200" y1="750" y2="10" stroke="white" stroke-width="2" />
   <line x1="300" x2="300" y1="750" y2="10" stroke="white" stroke-width="2" />
