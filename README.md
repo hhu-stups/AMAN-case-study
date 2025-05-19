@@ -1,7 +1,11 @@
-This Repository contains our latest version of the AMAN_v6 case study. 
-* The case study is contained in AMAN_v6 and can be started from an up-to-date version of [ProB 2 UI](https://www3.hhu.de/stups/downloads/prob2/snapshot/). 
+This repository contains the latest version of our formal model for the AMAN case study at ABZ 2023.
+
+* The case study can be started from an up-to-date version of [ProB 2 UI](https://www3.hhu.de/stups/downloads/prob2/snapshot/). 
     * The VO manager can be started under the "Advanced" menu.
 * The folder can also be treated as a Rodin project and started from within the IDE.
+* `AMAN_v7` is the current version of our formal model, while `AMAN_v6` is an earlier version
+* HTML scenarios can be inspected by domain experts together with a domain-specific VisB visualization
+
 
 ### Citation
 
