@@ -125,7 +125,7 @@
     <org.eventb.core.psStatus name="Move_Aircraft/no_overlap_airplanes/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="Move_Aircraft/ui_element_at_point_value/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="Move_Aircraft/currentMousePosition_glue/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
-    <org.eventb.core.psStatus name="Move_Aircraft/mousePositionZoomSlider_normal_inside_glue/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="Move_Aircraft/mousePositionZoomSlider_normal_inside_glue/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="Move_Aircraft/mousePositionZoomSlider_normal_outside_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="Move_Aircraft/mousePositionZoomSlider_drag_zoom_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="Move_Aircraft/mousePositionZoomSlider_drag_airplane_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>

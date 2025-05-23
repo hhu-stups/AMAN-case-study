@@ -12,8 +12,8 @@
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
         <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="AMAN_Update/inv4,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="AIRPLANES">
         <org.eventb.core.lang name="L"/>
@@ -49,8 +49,8 @@
             <org.eventb.core.prIdent name="landing_sequence" org.eventb.core.type="ℙ(AIRPLANES×ℤ)"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="Move_Aircraft/inv4,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16" org.eventb.core.prSets="AIRPLANES">
         <org.eventb.core.lang name="L"/>
@@ -115,8 +115,8 @@
         <org.eventb.core.prPred name="p22" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
         <org.eventb.core.prPred name="p20" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="Hold_Button/inv4,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="AIRPLANES">
@@ -186,9 +186,9 @@
         <org.eventb.core.prPred name="p20" org.eventb.core.predicate="scheduledAirplanes⊆AIRPLANES"/>
         <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
         <org.eventb.core.prPred name="p18" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
         <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="Unhold_Button/inv4,1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="AIRPLANES">

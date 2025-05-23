@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.prFile version="1">
-    <org.eventb.core.prProof name="axm3,1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="x,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="AIRPLANES" org.eventb.core.psManual="true">
+    <org.eventb.core.prProof name="axm3,1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="x,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
         <org.eventb.core.lang name="L"/>
         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
-                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
-                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
-                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
-                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
-                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees x,y)" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees x,y)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
                                         <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
                                         <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
-                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ProB (no enumeration / all cases checked)" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p1"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Existence of minimum or maximum in goal with finite hypothesis" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
                                     </org.eventb.core.prAnte>
                                 </org.eventb.core.prRule>
                             </org.eventb.core.prAnte>
@@ -21,19 +21,18 @@
                 </org.eventb.core.prRule>
             </org.eventb.core.prAnte>
         </org.eventb.core.prRule>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(AIRPLANES)"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0">
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0">
             <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
             <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.finiteHypBoundedGoal"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="axm3,2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="x,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="AIRPLANES">
         <org.eventb.core.lang name="L"/>
@@ -56,6 +55,7 @@
                                                 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
                                                 <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with DIST=(λx ↦ y·⊤ ∣ max({y − x,x − y}))" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p8">
                                                     <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
                                                         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
                                                             <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
                                                                 <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
@@ -69,7 +69,8 @@
                                     <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p15">
                                         <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with DIST=(λx ↦ y·⊤ ∣ max({y − x,x − y}))" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p8">
                                             <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
-                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p1,p8,p9">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p1,p9">
                                                     <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
                                                 </org.eventb.core.prRule>
                                             </org.eventb.core.prAnte>
@@ -82,6 +83,7 @@
                                                 <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
                                                 <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with DIST=(λx ↦ y·⊤ ∣ max({y − x,x − y}))" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p8">
                                                     <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
                                                         <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="">
                                                             <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
                                                                 <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
@@ -132,13 +134,13 @@
         <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·⊤∧⊤⇒x ↦ y∈dom(DIST)∧DIST∈ℤ × ℤ ⇸ ℤ∧y ↦ x∈dom(DIST)"/>
         <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
         <org.eventb.core.prPred name="p5" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="axm3,2/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="x,y" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
         <org.eventb.core.lang name="L"/>
@@ -159,9 +161,10 @@
                                         <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
                                         <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with DIST=(λx ↦ y·⊤ ∣ max({y − x,x − y}))" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p7">
                                             <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
                                                 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
                                                     <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
-                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p7">
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
                                                             <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
                                                         </org.eventb.core.prRule>
                                                     </org.eventb.core.prAnte>
@@ -199,11 +202,11 @@
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℤ∧y∈ℤ⇒{y − x,x − y}≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x0⦂ℤ·x0∈{y − x,x − y}⇒b≥x0)"/>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="DIST=(λx⦂ℤ ↦ y⦂ℤ·⊤∧⊤ ∣ max({y − x,x − y}))"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
         <org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eqL2:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="axm3,4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="AIRPLANES">
         <org.eventb.core.lang name="L"/>
