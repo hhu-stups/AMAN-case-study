@@ -1515,6 +1515,7 @@
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="time∉blockedTime" org.eventb.core.source="/AMAN_v7/M8_Interaction_Events.bum|org.eventb.core.machineFile#M8_Interaction_Events|org.eventb.core.event#_Ixt6WpaKEe24TugeHBuH1g|org.eventb.core.guard#_IxuhYpaKEe24TugeHBuH1g"/>
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="clickStartPosition={airplane_pos}" org.eventb.core.source="/AMAN_v7/M9_Push_Mouse_Buttons.bum|org.eventb.core.machineFile#M9_Push_Mouse_Buttons|org.eventb.core.event#_di3yPXVmEe2VVrqbNWbb9w|org.eventb.core.guard#_a5GMMHVpEe2VVrqbNWbb9w"/>
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="currentInteractionMode=DRAG_AIRPLANE_MODE" org.eventb.core.source="/AMAN_v7/M9_Push_Mouse_Buttons.bum|org.eventb.core.machineFile#M9_Push_Mouse_Buttons|org.eventb.core.event#_di3yPXVmEe2VVrqbNWbb9w|org.eventb.core.guard#_HO5AUL6EEe2KstIaBT7mfg"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="⊥" org.eventb.core.source="/AMAN_v7/M10_GUI.bum|org.eventb.core.machineFile#M10_GUI|org.eventb.core.event#_uA9kUG8bEe2yf4TIGcxCyM|org.eventb.core.guard#_zJ7MkE3UEfC_fpKAbxICGg"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTIDENTM1_Landing_Sequence_Concrete_CuG" org.eventb.core.parentSet="/AMAN_v7/M10_GUI.bpo|org.eventb.core.poFile#M10_GUI|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="clickStartPosition'" org.eventb.core.type="ℙ(mouse_positions)"/>
