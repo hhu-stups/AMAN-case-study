@@ -102,6 +102,7 @@
     <org.eventb.core.psStatus name="Move_Mouse_Nothing/mousePositionZoomSlider_drag_zoom_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="Move_Mouse_Nothing/mousePositionZoomSlider_drag_airplane_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/currently_at_airplane_or_nothing/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/currently_at_airplane_or_nothing/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/then_not_at_airplane/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/no_overlap/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/no_overlap_airplanes/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
@@ -109,13 +110,15 @@
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/currentMousePosition_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_nothing/ui_element_at_point/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/currently_at_airplane_or_nothing/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/currently_at_airplane_or_nothing/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/then_at_airplane/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/no_overlap/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/no_overlap_airplanes/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/ui_element_at_point_value/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/currentMousePosition_glue/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_to_airplane/ui_element_at_point/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
-    <org.eventb.core.psStatus name="AMAN_Update_mouse_stays/not_at_airplane/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AMAN_Update_mouse_stays/not_currently_at_airplane_or_nothing/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AMAN_Update_mouse_stays/not_currently_at_airplane_or_nothing/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_stays/no_overlap/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_stays/no_overlap_airplanes/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="AMAN_Update_mouse_stays/ui_element_at_point_value/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
