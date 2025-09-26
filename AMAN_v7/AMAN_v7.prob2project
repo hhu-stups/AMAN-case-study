@@ -472,6 +472,18 @@
           "taskType": "REPLAY_TRACE",
           "location": "M6_Scenario_Timeout.prob2trace",
           "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M6_Scenario_Labels_All_Positions_and_Zoom",
+          "location": "M6_Aircraft_Labels_All_Positions_and_Zoom.prob2trace",
+          "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M6_Scenario_Zoom_Levels",
+          "location": "M6_Scenario_Zoom_Levels.prob2trace",
+          "selected": true
         }
       ],
       "ltlPatterns": [],
@@ -580,6 +592,12 @@
         {
           "taskType": "REPLAY_TRACE",
           "location": "Zooming_Bug.prob2trace",
+          "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M9_Scenario_Zoom_Levels",
+          "location": "M9_Scenario_Zoom_Levels.prob2trace",
           "selected": true
         }
       ],
@@ -1447,19 +1465,42 @@
       "name": "Req17",
       "introducedAt": "M0_AMAN_Update",
       "text": "aircraft labels must always be positioned in front of a small bar of the timeline",
-      "validationObligations": []
+      "validationObligations": [
+        {
+          "machine": "M6_Select_Airplane_vis",
+          "expression": "M6_Scenario_Labels_All_Positions_and_Zoom"
+        }
+      ]
     },
     {
       "name": "Req18",
       "introducedAt": "M4_Zoom",
       "text": "Lift of the zoom slider should always be located on the slider bar",
-      "validationObligations": []
+      "validationObligations": [
+        {
+          "machine": "M6_Select_Airplane_vis",
+          "expression": "M6_Scenario_Zoom_Levels"
+        },
+        {
+          "machine": "M9_Push_Mouse_Buttons_vis",
+          "expression": "M9_Scenario_Zoom_Levels"
+        }
+      ]
     },
     {
       "name": "Req19",
       "introducedAt": "M4_Zoom",
       "text": "the value displayed next to the zoom slider must belong to the list of seven acceptable values for the zoom",
-      "validationObligations": []
+      "validationObligations": [
+        {
+          "machine": "M6_Select_Airplane_vis",
+          "expression": "M6_Scenario_Zoom_Levels"
+        },
+        {
+          "machine": "M9_Push_Mouse_Buttons_vis",
+          "expression": "M9_Scenario_Zoom_Levels"
+        }
+      ]
     },
     {
       "name": "Req20",
@@ -1546,7 +1587,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 57,
-    "savedAt": "2025-09-26T08:52:23.704935Z",
+    "savedAt": "2025-09-26T19:27:26.169923Z",
     "creator": "User",
     "proB2KernelVersion": "4.15.1-SNAPSHOT",
     "proBCliVersion": null,
