@@ -218,12 +218,12 @@
     {
       "id":"mouse",
       "attr":"x",
-      "value":"IF block_time_pos = currentMousePosition THEN 210 ELSIF airplane_pos = currentMousePosition THEN IF dragging_airplane = TRUE THEN 285 ELSE 430 END ELSIF hold_button_pos = currentMousePosition THEN 740 ELSIF zoom_slider_pos = currentMousePosition THEN 713 + 40 * (MU(mousePositionZoomSlider)/5 - 3) ELSE 500 END"
+      "value":"prj1(mouse_pos)"
     },
     {
       "id":"mouse",
       "attr":"y",
-      "value":"IF block_time_pos = currentMousePosition THEN IF MU(mousePositionBlockSlot) : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(MU(mousePositionBlockSlot)) + 1 ELSE 0 END ELSIF airplane_pos = currentMousePosition THEN IF MU(mousePositionAirplane) : dom(dragged_airplane) THEN bottomY - dragged_airplane(MU(mousePositionAirplane)) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSIF MU(mousePositionAirplane) : dom(landing_sequence) THEN bottomY - landing_sequence(MU(mousePositionAirplane)) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END ELSIF hold_button_pos = currentMousePosition THEN 510 ELSIF zoom_slider_pos = currentMousePosition THEN 75 ELSE 500 END"
+      "value":"prj1(mouse_pos)"
     }
   ],
   "events": [

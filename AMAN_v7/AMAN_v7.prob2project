@@ -146,7 +146,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M1_Landing_Sequence",
@@ -198,8 +200,8 @@
             "FIND_DEADLOCKS",
             "FIND_INVARIANT_VIOLATIONS"
           ],
-          "goal": "2 /: ran(landing_sequence)",
-          "selected": true
+          "selected": true,
+          "customGoal": "2 /: ran(landing_sequence)"
         },
         {
           "taskType": "MODEL_CHECKING",
@@ -228,7 +230,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M2_Hold_Button",
@@ -271,7 +275,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M3_Block_Timeslots",
@@ -340,7 +346,7 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": "visualization/AMAN_vis.json"
+      "visBVisualisations": []
     },
     {
       "name": "M4_Zoom_Ctx",
@@ -350,7 +356,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M4_Zoom",
@@ -371,7 +379,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M5_AMAN_Timeout",
@@ -388,7 +398,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M6_Select_Airplane",
@@ -446,7 +458,9 @@
           "path": "simulation/AMAN_sim_slow.json"
         }
       ],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M6_Select_Airplane_vis",
@@ -462,7 +476,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": "visualization/AMAN_vis.json"
+      "visBVisualisations": [
+        "visualization/AMAN_vis.json"
+      ]
     },
     {
       "name": "M7_Interaction_Pauses_Updates",
@@ -472,7 +488,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M8_Interaction_Events",
@@ -503,7 +521,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M9_Push_Mouse_Buttons",
@@ -517,7 +537,9 @@
           "path": "simulation/AMAN_sim_interactive.json"
         }
       ],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M9_Push_Mouse_Buttons_prob",
@@ -533,7 +555,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": "visualization/AMAN_vis_M9.json"
+      "visBVisualisations": [
+        "visualization/AMAN_vis_M9.json"
+      ]
     },
     {
       "name": "M10_GUI_Ctx",
@@ -543,7 +567,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M9_Push_Mouse_Buttons_vis",
@@ -563,7 +589,9 @@
           "path": "simulation/AMAN_sim_interactive.json"
         }
       ],
-      "visBVisualisation": "visualization/AMAN_vis_M9.json"
+      "visBVisualisations": [
+        "visualization/AMAN_vis_M9.json"
+      ]
     },
     {
       "name": "M10_GUI",
@@ -663,7 +691,9 @@
           "path": "simulation/AMAN_sim_interactive.json"
         }
       ],
-      "visBVisualisation": "visualization/AMAN_vis_M10_faster.json"
+      "visBVisualisations": [
+        "visualization/AMAN_vis_M10_faster.json"
+      ]
     },
     {
       "name": "M0_AMAN_Update_prob_mc",
@@ -683,7 +713,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M0_AMAN_Update_prob_mc2",
@@ -693,7 +725,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M1_Landing_Sequence_prob_mc",
@@ -703,7 +737,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M1_Landing_Sequence_prob_mc2",
@@ -723,7 +759,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M2_Hold_Button_prob_mc",
@@ -751,7 +789,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M2_Hold_Button_prob_mc2",
@@ -770,7 +810,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M3_Block_Timeslots_prob_mc",
@@ -780,7 +822,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M3_Block_Timeslots_prob_mc2",
@@ -838,7 +882,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M4_Zoom_prob_mc",
@@ -858,7 +904,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M4_Zoom_prob_mc2",
@@ -877,7 +925,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M5_AMAN_Timeout_prob_mc",
@@ -887,7 +937,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M5_AMAN_Timeout_prob_mc2",
@@ -913,7 +965,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M6_Select_Airplane_prob_mc",
@@ -923,7 +977,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M6_Select_Airplane_prob_mc2",
@@ -933,6 +989,7 @@
       "validationTasks": [
         {
           "taskType": "MODEL_CHECKING",
+          "id": "MC_COV",
           "searchStrategy": "MIXED_BF_DF",
           "options": [
             "IGNORE_OTHER_ERRORS"
@@ -941,11 +998,13 @@
         },
         {
           "taskType": "VISUALIZATION_FORMULA",
+          "id": "scheduled_airplanes_prj",
           "commandType": "transition_diagram",
           "formula": "dom(landing_sequence)"
         },
         {
           "taskType": "VISUALIZATION_FORMULA",
+          "id": "held_airplanes_prj",
           "commandType": "transition_diagram",
           "formula": "held_airplanes"
         },
@@ -962,7 +1021,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M7_Interaction_Pauses_Updates_prob_mc",
@@ -972,7 +1033,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M7_Interaction_Pauses_Updates_prob_mc2",
@@ -982,7 +1045,9 @@
       "validationTasks": [],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M8_Interaction_Events_prob_mc",
@@ -1001,7 +1066,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M8_Interaction_Events_prob_mc2",
@@ -1040,7 +1107,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M9_Push_Mouse_Buttons_prob_mc",
@@ -1060,7 +1129,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     },
     {
       "name": "M9_Push_Mouse_Buttons_prob_mc2",
@@ -1079,7 +1150,9 @@
       ],
       "ltlPatterns": [],
       "simulations": [],
-      "visBVisualisation": null
+      "visBVisualisations": [
+        ""
+      ]
     }
   ],
   "requirements": [
@@ -1417,6 +1490,39 @@
       "introducedAt": "M2_Hold_Button",
       "text": "Depending on the number of aircraft on arrival, this might be a complex constraint of which the satisfaction may require speeding up or slowing down some aircraft but also having some aircraft on HOLD which means sending them to a waiting zone for later processing. In such a case, the aircraft will be removed\n(after a while) from the landing sequence.\n\nNOTE Sebastian: What we have here is a extremly high level requirement which would require us to have a notion of airplane speed. Which is not implemented (Yet). However, we can show that an airplane that is put on hold, can have its arrival time reduced.",
       "validationObligations": []
+    },
+    {
+      "name": "BEH1",
+      "introducedAt": "M0_AMAN_Update",
+      "text": "An AMAN update adds scheduled airplanes, which can only be removed by an AMAN update.",
+      "validationObligations": [
+        {
+          "machine": "M6_Select_Airplane_prob_mc2",
+          "expression": "MC_COV & scheduled_airplanes_prj"
+        }
+      ]
+    },
+    {
+      "name": "BEH2",
+      "introducedAt": "M2_Hold_Button",
+      "text": "The ATCo can always put any airplane on hold, and only an AMAN update can remove an airplane on hold from the landing sequence.",
+      "validationObligations": [
+        {
+          "machine": "M6_Select_Airplane_prob_mc2",
+          "expression": "MC_COV & held_airplanes_prj"
+        }
+      ]
+    },
+    {
+      "name": "Coverage",
+      "introducedAt": "M3_Block_Timeslots",
+      "text": "All operations must be covered by the scenarios.",
+      "validationObligations": [
+        {
+          "machine": "M3_Block_Timeslots",
+          "expression": "M3_Scenario_1 & M3_Scenario_2 & M3_Scenario_3 & M3_Scenario_4"
+        }
+      ]
     }
   ],
   "preferences": [
@@ -1439,10 +1545,10 @@
   ],
   "metadata": {
     "fileType": "Project",
-    "formatVersion": 55,
-    "savedAt": "2024-11-04T16:42:52.496078Z",
+    "formatVersion": 57,
+    "savedAt": "2025-09-26T08:52:23.704935Z",
     "creator": "User",
-    "proB2KernelVersion": "4.13.2-SNAPSHOT",
+    "proB2KernelVersion": "4.15.1-SNAPSHOT",
     "proBCliVersion": null,
     "modelName": null
   }
