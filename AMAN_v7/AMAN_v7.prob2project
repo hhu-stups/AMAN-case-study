@@ -599,6 +599,30 @@
           "id": "M9_Scenario_Zoom_Levels",
           "location": "M9_Scenario_Zoom_Levels.prob2trace",
           "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M9_Scenario_Mouse_Cursor_Test",
+          "location": "M9_Scenario_Mouse_Cursor_Test.prob2trace",
+          "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M9_Scenario_Hold_Finished",
+          "location": "M9_Scenario_Hold_Finished.prob2trace",
+          "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M9_Scenario_Hold_Not_Pressed",
+          "location": "M9_Scenario_Hold_Not_Pressed.prob2trace",
+          "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M9_Scenario_Hold_Not_Released",
+          "location": "M9_Scenario_Hold_Not_Released.prob2trace",
+          "selected": true
         }
       ],
       "ltlPatterns": [],
@@ -1512,19 +1536,34 @@
       "name": "Req21",
       "introducedAt": "M9_Push_Mouse_Buttons",
       "text": "there must be one and only one mouse cursor on the screen",
-      "validationObligations": []
+      "validationObligations": [
+        {
+          "machine": "M9_Push_Mouse_Buttons_vis",
+          "expression": "M9_Scenario_Mouse_Cursor_Test"
+        }
+      ]
     },
     {
       "name": "Req22",
       "introducedAt": "M2_Hold_Button",
       "text": "Hold(aircraft) function can only be triggered after a mouse press and a mouse released have been performed on the HOLD button.",
-      "validationObligations": []
+      "validationObligations": [
+        {
+          "machine": "M9_Push_Mouse_Buttons_vis",
+          "expression": "M9_Scenario_Hold_Finished"
+        }
+      ]
     },
     {
       "name": "Req23",
       "introducedAt": "M2_Hold_Button",
       "text": "Hold(aircraft) function must not be triggered if there is not a mouse press and a mouse released performed on the HOLD button.",
-      "validationObligations": []
+      "validationObligations": [
+        {
+          "machine": "M9_Push_Mouse_Buttons_vis",
+          "expression": "M9_Scenario_Hold_Not_Pressed & M9_Scenario_Hold_Not_Released"
+        }
+      ]
     },
     {
       "name": "Hold planes can rescheduled a later time",
@@ -1587,7 +1626,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 57,
-    "savedAt": "2025-09-26T19:27:26.169923Z",
+    "savedAt": "2025-09-27T12:07:59.542388Z",
     "creator": "User",
     "proB2KernelVersion": "4.15.1-SNAPSHOT",
     "proBCliVersion": null,
