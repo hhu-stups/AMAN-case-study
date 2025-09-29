@@ -623,6 +623,12 @@
           "id": "M9_Scenario_Hold_Not_Released",
           "location": "M9_Scenario_Hold_Not_Released.prob2trace",
           "selected": true
+        },
+        {
+          "taskType": "REPLAY_TRACE",
+          "id": "M9_Aircraft_Labels_All_Positions_and_Zoom_Levels",
+          "location": "M9_Aircraft_Labels_All_Positions_and_Zoom.prob2trace",
+          "selected": true
         }
       ],
       "ltlPatterns": [],
@@ -1183,11 +1189,24 @@
       "validationTasks": [
         {
           "taskType": "MODEL_CHECKING",
+          "id": "MC_COV",
           "searchStrategy": "MIXED_BF_DF",
           "options": [
             "IGNORE_OTHER_ERRORS"
           ],
           "selected": true
+        },
+        {
+          "taskType": "VISUALIZATION_FORMULA",
+          "id": "Hold_Button_Prj",
+          "commandType": "transition_diagram",
+          "formula": "card(held_airplanes) |-> selectedAirplane |-> bool(currentMousePosition = hold_button_pos) |-> bool(clickStartPosition = {hold_button_pos})"
+        },
+        {
+          "taskType": "VISUALIZATION_FORMULA",
+          "id": "scheduled_airplanes_prj",
+          "commandType": "transition_diagram",
+          "formula": "dom(landing_sequence)"
         }
       ],
       "ltlPatterns": [],
@@ -1493,6 +1512,10 @@
         {
           "machine": "M6_Select_Airplane_vis",
           "expression": "M6_Scenario_Labels_All_Positions_and_Zoom"
+        },
+        {
+          "machine": "M9_Push_Mouse_Buttons_vis",
+          "expression": "M9_Aircraft_Labels_All_Positions_and_Zoom_Levels"
         }
       ]
     },
@@ -1579,6 +1602,10 @@
         {
           "machine": "M6_Select_Airplane_prob_mc2",
           "expression": "MC_COV & scheduled_airplanes_prj"
+        },
+        {
+          "machine": "M9_Push_Mouse_Buttons_prob_mc2",
+          "expression": "MC_COV & scheduled_airplanes_prj"
         }
       ]
     },
@@ -1626,7 +1653,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 57,
-    "savedAt": "2025-09-27T12:07:59.542388Z",
+    "savedAt": "2025-09-29T11:40:08.853277Z",
     "creator": "User",
     "proB2KernelVersion": "4.15.1-SNAPSHOT",
     "proBCliVersion": null,
